@@ -1,7 +1,10 @@
-import Vue from 'vue'
-import Vuex from 'vuex'
+import Vue from 'vue';
+import Vuex from 'vuex';
 
-Vue.use(Vuex)
+import Products from '@/store/Products';
+import User from '@/store/User';
+
+Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
@@ -13,5 +16,7 @@ export default new Vuex.Store({
   actions: {
   },
   modules: {
+    Products,
+    User,
   }
-})
+});

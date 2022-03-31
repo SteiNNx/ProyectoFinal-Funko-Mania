@@ -25,5 +25,8 @@ npm run test:unit
 npm run test:e2e
 ```
 
+## Instructivos para desarrolladores
+- Visite este [instructivo de Git](docs/git-commands.md)
+
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
