@@ -12,13 +12,13 @@ import {
 import { db } from "@/plugins/firebase";
 
 /**
- * @description Modulo Productos, contiene state, mutations, actions y getters
+ * @description Modulo Funkos, contiene state, mutations, actions y getters
  */
-const Products = {
+const Funkos = {
     state: () => ({}),
     mutations: {},
     actions: {},
     getters: {}
 };
 
-export default Products;
+export default Funkos;

@@ -4,6 +4,8 @@ import {
     signInWithEmailAndPassword,
 } from "firebase/auth";
 
+import { errorCodeToStringLabelFirebase } from '@/utils/functions';
+
 /**
  * @description Modulo Usuario, contiene state, mutations, actions y getters
  */
@@ -53,11 +55,12 @@ const User = {
                 });
         },
         getUserLogin({ commit }) {
-            getAuth().onAuthStateChanged((user) => {
-                if (user) {
-                    commit('SET_USER_LOGIN', user.email);
-                }
-            });
+            getAuth()
+                .onAuthStateChanged((user) => {
+                    if (user) {
+                        commit('SET_USER_LOGIN', user.email);
+                    }
+                });
         },
     },
     getters: {}
