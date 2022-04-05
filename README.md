@@ -54,4 +54,6 @@ R:  tipografía: Nunito
 3. Guía de instalación del proyecto: Indicar los requisitos necesarios, si se utiliza Webpack o
 Parcel, si es necesario instalar dependencias extra dentro de un directorio (Por ejemplo, para las
 Cloud Functions). Registrar paso a paso el proceso de instalación.
+
 4. Rutas de acceso: Indicar la ruta en donde puede ser encontrada la aplicación
+
