@@ -2,7 +2,7 @@
 
 <p align="center">
     <h2 align="center">Funko Pop Mania!</h2>
-    <p align="center">:superhero:</p>
+    <p align="center"> :teddy_bear: :mage_woman: :mage_man: :fairy: :superhero: :robot: :alien: :zombie: :vampire:</p>
 </p>
 
 ## _Descripción de nuestro Proyecto:_
