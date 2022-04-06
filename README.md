@@ -29,7 +29,7 @@ npm install
 npm run serve
 ```
 
-### _:man_technologist: :woman_technologist:Instructivos para desarrolladores_
+### _:woman_technologist:Instructivos para desarrolladores_
 - Visite este [instructivo de Git](docs/git-commands.md)
 
 
