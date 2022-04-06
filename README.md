@@ -1,17 +1,15 @@
-# **Funko Pop Mania**
-
 <p align="center">
     <h2 align="center">Funko Pop Mania!</h2>
     <p align="center"> :teddy_bear: :mage_woman: :mage_man: :fairy: :superhero: :robot: :alien: :zombie: :vampire:</p>
 </p>
 
-## _Descripción de nuestro Proyecto:_
+## _Descripción Proyecto:_
 
 En la actualidad han subido el número de coleccionistas de funko pops, sus precios al día de hoy son másaccesibles, pero muchos no encuentran las colecciones que necesitan para completarlas. 
 Debido a esto decidimos crear una pagina para ayudar a los coleccionistas a intercambiar sus funko pop yacceder a los que les faltaban.
 Nuestro sitio está dirigido a los amantes de los funko a públicos de todas las edades.
 
-## _Guia de estilos:_
+## _Guia de estilos :nail_care::_
 - Tipografía: 
     - [Bouncy](https://www.dafont.com/es/bouncy-2.font)
     - [Nunito](https://fonts.google.com/specimen/Nunito?query=nunito)
