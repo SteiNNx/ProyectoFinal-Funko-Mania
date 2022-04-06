@@ -20,7 +20,7 @@ Nuestro sitio está dirigido a los amantes de los funko a públicos de todas las
     ![ImagenPaletaColores](./docs/img/colorscheme.png) 
     - **#FFFFFF, #00CCFF, #00A4CD, #000000**
 
-## _Guia de Instalación_:
+## _:hammer_and_wrench:Guia de Instalación_:
 
 ```bash
 git clone https://github.com/SteiNNx/ProyectoFinal-Funko-Mania.git funko-mania
