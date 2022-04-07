@@ -24,7 +24,7 @@ footer {
   position: fixed;
   left: 0px;
   bottom: 0px;
-  height: 10rem;
+  height: 8rem;
   width: 100%;
   background: $negro;
   color: $blanco;
