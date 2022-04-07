@@ -1,39 +1,51 @@
 <template>
-  <div>
-    <b-navbar class="nav p-2" toggleable="lg" type="dark" variant="">
-      <b-navbar-brand href="/">FUNKO-MANIA</b-navbar-brand>
+  <b-navbar toggleable="lg" type="dark" variant="info">
+    <b-navbar-brand href="#">NavBar</b-navbar-brand>
 
-      <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+    <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
-      <b-collapse id="nav-collapse" is-nav>
-        <b-navbar-nav>
-          <b-nav-item to="/">Home</b-nav-item>
-          <b-nav-item to="/administracion">Administracion</b-nav-item>
-          <b-nav-item to="/login">Login</b-nav-item>
-          <b-nav-item to="/registrar">Registrar</b-nav-item>
-        </b-navbar-nav>
+    <b-collapse id="nav-collapse" is-nav>
+      <b-navbar-nav>
+        <b-nav-item href="#">Link</b-nav-item>
+        <b-nav-item href="#" disabled>Disabled</b-nav-item>
+      </b-navbar-nav>
 
-        <!-- Right aligned nav items -->
-      </b-collapse>
-      <div v-if="userLogin != null">
-        <span @click="logout" v-b-tooltip.hover title="Exit"
-          ><b-avatar icon="door-closed"></b-avatar
-        ></span>
-        <span>{{ userLogin }}</span>
-      </div>
-      <span v-else @click="ingresar">Ingresar</span>
-    </b-navbar>
-  </div>
+      <!-- Right aligned nav items -->
+      <b-navbar-nav class="ml-auto">
+        <b-nav-form>
+          <b-form-input size="sm" class="mr-sm-2" placeholder="Search"></b-form-input>
+          <b-button size="sm" class="my-2 my-sm-0" type="submit">Search</b-button>
+        </b-nav-form>
+
+        <b-nav-item-dropdown text="Lang" right>
+          <b-dropdown-item href="#">EN</b-dropdown-item>
+          <b-dropdown-item href="#">ES</b-dropdown-item>
+          <b-dropdown-item href="#">RU</b-dropdown-item>
+          <b-dropdown-item href="#">FA</b-dropdown-item>
+        </b-nav-item-dropdown>
+
+        <b-nav-item-dropdown right>
+          <!-- Using 'button-content' slot -->
+          <template #button-content>
+            <em>User</em>
+          </template>
+          <b-dropdown-item href="#">Profile</b-dropdown-item>
+          <b-dropdown-item href="#">Sign Out</b-dropdown-item>
+        </b-nav-item-dropdown>
+      </b-navbar-nav>
+    </b-collapse>
+  </b-navbar>
 </template>
 
 <script>
+//import UserLogin from "@/components/UserLogin";
+
+export default {
+  name: "Navbar",
+  components: {
+    // UserLogin,
+  },
+};
 </script>
 
-<style>
-.nav {
-  background-color: #00A4CD;
-}
-span {
-  color: #fff;
-}
-</style>
+<style></style>
