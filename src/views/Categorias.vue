@@ -1,4 +1,4 @@
-<template>
+<template id="Categorias">
 <div>
 <b-card
     title="Card Title"

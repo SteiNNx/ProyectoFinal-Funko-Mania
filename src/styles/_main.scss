@@ -1,0 +1,48 @@
+/*
+|--------------------------------------------------------------------------
+|                   Main File SCSS
+|--------------------------------------------------------------------------
+*/
+
+/** Colores */
+$blanco: #ffffff;
+$negro: #000000;
+$celeste: #00ccff;
+$celeste-oscuro: #00a4cd;
+
+/** Breakpoints */
+
+@mixin breakpoint($point) {
+    @if $point == "Celular" {
+        @media (min-width: 0px) and (max-width: 576px) {
+            @content;
+        }
+    } @else if $point == "Tablet" {
+        @media (min-width: 576px) and (max-width: 768px) {
+            @content;
+        }
+    } @else if $point == "Desktop" {
+        @media (min-width: 768px) {
+            @content;
+        }
+    }
+}
+/** Tipografia */
+
+$bouncy: "Bouncy";
+$nunito: "Nunito";
+
+$font-size-xl: 32px;
+$font-size-md: 24px;
+$font-size-sm: 16px;
+
+/** Bouncy */
+@font-face {
+    font-family: "Bouncy";
+    src: url("@/assets/fonts/bouncy/bouncy-thin-personal.otf");
+}
+/** Nunito */
+@font-face {
+    font-family: "Nunito", sans-serif;
+    src: url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap");
+}
