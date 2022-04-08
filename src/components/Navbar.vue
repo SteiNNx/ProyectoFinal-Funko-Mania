@@ -7,10 +7,17 @@
 
     <b-collapse id="nav-collapse" is-nav>
       <b-navbar-nav>
+<<<<<<< HEAD
         <b-nav-item class="funko-nav-item" href="/">Inicio</b-nav-item>
         <b-nav-item class="funko-nav-item" href="/categorias">Categorias</b-nav-item>
         <b-nav-item class="funko-nav-item" href="/favoritos">Favoritos</b-nav-item>
         <b-nav-item class="funko-nav-item" href="#">Blog</b-nav-item>
+=======
+        <b-nav-item href="/">Inicio</b-nav-item>
+        <b-nav-item href="/Categorias">Categorias</b-nav-item>
+        <b-nav-item href="#">Favoritos</b-nav-item>
+        <b-nav-item href="#">Blog</b-nav-item>
+>>>>>>> origin/master
       </b-navbar-nav>
 
       <!-- Right aligned nav items -->
