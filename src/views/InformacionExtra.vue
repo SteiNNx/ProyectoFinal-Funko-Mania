@@ -7,7 +7,7 @@
           <h2 class="mt-5">Funkos mas buscados</h2>
         </div>
 
-        <p class="text-justify">
+        <p class="text-justify mt-5 mb-5">
           Quisque faucibus sem at justo consectetur, a dictum ante rutrum. Proin
           in ipsum tempor, pharetra quam vitae, tristique ex. Sed molestie eget
           tellus eu scelerisque. Ut pretium arcu ac augue egestas, ut
@@ -22,7 +22,7 @@
           <h2 class="mt-5">Curiosidades</h2>
         </div>
 
-        <p class="text-justify">
+        <p class="text-justify mt-5">
           Quisque faucibus sem at justo consectetur, a dictum ante rutrum. Proin
           in ipsum tempor, pharetra quam vitae, tristique ex. Sed molestie eget
           tellus eu scelerisque. Ut pretium arcu ac augue egestas, ut
@@ -37,7 +37,7 @@
           <h2 class="mt-5">Promociones</h2>
         </div>
 
-        <p class="text-justify">
+        <p class="text-justify mt-5">
           Quisque faucibus sem at justo consectetur, a dictum ante rutrum. Proin
           in ipsum tempor, pharetra quam vitae, tristique ex. Sed molestie eget
           tellus eu scelerisque. Ut pretium arcu ac augue egestas, ut

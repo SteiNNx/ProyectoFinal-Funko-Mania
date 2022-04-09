@@ -6,7 +6,7 @@
 
     <div class="row"  justify="left">
       <div class="col-md-5">
-        <p class="text-justify m-5">
+        <p class="text1 text-justify">
           Bienvenidos al mundo de Funko Pop, aqui podras encontrar la historia,
           datos curiosos, intercambiar y comprar para completar tu colección de
           uno de los mayores fenómenos de coleccionistas modernos. <br /><br />
@@ -17,21 +17,13 @@
           lobortis. Phasellus arcu dui, lacinia non bibendum quis, aliquet sit
           amet enim. Vivamus dignissim facilisis aliquam. Etiam odio mauris,
           pulvinar in porttitor at, pellentesque eu purus. Nam dapibus rhoncus
-          justo et egestas. Sed sagittis leo a posuere egestas. Sed in enim
-          vitae velit scelerisque venenatis. Nam iaculis ut nisl vel finibus.
-          Becker empezó con 35.000 dólares
-          de su propio bolsillo trabajando desde su casa y su primer muñequito,
-          como no podía ser de otra manera, fue el Big Boy que había estado
-          buscando durante tanto tiempo, esta vez en versión muñeco sin hucha.
-          Acto seguido fue a por su primera línea bautizada con el nombre de
-          Wacky Wobblers (algo así como los “locos que se tambalean”) cuyos
-          protagonistas eran figuras animadas como Popeye, Dick Tracy o
-          personajes de las marcas de cereales de General Mills.
+          justo et egestas. Sed sagittis leo a pulvinar in porttitor at, pellentesque eu purus. Nam dapibus rhoncus
+          justo et egestas. Sed sagittis leo a 
         </p>
       </div>
 
       <div class="col-md-7" justify="right">
-        <img class="imghome1 m-4" src="../assets/img/inicio.jpg" />
+        <img class="imghome1" src="../assets/img/inicio.jpg" />
       </div>
     </div>
     <div class="mt-5 mb-5 text-center">
@@ -40,7 +32,7 @@
 
     <div class="row"  justify="center">
       <div class="col-md-5">
-        <p class="text-justify m-5">
+        <p class="text1 text-justify">
           En 1998, Mike Becker, diseñador de camisetas y buscador de juguetes
           raros, tenía entre ceja y ceja el muñeco-hucha con el famoso Big Boy
           de la cadena de 'fast food' americana. El problema es que todo aquel
@@ -80,11 +72,20 @@ export default {
 
 <style>
 .imghome1 {
-  width: 800px;
-  height: 550px;
+  width: 650px;
+  height: 400px;
+  margin-top: 80px;
+  margin-right: 20px;
 }
 .imghome2 {
   width: 700px;
   height: 550px;
+  margin-top: 130px;
+}
+.text1 {
+  margin-left: 200px;
+  margin-right: 20px;
+  margin-top: 80px;
+  margin-bottom: 80px;
 }
 </style>
