@@ -1,6 +1,9 @@
 <p align="center">
     <h2 align="center">Funko Pop Mania!</h2>
     <p align="center"> :teddy_bear: :mage_woman: :mage_man: :fairy: :superhero: :robot: :alien: :zombie: :vampire:</p>
+    <p align="center"> 
+    Ver :point_right: [Aquí](https://www.dafont.com/es/bouncy-2.font) :eyes:
+    </p>
 </p>
 
 ## _:scroll:Descripción Proyecto:_
@@ -8,10 +11,6 @@
 En la actualidad han subido el número de coleccionistas de funko pops, sus precios al día de hoy son más accesibles, pero muchos no encuentran las colecciones que necesitan para completarlas. 
 Debido a esto decidimos crear una pagina para ayudar a los coleccionistas a intercambiar sus funko pop y acceder a los que les faltaban.
 Nuestro sitio está dirigido a los amantes de los funko a públicos de todas las edades.
-
-## _:eyes:Visualizar:_
-
-:point_right: [FunkoMania](https://www.dafont.com/es/bouncy-2.font)
 
 ## _:art:Guia de estilos:_
 - Tipografía: 
