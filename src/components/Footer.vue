@@ -26,11 +26,11 @@
 <style lang="scss" scoped>
 /** HTML Elementos */
 footer {
-  position: fixed;
   bottom: 0px;
   width: 100%;
   background: $negro;
   color: $blanco;
+  margin-top: 20px;
 
   @include breakpoint("Celular") {
     font-size: $font-size-sm;

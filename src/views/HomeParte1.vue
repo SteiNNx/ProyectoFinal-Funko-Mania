@@ -1,12 +1,12 @@
 <template>
-  <v-container class="mt-10">
-    <div class="mt-6 mb-3 text-center">
+  <div class="mt-10 con">
+    <div class="mt-5 mb-5 text-center">
       <h1>¡ NO TE QUEDE SIN TU COLECCIÓN DE FUNKO POP !</h1>
     </div>
 
-    <v-row align="center" justify="center">
+    <div class="row"  justify="left">
       <div class="col-md-5">
-        <p class="text-justify">
+        <p class="text-justify m-5">
           Bienvenidos al mundo de Funko Pop, aqui podras encontrar la historia,
           datos curiosos, intercambiar y comprar para completar tu colección de
           uno de los mayores fenómenos de coleccionistas modernos. <br /><br />
@@ -19,20 +19,28 @@
           pulvinar in porttitor at, pellentesque eu purus. Nam dapibus rhoncus
           justo et egestas. Sed sagittis leo a posuere egestas. Sed in enim
           vitae velit scelerisque venenatis. Nam iaculis ut nisl vel finibus.
+          Becker empezó con 35.000 dólares
+          de su propio bolsillo trabajando desde su casa y su primer muñequito,
+          como no podía ser de otra manera, fue el Big Boy que había estado
+          buscando durante tanto tiempo, esta vez en versión muñeco sin hucha.
+          Acto seguido fue a por su primera línea bautizada con el nombre de
+          Wacky Wobblers (algo así como los “locos que se tambalean”) cuyos
+          protagonistas eran figuras animadas como Popeye, Dick Tracy o
+          personajes de las marcas de cereales de General Mills.
         </p>
       </div>
 
-      <div class="col-md-7">
-        <img src="../assets/img/inicio.jpg" />
+      <div class="col-md-7" justify="right">
+        <img class="imghome1 m-4" src="../assets/img/inicio.jpg" />
       </div>
-    </v-row>
-    <div class="mt-6 mb-3 text-center">
+    </div>
+    <div class="mt-5 mb-5 text-center">
       <h1>LA HISTORIA DE LOS FUNKO POP</h1>
     </div>
 
-    <v-row align="center" justify="center">
+    <div class="row"  justify="center">
       <div class="col-md-5">
-        <p class="text-justify">
+        <p class="text-justify m-5">
           En 1998, Mike Becker, diseñador de camisetas y buscador de juguetes
           raros, tenía entre ceja y ceja el muñeco-hucha con el famoso Big Boy
           de la cadena de 'fast food' americana. El problema es que todo aquel
@@ -46,14 +54,22 @@
           Wacky Wobblers (algo así como los “locos que se tambalean”) cuyos
           protagonistas eran figuras animadas como Popeye, Dick Tracy o
           personajes de las marcas de cereales de General Mills.
+          Becker empezó con 35.000 dólares
+          de su propio bolsillo trabajando desde su casa y su primer muñequito,
+          como no podía ser de otra manera, fue el Big Boy que había estado
+          buscando durante tanto tiempo, esta vez en versión muñeco sin hucha.
+          Acto seguido fue a por su primera línea bautizada con el nombre de
+          Wacky Wobblers (algo así como los “locos que se tambalean”) cuyos
+          protagonistas eran figuras animadas como Popeye, Dick Tracy o
+          personajes de las marcas de cereales de General Mills.
         </p>
       </div>
 
       <div class="col-md-7">
-        <img src="@/assets/img/BOY.jpg" />
+        <img class="imghome2" src="@/assets/img/BOY.jpg" />
       </div>
-    </v-row>
-  </v-container>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -62,4 +78,13 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+.imghome1 {
+  width: 800px;
+  height: 550px;
+}
+.imghome2 {
+  width: 700px;
+  height: 550px;
+}
+</style>
