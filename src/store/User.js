@@ -10,6 +10,7 @@ import { errorCodeToStringLabelFirebase } from '@/utils/functions';
  * @description Modulo Usuario, contiene state, mutations, actions y getters
  */
 const User = {
+    namespaced: true,
     state: () => ({
         userLogin: null,
         userMsjError: null,
