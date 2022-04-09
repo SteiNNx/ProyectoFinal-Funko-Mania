@@ -1,6 +1,6 @@
 <template id="Categorias">
 <div class="container">
-<div class="row">
+<div class="row m-5">
 <b-card text-variant="black" header="ROCK" class="text-center col-sm-12 col-md-6 col-lg-6"
     img-src="../assets/img/rock.jpg"
     img-alt="rock"
@@ -74,8 +74,5 @@ export default {};
 </script>
 
 <style>
-.categorias img {
-width: 50px;
-height: 60px;
-}
+
 </style>

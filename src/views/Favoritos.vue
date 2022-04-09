@@ -1,6 +1,6 @@
 <template id="favoritos">
 <b-container fluid class="p-4 bg-dark">
-  <b-row>
+  <b-row class="m-5">
     <b-col>
       <b-img thumbnail fluid src="@/assets/img/comics.jpg" alt="Image 1"></b-img>
     </b-col>
@@ -16,7 +16,17 @@
     <b-col>
       <b-img thumbnail fluid src="@/assets/img/comics.jpg" alt="Image 3"></b-img>
     </b-col>
+    <b-col>
+      <b-img thumbnail fluid src="@/assets/img/comics.jpg" alt="Image 3"></b-img>
+    </b-col>
+    <b-col>
+      <b-img thumbnail fluid src="@/assets/img/comics.jpg" alt="Image 3"></b-img>
+    </b-col>
+    <b-col>
+      <b-img thumbnail fluid src="@/assets/img/comics.jpg" alt="Image 3"></b-img>
+    </b-col>  
   </b-row>
+
 </b-container>
 </template>
 
