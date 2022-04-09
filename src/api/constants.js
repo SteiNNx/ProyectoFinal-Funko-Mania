@@ -1,0 +1,1 @@
+export const GET_ALL_FUNKOS = 'https://web-scrapping-sample-proyecto-final-funko-mania.vercel.app/api/all-funkos.json';
