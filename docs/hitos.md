@@ -1,7 +1,7 @@
 # _:clipboard:Pauta de Evaluación_
 
 ## _Hito :one:_
-### _Detalle_
+### _Instrucciones_
 
 > El primer paso es definir la temática de la aplicación y crear el directorio y estructura de archivos a
 trabajar.
@@ -59,3 +59,44 @@ de props o eventos según corresponda. Estructurar la aplicación en base a aque
 - :heavy_check_mark: Navegación basada en Vue router. `(1 punto)`
 - :heavy_check_mark: Uso de librería de componentes para el desarrollo de la interfaz. `(1.5 puntos)`
 - :heavy_check_mark: Interfaz responsiva. `(1 punto)`
+
+## _Hito :two:_
+
+### _Instrucciones_
+
+> En esta etapa se deberán realizar las conexiones a la API para la obtención de datos o
+procesamiento de los mismos utilizando axios o fetch.
+> 
+> Se debe utilizar Vuex para mantener los datos en el estado, cuando sea posible, evitando realizar
+peticiones innecesarias a la API cada vez que se navega por las diferentes vistas.
+>
+> Además, se debe crear la interacción entre componentes padre e hijos mediante paso de props o
+emisión de eventos, según corresponda.
+> 
+> El usuario deberá poder realizar una acción en la vista principal (visualización de datos, envío de
+datos a una API para su procesamiento, etc.) y deberá tener la posibilidad de marcar algún resultado
+como favorito o guardarlo para uso posterior.
+> 
+> En la siguiente vista, el usuario deberá poder visualizar la información guardada y tener la posibilidad
+de eliminar alguna de ellas.
+>
+> Como aún no hay conexión con una base de datos para la persistencia de los mismos, la información
+que el usuario desee almacenar será guardada en Vuex. Lo mismo para el rescate y renderizado de
+los datos almacenados por el usuario en la vista "favoritos". Estos datos serán obtenidos, y
+eliminados cuando el usuario lo requiera, desde Vuex.
+> 
+> Cabe mencionar que se describe el funcionamiento mínimo necesario que deberá tener la aplicación.
+> 
+> Se deberán agregar otras características y funcionalidades según sea necesario y según temática del
+proyecto. Por ejemplo, se podría agregar una barra de búsqueda, un filtro para ordenar resultados por
+fecha, filtro para ordenar resultados de forma alfabética, etc,
+> 
+> Al finalizar esta etapa, se deberá contar con una aplicación cuya interfaz es completamente funcional.
+
+- :heavy_check_mark: Conexión con una API usando una librería. `(1 punto)`
+- :heavy_check_mark: Almacenamiento de datos en Vuex. `(0.5 puntos)`
+- :o: Modificación del estado en Vuex. `(0.5 puntos)`
+- :heavy_check_mark: Comunicación entre componentes mediante props o eventos. `(1 punto)`
+- :heavy_check_mark: Definición de variables y métodos necesarios. `(2 puntos)`
+- :o: Contiene las funcionalidades básicas descritas. `(3 puntos)`
+- :o: Agrega funcionalidades extra a las mínimas necesarias. `(2 puntos)`

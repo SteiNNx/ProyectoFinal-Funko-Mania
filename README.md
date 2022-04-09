@@ -44,7 +44,7 @@ npm run serve
 
 ### _:clipboard:Pauta de Evaluación_
 
-- Hito 1
+- [Hito 1](docs/hitos.md#hito-one)
     - :heavy_check_mark: Creación del archivo README.md `(0.5 puntos)`
     - :heavy_check_mark: Instalación de las dependencias necesarias. `(0.5 puntos)`
     - :heavy_check_mark: Creación de las 3 vistas principales. `(2 puntos)`
@@ -55,7 +55,7 @@ npm run serve
     - :heavy_check_mark: Navegación basada en Vue router. `(1 punto)`
     - :heavy_check_mark: Uso de librería de componentes para el desarrollo de la interfaz. `(1.5 puntos)`
     - :heavy_check_mark: Interfaz responsiva. `(1 punto)`
-- Hito 2
+- [Hito 2](docs/hitos.md#hito-two)
     - :heavy_check_mark: Conexión con una API usando una librería. `(1 punto)`
     - :heavy_check_mark: Almacenamiento de datos en Vuex. `(0.5 puntos)`
     - :o: Modificación del estado en Vuex. `(0.5 puntos)`
