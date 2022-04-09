@@ -1,13 +1,15 @@
 <template>
   <b-navbar-nav>
-    <b-nav-item
-      v-for="(item, index) in items"
-      :key="index"
-      class="funko-nav-item"
-      :href="item?.NavbarHref"
-    >
-      {{ item?.NavbarItem }}
-    </b-nav-item>
+    <template v-for="(item, index) in items">
+      <b-nav-item
+        :key="index"
+        class="funko-nav-item"
+        :href="item?.NavbarHref"
+        v-if="!item?.checkLogin || userLogin"
+      >
+        {{ item?.NavbarItem }}
+      </b-nav-item>
+    </template>
   </b-navbar-nav>
 </template>
 
@@ -16,6 +18,7 @@ export default {
   name: "NavbarItem",
   props: {
     items: [],
+    userLogin: null,
   },
 };
 </script>

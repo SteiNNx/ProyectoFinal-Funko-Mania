@@ -1,5 +1,11 @@
 <template>
   <div class="row">
+    <div class="col-sm-12 col-md-12 col-lg-12 my-3">
+      <p class="funko-categoria-count">
+        Resultados:
+        <span>{{ categorias.length }}</span>
+      </p>
+    </div>
     <div
       v-for="(categoria, index) in categorias"
       :key="index"
@@ -77,6 +83,20 @@ export default {
   min-height: 7rem;
   @include breakpoint("Celular") {
     min-height: 3rem;
+  }
+}
+
+.funko-categoria-count {
+  color: $celeste;
+  font-family: $bouncy;
+  font-style: italic;
+  text-align: right;
+  span {
+    font-family: $nunito;
+    font-weight: 700;
+  }
+  @include breakpoint("Celular") {
+    text-align: center;
   }
 }
 

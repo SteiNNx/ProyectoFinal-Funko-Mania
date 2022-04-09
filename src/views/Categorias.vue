@@ -4,7 +4,7 @@
       <div class="col-sm-12 col-md-4 col-lg-4">
         <div class="row">
           <div class="col-12">
-            <ul class="list-group  list-group-horizontal-sm-down list-group-flush">
+            <ul class="list-group list-group-horizontal-sm-down list-group-flush">
               <li class="list-group-item funko-li-title">Filtros:</li>
               <li
                 v-for="(categoria, index) in categorias"
@@ -27,6 +27,22 @@
                   </label>
                 </div>
               </li>
+              <li class="list-group-item funko-li-price-item">
+                <div class="form-check">
+                  <b-form-input
+                    id="input-range-price"
+                    class="form-check-input funko-categorias-filter-check funko-range-price"
+                    v-model="priceFilter"
+                    type="range"
+                    :min="priceMin"
+                    :max="priceMax"
+                    :step="priceStep"
+                  ></b-form-input>
+                  <label for="input-range-price" class="form-check-label">
+                    {{ getLabelPrice(priceFilter) }}
+                  </label>
+                </div>
+              </li>
             </ul>
           </div>
         </div>
@@ -42,6 +58,13 @@
 import { mapActions, mapState } from "vuex";
 
 import CardCategorias from "@/components/CardCategorias";
+import {
+  INIT_PRICE_FUNKO_FILTER,
+  MIN_PRICE_FUNKO,
+  MAX_PRICE_FUNKO,
+  STEP_PRICE_FUNKO,
+} from "@/utils/constants";
+import { getPriceInCLP } from "@/utils/functions";
 
 export default {
   name: "Categorias",
@@ -76,28 +99,44 @@ export default {
           isCheched: false,
         },
       ],
+      priceFilter: INIT_PRICE_FUNKO_FILTER,
+      priceMin: MIN_PRICE_FUNKO,
+      priceMax: MAX_PRICE_FUNKO,
+      priceStep: STEP_PRICE_FUNKO,
     };
   },
   methods: {
     handleOnCheck(index) {
       this.categorias[index].isCheched = !this.categorias[index]?.isCheched;
     },
+    getLabelPrice(price) {
+      return getPriceInCLP(price);
+    },
   },
-  mounted() {},
   computed: {
     ...mapState("Funkos", ["funkos"]),
     getFunkosFiltered() {
-      const filters = this.categorias.filter(({ isCheched }) => isCheched);
-      const canFilter = filters.length > 0;
+      const { priceFilter } = this;
 
-      const newFunkosFiltered = canFilter
+      const filtersCategory = this.categorias.filter(({ isCheched }) => isCheched);
+      const canFilterCategory = filtersCategory.length > 0;
+
+      const newFunkosFilteredCategory = canFilterCategory
         ? this.funkos.filter((funko) => {
-            let isVisible = filters.some((filter) => funko.category == filter.label);
+            let isVisible = filtersCategory.some(
+              (filter) => funko.category == filter.label
+            );
             return isVisible;
           })
         : this.funkos;
 
-      return newFunkosFiltered;
+      const newFunkosFilteredCategoryWithPrice = newFunkosFilteredCategory?.filter(
+        (funko) => {
+          return funko?.price <= priceFilter;
+        }
+      );
+
+      return newFunkosFilteredCategoryWithPrice;
     },
   },
 };
@@ -114,5 +153,16 @@ export default {
   font-family: $bouncy;
   font-weight: 500;
 }
-
+.funko-range-price {
+  position: relative !important;
+}
+.funko-li-price-item {
+  font-family: fantasy;
+  font-size: $font-size-md;
+  font-weight: 500;
+  text-align: right;
+  @include breakpoint("Celular") {
+    text-align: center;
+  }
+}
 </style>

@@ -30,12 +30,15 @@
 </template>
 
 <script>
-import { mapActions, mapState } from "vuex";
+import { mapActions } from "vuex";
 
 import { getNameLocalFromEmail } from "@/utils/functions";
 
 export default {
   name: "NavbarLogin",
+  props: {
+    userLogin: null,
+  },
   mounted() {
     this.getUserLogin();
   },
@@ -51,7 +54,6 @@ export default {
     },
   },
   computed: {
-    ...mapState("User", ["userLogin"]),
     getLabelName() {
       return this?.userLogin?.email ? getNameLocalFromEmail(this.userLogin.email) : "";
     },

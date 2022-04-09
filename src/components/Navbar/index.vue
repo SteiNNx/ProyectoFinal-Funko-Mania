@@ -6,14 +6,16 @@
     <b-navbar-toggle class="funko-toggle-btn" target="nav-collapse"></b-navbar-toggle>
 
     <b-collapse id="nav-collapse" is-nav>
-      <NavbarItems :items="items" />
+      <NavbarItems :items="items" :userLogin="userLogin" />
       <!-- Right aligned nav items -->
-      <NavbarLogin />
+      <NavbarLogin :userLogin="userLogin" />
     </b-collapse>
   </b-navbar>
 </template>
 
 <script>
+import { mapState } from "vuex";
+
 import NavbarItems from "@/components/Navbar/NavbarItems";
 import NavbarLogin from "@/components/Navbar/NavbarLogin";
 
@@ -29,17 +31,23 @@ export default {
         {
           NavbarHref: "/",
           NavbarItem: "Inicio",
+          checkLogin: false,
         },
         {
           NavbarHref: "/categorias",
           NavbarItem: "Categorias",
+          checkLogin: false,
         },
         {
           NavbarHref: "/favoritos",
           NavbarItem: "Favoritos",
+          checkLogin: true,
         },
       ],
     };
+  },
+  computed: {
+    ...mapState("User", ["userLogin"]),
   },
 };
 </script>
