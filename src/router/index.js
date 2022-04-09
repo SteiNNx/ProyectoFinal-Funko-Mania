@@ -6,6 +6,7 @@ import Detalle from '@/views/Detalle'
 import Home from '@/views/Home'
 import Login from '@/views/Login'
 import Registrar from '@/views/Registrar'
+import Agregar from '@/views/Agregar'
 
 
 Vue.use(VueRouter)
@@ -15,6 +16,12 @@ const routes = [
     path: '/',
     name: 'Home',
     component: Home,
+    meta: { authRequired: true }
+  },
+  {
+    path: '/Agregar',
+    name: 'Agregar',
+    component: Agregar,
     meta: { authRequired: true }
   },
   {
