@@ -9,7 +9,8 @@
         <img
           :src="categoria?.image_url"
           class="card-img-top funko-categoria-img"
-          alt="..."
+          :alt="`Funko CardImageTop ${index}`"
+          @click="onClickViewDetail(categoria)"
         />
         <div class="card-body">
           <p class="funko-categoria-category">{{ categoria.category }}</p>
@@ -17,7 +18,10 @@
           <p class="funko-categoria-price">
             {{ getLabelPrice(categoria?.price) }}
           </p>
-          <button class="btn btn-primary rounded-pill btn-funko-primary funko-categoria-btn w-100">
+          <button
+            class="btn btn-primary rounded-pill btn-funko-primary funko-categoria-btn w-100"
+            @click="onClickViewDetail(categoria)"
+          >
             Detalle
           </button>
         </div>
@@ -26,6 +30,7 @@
   </div>
 </template>
 <script>
+import { mapActions } from "vuex";
 import { getPriceInCLP } from "@/utils/functions";
 
 export default {
@@ -34,10 +39,14 @@ export default {
     categorias: [],
   },
   methods: {
+    ...mapActions("Funkos", ["setFunkoDetalle"]),
     getLabelPrice(price) {
       return getPriceInCLP(price);
     },
-    getLabelCategoria(category) {},
+    onClickViewDetail(categoria) {
+      this.setFunkoDetalle(categoria);
+      this.$router.push(`/detalle/${categoria?.id}`);
+    },
   },
 };
 </script>
@@ -46,6 +55,10 @@ export default {
 .funko-categoria-img {
   object-fit: contain;
   height: 15rem;
+  transition: transform 0.2s ease;
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 
 .funko-categoria-category {
@@ -74,5 +87,9 @@ export default {
 }
 .funko-categoria-btn {
   font-family: $bouncy;
+  transition: transform 0.2s ease;
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 </style>

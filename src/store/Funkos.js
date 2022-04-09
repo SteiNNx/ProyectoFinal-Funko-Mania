@@ -21,10 +21,14 @@ const Funkos = {
     namespaced: true,
     state: {
         funkos: [],
+        funkoDetalle: {},
     },
     mutations: {
         SET_FUNKOS(state, payload) {
             state.funkos = payload;
+        },
+        SET_FUNKO_DETALLE(state, payload) {
+            state.funkoDetalle = payload;
         }
     },
     actions: {
@@ -37,9 +41,11 @@ const Funkos = {
                     console.error(error);
                 })
         },
+        setFunkoDetalle({ commit }, funko) {
+            commit('SET_FUNKO_DETALLE', funko);
+        },
     },
-    getters: {
-    }
+    getters: {}
 };
 
 export default Funkos;
