@@ -15,6 +15,7 @@ import { db } from "@/plugins/firebase";
  * @description Modulo Funkos, contiene state, mutations, actions y getters
  */
 const Funkos = {
+    namespaced: true,
     state: () => ({}),
     mutations: {},
     actions: {},

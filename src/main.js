@@ -5,6 +5,7 @@ import store from './store'
 
 require('@/plugins/firebase');
 require('@/plugins/bootstrap-vue');
+require('@/plugins/vue-toastification');
 
 Vue.config.productionTip = false
 
