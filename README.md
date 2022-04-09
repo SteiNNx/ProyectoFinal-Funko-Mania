@@ -5,8 +5,8 @@
 
 ## _:scroll:Descripción Proyecto:_
 
-En la actualidad han subido el número de coleccionistas de funko pops, sus precios al día de hoy son másaccesibles, pero muchos no encuentran las colecciones que necesitan para completarlas. 
-Debido a esto decidimos crear una pagina para ayudar a los coleccionistas a intercambiar sus funko pop yacceder a los que les faltaban.
+En la actualidad han subido el número de coleccionistas de funko pops, sus precios al día de hoy son más accesibles, pero muchos no encuentran las colecciones que necesitan para completarlas. 
+Debido a esto decidimos crear una pagina para ayudar a los coleccionistas a intercambiar sus funko pop y acceder a los que les faltaban.
 Nuestro sitio está dirigido a los amantes de los funko a públicos de todas las edades.
 
 ## _:art:Guia de estilos:_

@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 
 import Categorias from '@/views/Categorias'
 import Detalle from '@/views/Detalle'
+import Favoritos from '@/views/Favoritos'
 import Home from '@/views/Home'
 import Login from '@/views/Login'
 import Registrar from '@/views/Registrar'
@@ -44,6 +45,11 @@ const routes = [
     name: 'Detalle',
     component: Detalle,
     props: true,
+  },
+  {
+    path: '/favoritos',
+    name: 'Favoritos',
+    component: Favoritos
   },
 ]
 

@@ -1,20 +1,71 @@
 <template id="Categorias">
-<div>
-<b-card
-    title="Card Title"
-    img-src="https://picsum.photos/600/300/?image=25"
-    img-alt="Image"
+<div class="container">
+<div class="row m-5">
+<b-card text-variant="black" header="ROCK" class="text-center col-sm-12 col-md-6 col-lg-6"
+    img-src="../assets/img/rock.jpg"
+    img-alt="rock"
     img-top
     tag="article"
     style="max-width: 20rem;"
-    class="mb-2"
 >
-    <b-card-text>
-    Some quick example text to build on the card title and make up the bulk of the card's content.
-    </b-card-text>
-
-    <b-button href="#" variant="primary">Go somewhere</b-button>
+    <b-button href="#" variant="primary">Ver mas</b-button>
 </b-card>
+
+<b-card text-variant="black" header="ANIME" class="text-center col-sm-12 col-md-6 col-lg-6"
+    img-src="../assets/img/anime.jpg"
+    img-alt="anime"
+    img-top
+    tag="article"
+    style="max-width: 20rem;"
+>
+    <b-button href="#" variant="primary">Ver mas</b-button>
+</b-card>
+<b-card text-variant="black" header="BOOK" class="text-center col-sm-12 col-md-6 col-lg-6"
+    img-src="../assets/img/book.jpg"
+    img-alt="book"
+    img-top
+    tag="article"
+    style="max-width: 20rem;"
+>
+    <b-button href="#" variant="primary">Ver mas</b-button>
+</b-card>
+<b-card text-variant="black" header="COMICS" class="text-center col-sm-12 col-md-6 col-lg-6"
+    img-src="../assets/img/comics.jpg"
+    img-alt="comics"
+    img-top
+    tag="article"
+    style="max-width: 20rem;"
+>
+    <b-button href="#" variant="primary">Ver mas</b-button>
+</b-card>
+<b-card text-variant="black" header="DISNEY" class="text-center col-sm-12 col-md-6 col-lg-6"
+    img-src="../assets/img/disney.jpg"
+    img-alt="disney"
+    img-top
+    tag="article"
+    style="max-width: 20rem;"
+>
+    <b-button href="#" variant="primary">Ver mas</b-button>
+</b-card>
+<b-card text-variant="black" header="HEROES" class="text-center col-sm-12 col-md-6 col-lg-6"
+    img-src="../assets/img/heroe.jpg"
+    img-alt="heroes"
+    img-top
+    tag="article"
+    style="max-width: 20rem;"
+>
+    <b-button href="#" variant="primary">Ver mas</b-button>
+</b-card>
+<b-card text-variant="black" header="TELEVISIÓN" class="text-center col-sm-12 col-md-6 col-lg-6"
+    img-src="../assets/img/television.jpg"
+    img-alt="television"
+    img-top
+    tag="article"
+    style="max-width: 20rem;"
+>
+    <b-button href="#" variant="primary">Ver mas</b-button>
+</b-card>
+</div>
 </div>
 </template>
 
@@ -22,4 +73,6 @@
 export default {};
 </script>
 
-<style></style>
+<style>
+
+</style>
