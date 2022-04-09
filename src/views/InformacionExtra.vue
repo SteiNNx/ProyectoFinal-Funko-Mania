@@ -3,7 +3,7 @@
     <v-row align="center" justify="center">
       <div class="col-md-4">
         <div class="mt-6 mb-3 text-center">
-          <img src="img/mision.png" />
+          <img src="@/img/lupa.png" />
           <h2 class="mt-5">Funkos mas buscados</h2>
         </div>
 
@@ -18,7 +18,7 @@
 
       <div class="col-md-4">
         <div class="mt-6 mb-3 text-center">
-          <img src="img/objetivo.png" />
+          <img src="@/img/curiosidades.png" />
           <h2 class="mt-5">Curiosidades</h2>
         </div>
 
@@ -33,7 +33,7 @@
 
       <div class="col-md-4">
         <div class="mt-6 mb-3 text-center">
-          <img src="img/vision.png" />
+          <img src="@/img/promociones.png" />
           <h2 class="mt-5">Promociones</h2>
         </div>
 
