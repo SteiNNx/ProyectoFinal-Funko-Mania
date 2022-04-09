@@ -14,3 +14,7 @@ export const errorCodeToStringLabelFirebase = (errorCode) => {
 export const getNameLocalFromEmail = (email) => {
     return email.split("@")[0];
 }
+
+export const getPriceInCLP = (priceNumber) => {
+    return new Intl.NumberFormat('es-CL', { currency: 'CLP', style: 'currency' }).format(priceNumber);
+}

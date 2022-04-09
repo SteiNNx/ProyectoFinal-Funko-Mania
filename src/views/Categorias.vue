@@ -1,78 +1,69 @@
-<template id="Categorias">
-<div class="container">
-<div class="row m-5">
-<b-card text-variant="black" header="ROCK" class="text-center col-sm-12 col-md-6 col-lg-6"
-    img-src="../assets/img/rock.jpg"
-    img-alt="rock"
-    img-top
-    tag="article"
-    style="max-width: 20rem;"
->
-    <b-button href="#" variant="primary">Ver mas</b-button>
-</b-card>
-
-<b-card text-variant="black" header="ANIME" class="text-center col-sm-12 col-md-6 col-lg-6"
-    img-src="../assets/img/anime.jpg"
-    img-alt="anime"
-    img-top
-    tag="article"
-    style="max-width: 20rem;"
->
-    <b-button href="#" variant="primary">Ver mas</b-button>
-</b-card>
-<b-card text-variant="black" header="BOOK" class="text-center col-sm-12 col-md-6 col-lg-6"
-    img-src="../assets/img/book.jpg"
-    img-alt="book"
-    img-top
-    tag="article"
-    style="max-width: 20rem;"
->
-    <b-button href="#" variant="primary">Ver mas</b-button>
-</b-card>
-<b-card text-variant="black" header="COMICS" class="text-center col-sm-12 col-md-6 col-lg-6"
-    img-src="../assets/img/comics.jpg"
-    img-alt="comics"
-    img-top
-    tag="article"
-    style="max-width: 20rem;"
->
-    <b-button href="#" variant="primary">Ver mas</b-button>
-</b-card>
-<b-card text-variant="black" header="DISNEY" class="text-center col-sm-12 col-md-6 col-lg-6"
-    img-src="../assets/img/disney.jpg"
-    img-alt="disney"
-    img-top
-    tag="article"
-    style="max-width: 20rem;"
->
-    <b-button href="#" variant="primary">Ver mas</b-button>
-</b-card>
-<b-card text-variant="black" header="HEROES" class="text-center col-sm-12 col-md-6 col-lg-6"
-    img-src="../assets/img/heroe.jpg"
-    img-alt="heroes"
-    img-top
-    tag="article"
-    style="max-width: 20rem;"
->
-    <b-button href="#" variant="primary">Ver mas</b-button>
-</b-card>
-<b-card text-variant="black" header="TELEVISIÓN" class="text-center col-sm-12 col-md-6 col-lg-6"
-    img-src="../assets/img/television.jpg"
-    img-alt="television"
-    img-top
-    tag="article"
-    style="max-width: 20rem;"
->
-    <b-button href="#" variant="primary">Ver mas</b-button>
-</b-card>
-</div>
-</div>
+<template>
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-sm-12 col-md-4 col-lg-4">
+        <div class="row">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item funko-li-title">Filtros:</li>
+            <li
+              v-for="(categoria, index) in categorias"
+              :key="index"
+              class="list-group-item"
+            >
+              <div class="form-check">
+                <input
+                  class="form-check-input funko-categorias-filter-check"
+                  type="checkbox"
+                  :id="`input-check-${index}`"
+                />
+                <label
+                  class="form-check-label funko-li-title-item"
+                  :for="`input-check-${index}`"
+                >
+                  {{ categoria }}
+                </label>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-8 col-lg-8">
+        <CardCategorias :categorias="funkos" />
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
-export default {};
+import { mapActions, mapState } from "vuex";
+
+import CardCategorias from "@/components/CardCategorias";
+
+export default {
+  name: "Categorias",
+  components: {
+    CardCategorias,
+  },
+  data() {
+    return {
+      categorias: ["Television", "Anime", "Rock", "Book", "Disney", "Heroe"],
+    };
+  },
+  computed: {
+    ...mapState("Funkos", ["funkos"]),
+  },
+};
 </script>
 
-<style>
-
+<style lang="scss">
+.funko-li-title {
+  color: $celeste-oscuro;
+  font-family: $bouncy;
+  font-size: $font-size-xl;
+  border-bottom: 1px solid $celeste !important;
+}
+.funko-li-title-item {
+  font-family: $bouncy;
+  font-weight: 500;
+}
 </style>
