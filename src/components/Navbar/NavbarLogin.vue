@@ -3,14 +3,24 @@
     <b-nav-item-dropdown right>
       <!-- Using 'button-content' slot -->
       <template #button-content>
-        <em class="funko-label-name">{{ getLabelName }}</em>
+        <em v-if="userLogin != null" class="funko-label-name">{{ getLabelName }}</em>
+        <em v-else class="funko-label-name"> Sin Sesion </em>
       </template>
       <!--<b-dropdown-item href="#">Profile</b-dropdown-item>-->
-      <b-dropdown-item class="funko-label-logout" @click="salir">
+      <b-dropdown-item v-if="userLogin != null" class="funko-label-logout" @click="salir">
         Salir
         <b-icon
           class="float-end funko-label-icon"
           icon="box-arrow-right"
+          scale="1"
+          variant="white"
+        ></b-icon>
+      </b-dropdown-item>
+      <b-dropdown-item v-else class="funko-label-logout" @click="ingresar">
+        Ingresar
+        <b-icon
+          class="float-end funko-label-icon"
+          icon="box-arrow-in-left"
           scale="1"
           variant="white"
         ></b-icon>

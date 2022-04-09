@@ -58,11 +58,12 @@ export default {
     async loginUsuario() {
       const { user } = this;
       await this.registerUser(user);
-      if (this.userMsjError === null || this.userMsjError === undefined) {
+      const { userMsjError } = this.$store.state.User;
+      if (userMsjError === null || userMsjError === undefined) {
         this.$toast.success("Usuario Registrado");
-        this.$router.push("/");
+        this.$router.push("/ingresar");
       } else {
-        this.$toast.error(this.userMsjError);
+        this.$toast.error(userMsjError);
       }
     },
     redirectToLogin() {

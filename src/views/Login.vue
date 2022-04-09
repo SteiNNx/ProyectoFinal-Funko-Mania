@@ -46,36 +46,32 @@
 </template>
 
 <script>
-import { mapActions } from "vuex";
+import { mapActions, mapState } from "vuex";
 
 export default {
   name: "Login",
   data() {
     return { user: { email: "", password: "" } };
   },
-  mounted() {
-    /* this.$toast("I'm a toast!");
-
-    // Or with options
-    this.$toast("My toast content", {
-      timeout: 2000,
-    }); */
-  },
   methods: {
     ...mapActions("User", ["loginUser"]),
     async loginUsuario() {
       const { user } = this;
       await this.loginUser(user);
-      if (this.userMsjError === null || this.userMsjError === undefined) {
+      const { userMsjError } = this.$store.state.User;
+      if (userMsjError === null || userMsjError === undefined) {
         this.$toast.success("Sesion Iniciada");
         this.$router.push("/");
       } else {
-        this.$toast.error(this.userMsjError ?? "Error");
+        this.$toast.error(userMsjError ?? "Error");
       }
     },
     redirectToRegister() {
       this.$router.push("/registrar");
     },
+  },
+  computed: {
+    ...mapState(["userMsjError"]),
   },
 };
 </script>
