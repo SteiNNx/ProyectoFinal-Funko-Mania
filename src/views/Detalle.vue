@@ -79,7 +79,12 @@
           />
         </div>
       </div>
-      <div class="col-sm-12 col-md-5 col-lg-5"></div>
+      <div class="col-sm-12 col-md-5 col-lg-5">
+        <div class="card" style="width: 18rem">
+          <div class="card-header">Featured</div>
+          <div class="card-body"></div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -105,6 +110,7 @@ export default {
 <style lang="scss">
 .funko-detalle-card-header {
   h1 {
+    text-transform: uppercase;
     font-size: $font-size-xl;
     font-weight: 700;
     text-align: left;
