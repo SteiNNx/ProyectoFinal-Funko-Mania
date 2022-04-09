@@ -1,7 +1,7 @@
 <template>
   <b-navbar class="funko-nav py-md-4" toggleable="lg">
     <b-navbar-brand href="/"
-      ><img src="@/assets/img/funkomania.png" width="50" alt="FUNKO POP MANIA"
+      ><img src="@/assets/img/funkomania1.png" width="50" alt="FUNKO POP MANIA"
     /></b-navbar-brand>
     <b-navbar-toggle class="funko-toggle-btn" target="nav-collapse"></b-navbar-toggle>
 

@@ -1,6 +1,9 @@
 <template>
+
   <Carousel />
+  
 </template>
+
 
 <script>
 import Carousel from "@/components/Carousel";

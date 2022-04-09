@@ -11,18 +11,18 @@
       @sliding-start="onSlideStart"
       @sliding-end="onSlideEnd"
     >
-      <b-carousel-slide class="funko-carousel__img" img-src="@/assets/img/banner1.jpg">
+      <b-carousel-slide class="funko-carousel__img" img-src="@/assets/img/BANNER1.png">
       </b-carousel-slide>
 
-      <b-carousel-slide class="funko-carousel__img" img-src="@/assets/img/banner2.jpg">
+      <b-carousel-slide class="funko-carousel__img" img-src="@/assets/img/BANNER2.png">
       </b-carousel-slide>
 
       <b-carousel-slide
         class="funko-carousel__img"
-        img-src="@/assets/img/banner3.jpg"
+        img-src="../assets/img/BANNER3.png"
       ></b-carousel-slide>
 
-      <b-carousel-slide class="funko-carousel__img" img-src="@/assets/img/banner4.jpg">
+      <b-carousel-slide class="funko-carousel__img" img-src="../assets/img/BANNER4.png">
       </b-carousel-slide>
     </b-carousel>
   </div>
