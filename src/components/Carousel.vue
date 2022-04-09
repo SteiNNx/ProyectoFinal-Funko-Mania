@@ -22,7 +22,7 @@
         img-src="../assets/img/BANNER3.png"
       ></b-carousel-slide>
 
-      <b-carousel-slide class="funko-carousel__img" img-src="@/assets/img/banner4.jpg">
+      <b-carousel-slide class="funko-carousel__img" img-src="../assets/img/BANNER4.png">
       </b-carousel-slide>
     </b-carousel>
   </div>
