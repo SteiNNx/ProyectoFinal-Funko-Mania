@@ -58,7 +58,7 @@
 
 <script>
 export default {
-  name: "Home1",
+  name: "HomeParte1",
 };
 </script>
 
