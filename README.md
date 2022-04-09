@@ -9,6 +9,10 @@ En la actualidad han subido el número de coleccionistas de funko pops, sus prec
 Debido a esto decidimos crear una pagina para ayudar a los coleccionistas a intercambiar sus funko pop y acceder a los que les faltaban.
 Nuestro sitio está dirigido a los amantes de los funko a públicos de todas las edades.
 
+## _:eyes:Visualizar:_
+
+:point_right: [FunkoMania](https://www.dafont.com/es/bouncy-2.font)
+
 ## _:art:Guia de estilos:_
 - Tipografía: 
     - [Bouncy](https://www.dafont.com/es/bouncy-2.font)
