@@ -1,7 +1,7 @@
 <template>
   <div class="mt-10 con">
     <div class="mt-5 mb-5 text-center">
-      <h1>¡ NO TE QUEDE SIN TU COLECCIÓN DE FUNKO POP !</h1>
+      <h1>¡ NO TE QUEDES SIN TU COLECCIÓN DE FUNKO POP !</h1>
     </div>
 
     <div class="row"  justify="left">
