@@ -12,24 +12,24 @@
     >
       <b-carousel-slide
         class="funko-carousel__img"
-        img-src="@/assets/img/BANNER1.png"
+        img-src="@/assets/img/BANNER4.png"
       >
       </b-carousel-slide>
 
       <b-carousel-slide
         class="funko-carousel__img"
-        img-src="@/assets/img/BANNER2.png"
+        img-src="@/assets/img/BANNER3.png"
       >
       </b-carousel-slide>
 
       <b-carousel-slide
         class="funko-carousel__img"
-        img-src="../assets/img/BANNER3.png"
+        img-src="../assets/img/BANNER2.png"
       ></b-carousel-slide>
 
       <b-carousel-slide
         class="funko-carousel__img"
-        img-src="../assets/img/BANNER4.png"
+        img-src="../assets/img/BANNER1.png"
       >
       </b-carousel-slide>
     </b-carousel>
