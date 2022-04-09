@@ -5,10 +5,9 @@
     <p align="center"> 
         :teddy_bear: :mage_woman: :mage_man: :fairy: :superhero: :robot: :alien: :zombie: :vampire:
     </p>
-    <p align="center"> 
-        Ver :point_right: 
+    <p align="center">
         <a href="https://proyecto-final-funko-mania.vercel.app/" target="_blank">
-            Aquí
+            Ver Aquí
         </a>
         :eyes:
     </p>
