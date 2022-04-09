@@ -1,8 +1,16 @@
 <p align="center">
-    <h2 align="center">Funko Pop Mania!</h2>
-    <p align="center"> :teddy_bear: :mage_woman: :mage_man: :fairy: :superhero: :robot: :alien: :zombie: :vampire:</p>
+    <h2 align="center">
+        Funko Pop Mania!
+    </h2>
     <p align="center"> 
-    Ver :point_right: [Aquí](https://www.dafont.com/es/bouncy-2.font) :eyes:
+        :teddy_bear: :mage_woman: :mage_man: :fairy: :superhero: :robot: :alien: :zombie: :vampire:
+    </p>
+    <p align="center"> 
+        Ver :point_right: 
+        <a href="https://proyecto-final-funko-mania.vercel.app/" target="_blank">
+            Aquí
+        </a>
+        :eyes:
     </p>
 </p>
 
