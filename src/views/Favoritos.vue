@@ -1,5 +1,5 @@
 <template id="favoritos">
-  <b-container fluid class="p-4 bg-dark">
+  <b-container fluid class="p-4">
     <h1 class="text-center">LISTA DE FAVORITOS</h1>
     <b-row class="m-5">
       <b-col>
