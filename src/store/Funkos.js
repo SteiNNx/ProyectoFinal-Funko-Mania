@@ -38,7 +38,8 @@ const Funkos = {
                 })
         },
     },
-    getters: {}
+    getters: {
+    }
 };
 
 export default Funkos;

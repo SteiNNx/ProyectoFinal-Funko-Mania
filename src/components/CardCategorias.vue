@@ -3,9 +3,9 @@
     <div
       v-for="(categoria, index) in categorias"
       :key="index"
-      class="col-sm-12 col-md-4 col-md-4 my-3"
+      class="col-sm-12 col-md-6 col-lg-4 my-3"
     >
-      <div class="card">
+      <div class="card border-0">
         <img
           :src="categoria?.image_url"
           class="card-img-top funko-categoria-img"
@@ -17,7 +17,9 @@
           <p class="funko-categoria-price">
             {{ getLabelPrice(categoria?.price) }}
           </p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+          <button class="btn btn-primary rounded-pill btn-funko-primary funko-categoria-btn w-100">
+            Detalle
+          </button>
         </div>
       </div>
     </div>
@@ -60,11 +62,17 @@ export default {
   text-align: initial;
   text-transform: uppercase;
   min-height: 7rem;
+  @include breakpoint("Celular") {
+    min-height: 3rem;
+  }
 }
 
 .funko-categoria-price {
   font-family: fantasy;
   font-size: $font-size-md;
   font-weight: 500;
+}
+.funko-categoria-btn {
+  font-family: $bouncy;
 }
 </style>

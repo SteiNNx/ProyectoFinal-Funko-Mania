@@ -45,6 +45,9 @@ ul {
 .footer-siguenos {
   padding: 0px;
   margin: 0px;
+  @include breakpoint("Celular") {
+    display: none;
+  }
 }
 .footer-copyrigh {
   font-family: $bouncy;
