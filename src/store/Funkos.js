@@ -16,7 +16,7 @@ import { db } from "@/plugins/firebase";
  */
 const Funkos = {
     namespaced: true,
-    state: () => ({}),
+    state: {},
     mutations: {},
     actions: {},
     getters: {}

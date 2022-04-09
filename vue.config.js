@@ -6,6 +6,7 @@ module.exports = defineConfig({
       .use('vue-loader')
       .loader('vue-loader')
       .tap(options => {
+        options.compiler = require('vue-template-babel-compiler')
         options.transformAssetUrls = {
           img: 'src',
           image: 'xlink:href',

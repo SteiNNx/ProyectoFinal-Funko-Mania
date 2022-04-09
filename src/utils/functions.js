@@ -10,3 +10,7 @@ export const errorCodeToStringLabelFirebase = (errorCode) => {
             return "Correo y Contraseña Incorrecto";
     }
 }
+
+export const getNameLocalFromEmail = (email) => {
+    return email.split("@")[0];
+}
