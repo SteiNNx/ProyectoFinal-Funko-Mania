@@ -1,7 +1,7 @@
 <template>
   <footer>
     <div class="container text-center">
-      <div class="row py-5">
+      <div class="row py-1 py-sm-5">
         <div class="col-sm-12 col-md-6 col-lg-6">
           <ul>
             <li>Terminos y Condiciones</li>
@@ -45,6 +45,9 @@ ul {
 .footer-siguenos {
   padding: 0px;
   margin: 0px;
+  @include breakpoint("Celular") {
+    display: none;
+  }
 }
 .footer-copyrigh {
   font-family: $bouncy;

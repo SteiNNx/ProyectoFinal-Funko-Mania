@@ -11,10 +11,10 @@ import { errorCodeToStringLabelFirebase } from '@/utils/functions';
  */
 const User = {
     namespaced: true,
-    state: () => ({
+    state: {
         userLogin: null,
         userMsjError: null,
-    }),
+    },
     mutations: {
         SET_USER_LOGIN(state, payload) {
             state.userLogin = payload;
@@ -59,7 +59,7 @@ const User = {
             getAuth()
                 .onAuthStateChanged((user) => {
                     if (user) {
-                        commit('SET_USER_LOGIN', user.email);
+                        commit('SET_USER_LOGIN', user);
                     }
                 });
         },
