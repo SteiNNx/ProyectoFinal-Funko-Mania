@@ -1,77 +1,36 @@
-<template id="favoritos">
-  <b-container fluid class="p-4">
-    <h1 class="text-center">LISTA DE FAVORITOS</h1>
-    <b-row class="m-5">
-      <b-col>
-        <b-img
-          thumbnail
-          fluid
-          src="@/assets/img/comics.jpg"
-          alt="Image 1"
-        ></b-img>
-      </b-col>
-      <b-col>
-        <b-img
-          thumbnail
-          fluid
-          src="@/assets/img/comics.jpg"
-          alt="Image 2"
-        ></b-img>
-      </b-col>
-      <b-col>
-        <b-img
-          thumbnail
-          fluid
-          src="@/assets/img/comics.jpg"
-          alt="Image 3"
-        ></b-img>
-      </b-col>
-      <b-col>
-        <b-img
-          thumbnail
-          fluid
-          src="@/assets/img/comics.jpg"
-          alt="Image 3"
-        ></b-img>
-      </b-col>
-      <b-col>
-        <b-img
-          thumbnail
-          fluid
-          src="@/assets/img/comics.jpg"
-          alt="Image 3"
-        ></b-img>
-      </b-col>
-      <b-col>
-        <b-img
-          thumbnail
-          fluid
-          src="@/assets/img/comics.jpg"
-          alt="Image 3"
-        ></b-img>
-      </b-col>
-      <b-col>
-        <b-img
-          thumbnail
-          fluid
-          src="@/assets/img/comics.jpg"
-          alt="Image 3"
-        ></b-img>
-      </b-col>
-      <b-col>
-        <b-img
-          thumbnail
-          fluid
-          src="@/assets/img/comics.jpg"
-          alt="Image 3"
-        ></b-img>
-      </b-col>
-    </b-row>
-  </b-container>
+<template>
+  <div class="container">
+    <div class="row py-5">
+      <div class="col-12">
+        <h1 class="funko-favoritos-title">Favoritos</h1>
+      </div>
+      <div class="col-12">
+        <CardFavoritos :favoritos="funkosFavoritos" />
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
-export default {};
+import { mapState } from "vuex";
+
+import CardFavoritos from "@/components/Cards/CardFavoritos";
+
+export default {
+  name: "Favoritos",
+  components: {
+    CardFavoritos,
+  },
+  computed: {
+    ...mapState("Funkos", ["funkosFavoritos"]),
+  },
+};
 </script>
 
-<style></style>
+<style lang="scss">
+.funko-favoritos-title {
+  color: $celeste-oscuro;
+  font-family: $bouncy;
+  font-size: $font-size-xl;
+}
+</style>

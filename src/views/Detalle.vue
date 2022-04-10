@@ -1,64 +1,5 @@
 <template>
   <div class="container py-5">
-    <!-- <div class="funko-header">
-      <router-link to="/home">Home /</router-link>
-      <router-link to="/Categorias"> Categorias /</router-link>
-      <router-link to="/Categorias"> Categoria Especifica</router-link>
-    </div>
-
-    <b-container class="producto">
-      <b-row>
-        <b-col>
-          <b-card variant="info">
-            <b><h2>Funko POP Harry Potter nº8</h2></b>
-            <h3>$11.990</h3>
-          </b-card>
-          <b-card
-            img-src="https://m.media-amazon.com/images/I/61q5FhBairL._AC_UX679_.jpg"
-            class="Card-image"
-          ></b-card>
-          <b-button variant="info">Agregar a favoritos</b-button>
-        </b-col>
-
-        <b-col>
-          <b-card-group deck>
-            <b-card
-              border-variant="info"
-              header="Contacto"
-              header-bg-variant="info"
-              header-text-variant="white"
-              align="center"
-            >
-              <b-card-text>Roberto Raggio</b-card-text>
-              <hr />
-              <b-card-text>Ñuñoa, Región Metropolitana</b-card-text>
-              <hr />
-              <b-card-text>+56962458214</b-card-text>
-            </b-card>
-          </b-card-group>
-
-          <b-form deck class="mensaje">
-            <b-card
-              border-variant="info"
-              header="Deja tu mensaje"
-              header-bg-variant="info"
-              header-text-variant="white"
-              align="center"
-            >
-              <b-form-input placeholder="Tu Nombre"></b-form-input><br />
-              <b-form-input placeholder="Tu E-mail"></b-form-input><br />
-              <b-form-input placeholder="Tu Telefono"></b-form-input><br />
-              <b-form-textarea
-                id="textarea-default"
-                placeholder="Deja tu mensaje"
-              ></b-form-textarea>
-              <b-button variant="info">Enviar tu mensaje</b-button>
-            </b-card>
-          </b-form>
-        </b-col>
-      </b-row>
-    </b-container> -->
-
     <div class="row">
       <div
         class="col-sm-12 col-md-7 col-lg-7 justify-content-center align-content-center"
@@ -71,18 +12,98 @@
             <h3>
               {{ getLabelPrice(funkoDetalle?.price) }}
             </h3>
+            <b-icon
+              v-if="isInFavoritos"
+              class="funko-detalle-icon-like"
+              icon="heart-fill"
+              scale="1.4"
+              @click="eliminarFunkoFavoritos"
+            ></b-icon>
+            <b-icon
+              v-else
+              class="funko-detalle-icon-like"
+              icon="heart"
+              scale="1.4"
+              @click="agregarFunkoFavoritos"
+            ></b-icon>
           </div>
           <img
             :src="funkoDetalle?.image_url"
-            class="card-img-top funko-categoria-img"
+            class="card-img-top funko-funko-img"
             alt="..."
           />
         </div>
       </div>
       <div class="col-sm-12 col-md-5 col-lg-5">
-        <div class="card" style="width: 18rem">
-          <div class="card-header">Featured</div>
-          <div class="card-body"></div>
+        <div class="row">
+          <div class="col-12 py-3">
+            <div class="card text-center">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item funko-card-header-seller">Vendedor</li>
+                <li class="list-group-item">Roberto Raggio</li>
+                <li class="list-group-item">San Miguel, Santiago</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 py-3">
+            <div class="card text-center">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item funko-card-header-seller">Tu Información</li>
+              </ul>
+              <div class="row text-left p-3">
+                <div class="col-12">
+                  <div class="form-group">
+                    <label for="txt_detalle_nombre">Nombre</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="txt_detalle_nombre"
+                      aria-describedby="emailHelp"
+                    />
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group">
+                    <label for="txt_detalle_email">Correo Electrónico</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="txt_detalle_email"
+                      aria-describedby="emailHelp"
+                    />
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group">
+                    <label for="txt_detalle_telefono">Telefono</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="txt_detalle_telefono"
+                      aria-describedby="emailHelp"
+                    />
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group">
+                    <label for="txt_detalle_mensaje">Mensaje</label>
+                    <textarea
+                      class="form-control"
+                      id="txt_detalle_mensaje"
+                      rows="3"
+                    ></textarea>
+                  </div>
+                </div>
+                <div class="col-12 d-flex justify-content-center">
+                  <button
+                    class="btn btn-primary rounded-pill btn-funko-primary funko-categoria-btn w-75"
+                  >
+                    Enviar Mensaje
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -90,26 +111,51 @@
 </template>
 
 <script>
-import { mapState } from "vuex";
+import { mapActions, mapState } from "vuex";
 
 import { getPriceInCLP } from "@/utils/functions";
 
 export default {
   name: "Detalle",
+  mounted() {
+    const { id } = this.$route.params;
+    if (this.funkoDetalle.id != id) {
+      this.$router.push("/categorias");
+    }
+  },
   methods: {
+    ...mapActions("Funkos", ["addFunkoFavorito", "deleteFunkoFavorito"]),
+    agregarFunkoFavoritos() {
+      const { funkoDetalle } = this;
+      this.addFunkoFavorito(funkoDetalle);
+    },
+    eliminarFunkoFavoritos() {
+      const { funkoDetalle } = this;
+      this.deleteFunkoFavorito(funkoDetalle);
+    },
     getLabelPrice(price) {
       return getPriceInCLP(price);
     },
   },
   computed: {
-    ...mapState("Funkos", ["funkoDetalle"]),
+    ...mapState("Funkos", ["funkos", "funkoDetalle", "funkosFavoritos"]),
+    isInFavoritos() {
+      const { funkoDetalle, funkosFavoritos } = this;
+      const existFunkoInFav = funkosFavoritos.findIndex(
+        (funkoIteracion) => funkoIteracion.id === funkoDetalle.id
+      );
+      return existFunkoInFav > -1;
+    },
   },
 };
 </script>
 
 <style lang="scss">
 .funko-detalle-card-header {
+  display: flex;
+  flex-direction: column;
   h1 {
+    display: block;
     text-transform: uppercase;
     font-size: $font-size-xl;
     font-weight: 700;
@@ -119,6 +165,7 @@ export default {
     }
   }
   h3 {
+    display: block;
     font-family: fantasy;
     font-size: $font-size-md;
     text-align: left;
@@ -126,22 +173,25 @@ export default {
       text-align: center;
     }
   }
+  svg {
+    justify-content: end;
+  }
+}
+.funko-detalle-icon-like {
+  color: $celeste-oscuro;
+  float: right;
+  margin: 1rem 0rem;
+  transition: transform 0.2s;
+  &:hover {
+    transform: scale(2);
+  }
+  @include breakpoint("Celular") {
+    width: 100%;
+  }
 }
 
-/* .producto {
-  margin-top: 80px;
-  font-family: "Nunito";
+.funko-card-header-seller {
+  font-family: $bouncy;
+  font-size: $font-size-md;
 }
-.Card-image {
-  width: 700px;
-  padding: 40px;
-}
-.funko-header {
-  margin-top: 50px;
-  margin-left: 30px;
-  font-family: "Nunito";
-}
-.mensaje {
-  margin-top: 20px;
-} */
 </style>
