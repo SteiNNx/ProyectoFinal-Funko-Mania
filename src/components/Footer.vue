@@ -4,8 +4,12 @@
       <div class="row py-1 py-sm-5">
         <div class="col-sm-12 col-md-6 col-lg-6">
           <ul>
-            <li>Terminos y Condiciones</li>
-            <a href ="">Politicas de Privacidad</a>
+            <router-link class="funko-footer-li" tag="li" to="/"
+              >Termino y Condiciones</router-link
+            >
+            <router-link class="funko-footer-li" tag="li" to="/politicas"
+              >Politicas de Privacidad</router-link
+            >
           </ul>
         </div>
         <div class="col-sm-12 col-md-6 col-lg-6">
@@ -64,6 +68,11 @@ ul {
 
   @include breakpoint("Celular") {
     font-size: $font-size-md;
+  }
+}
+.funko-footer-li {
+  &:hover {
+    color: $celeste;
   }
 }
 </style>
