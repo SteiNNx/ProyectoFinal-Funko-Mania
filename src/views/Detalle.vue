@@ -57,7 +57,7 @@
                   <div class="form-group">
                     <label for="txt_detalle_nombre">Nombre</label>
                     <input
-                      type="email"
+                      type="text"
                       class="form-control"
                       id="txt_detalle_nombre"
                       aria-describedby="emailHelp"
@@ -79,7 +79,7 @@
                   <div class="form-group">
                     <label for="txt_detalle_telefono">Telefono</label>
                     <input
-                      type="email"
+                      type="text"
                       class="form-control"
                       id="txt_detalle_telefono"
                       aria-describedby="emailHelp"
@@ -119,6 +119,11 @@ import { getPriceInCLP } from "@/utils/functions";
 
 export default {
   name: "Detalle",
+  data() {
+    return {
+      isSendMessage: false,
+    };
+  },
   mounted() {
     const { id } = this.$route.params;
     if (this.funkoDetalle.id != id) {

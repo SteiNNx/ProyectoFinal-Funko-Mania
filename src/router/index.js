@@ -1,13 +1,14 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
+import Agregar from '@/views/Agregar'
 import Categorias from '@/views/Categorias'
 import Detalle from '@/views/Detalle'
 import Favoritos from '@/views/Favoritos'
 import Home from '@/views/Home'
 import Login from '@/views/Login'
+import NotFound from '@/views/NotFound'
 import Registrar from '@/views/Registrar'
-import Agregar from '@/views/Agregar'
 import Politicas from '@/views/Politicas'
 
 
@@ -19,6 +20,11 @@ const routes = [
     name: 'Home',
     component: Home,
     meta: { authRequired: true }
+  },
+  {
+    path: '*',
+    name: "NotFound",
+    component: NotFound,
   },
   {
     path: '/Agregar',
