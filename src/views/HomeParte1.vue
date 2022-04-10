@@ -74,18 +74,18 @@ export default {
 .imghome1 {
   width: 650px;
   height: 400px;
-  margin-top: 80px;
+  margin-top: 35px;
   margin-right: 20px;
 }
 .imghome2 {
-  width: 700px;
+  width: 650px;
   height: 550px;
-  margin-top: 130px;
+  margin-top: 80px;
 }
 .text1 {
   margin-left: 200px;
   margin-right: 20px;
-  margin-top: 80px;
+  margin-top: 30px;
   margin-bottom: 80px;
 }
 </style>

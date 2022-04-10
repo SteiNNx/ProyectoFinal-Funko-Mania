@@ -45,6 +45,9 @@
           volutpat. Donec varius arcu ac condimentum elementum.
         </p>
       </div>
+      <div class="mt-5 mb-5 text-center">
+          <img class="img3" src="@/assets/img/img3.png" />
+        </div>
     </div>
   </div>
 </template>
