@@ -39,7 +39,13 @@ npm run serve
 ```
 
 ### _:woman_technologist:Instructivos para desarrolladores_
-- Visite este [instructivo de Git](docs/git-commands.md)
+- [instructivo de Git](docs/git-commands.md)
+- [WebScrapping Generated Api JSON Funkos](https://github.com/SteiNNx/WebScrappingSample-ProyectoFinal-Funko-Mania)
+
+### _:man_technologist:Colaboradores_
+<a href="https://github.com/SteiNNx/ProyectoFinal-Funko-Mania/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=SteiNNx/ProyectoFinal-Funko-Mania" />
+</a>
 
 ### _:clipboard:Pauta de Evaluación_
 

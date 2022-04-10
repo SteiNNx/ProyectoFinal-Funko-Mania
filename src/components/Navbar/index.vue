@@ -64,6 +64,7 @@ export default {
   }
 }
 .funko-toggle-btn {
-  background-color: $negro-claro;
+    background-color: $negro-claro !important;
+  
 }
 </style>
