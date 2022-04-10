@@ -5,7 +5,7 @@
         <div class="col-sm-12 col-md-6 col-lg-6">
           <ul>
             <li>Terminos y Condiciones</li>
-            <li>Politicas de Privacidad</li>
+            <a href ="">Politicas de Privacidad</a>
           </ul>
         </div>
         <div class="col-sm-12 col-md-6 col-lg-6">
