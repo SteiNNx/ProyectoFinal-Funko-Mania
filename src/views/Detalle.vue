@@ -12,20 +12,22 @@
             <h3>
               {{ getLabelPrice(funkoDetalle?.price) }}
             </h3>
-            <b-icon
-              v-if="isInFavoritos"
-              class="funko-detalle-icon-like"
-              icon="heart-fill"
-              scale="1.4"
-              @click="eliminarFunkoFavoritos"
-            ></b-icon>
-            <b-icon
-              v-else
-              class="funko-detalle-icon-like"
-              icon="heart"
-              scale="1.4"
-              @click="agregarFunkoFavoritos"
-            ></b-icon>
+            <template v-if="userLogin != null">
+              <b-icon
+                v-if="isInFavoritos"
+                class="funko-detalle-icon-like"
+                icon="heart-fill"
+                scale="1.4"
+                @click="eliminarFunkoFavoritos"
+              ></b-icon>
+              <b-icon
+                v-else
+                class="funko-detalle-icon-like"
+                icon="heart"
+                scale="1.4"
+                @click="agregarFunkoFavoritos"
+              ></b-icon>
+            </template>
           </div>
           <img
             :src="funkoDetalle?.image_url"
@@ -139,6 +141,7 @@ export default {
   },
   computed: {
     ...mapState("Funkos", ["funkos", "funkoDetalle", "funkosFavoritos"]),
+    ...mapState("User", ["userLogin"]),
     isInFavoritos() {
       const { funkoDetalle, funkosFavoritos } = this;
       const existFunkoInFav = funkosFavoritos.findIndex(

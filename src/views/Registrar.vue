@@ -30,7 +30,8 @@
               class="btn btn-primary btn-funko-primary w-100"
               @click="loginUsuario"
             >
-              Registrarse
+              <b-spinner v-if="loading" small></b-spinner>
+              <span v-else>Registrarse</span>
             </button>
           </div>
           <div class="card-footer text-muted">
@@ -51,13 +52,21 @@ import { mapActions, mapState } from "vuex";
 export default {
   name: "Registrar",
   data() {
-    return { user: { email: "", password: "" } };
+    return {
+      user: {
+        email: "",
+        password: "",
+      },
+      loading: false,
+    };
   },
   methods: {
     ...mapActions("User", ["registerUser"]),
     async loginUsuario() {
       const { user } = this;
+      this.loading = true;
       await this.registerUser(user);
+      this.loading = false;
       const { userMsjError } = this.$store.state.User;
       if (userMsjError === null || userMsjError === undefined) {
         this.$toast.success("Usuario Registrado");

@@ -25,9 +25,8 @@ Nuestro sitio está dirigido a los amantes de los funko a públicos de todas las
     - [Nunito](https://fonts.google.com/specimen/Nunito?query=nunito)
 - Tamaños Texto:
     - 32px, 24px y 16px.
-- Paleta de Colores:
-
-    ![ImagenPaletaColores](./docs/img/colorscheme.png) 
+- Paleta de Colores: 
+    - <img src="./docs/img/colorscheme.png" width="110" height="110">
     - **#FFFFFF, #00CCFF, #00A4CD, #000000**
 
 ## _:hammer_and_wrench:Guia de Instalación_:
@@ -58,10 +57,10 @@ npm run serve
 - [Hito 2](docs/hitos.md#hito-two)
     - :heavy_check_mark: Conexión con una API usando una librería. `(1 punto)`
     - :heavy_check_mark: Almacenamiento de datos en Vuex. `(0.5 puntos)`
-    - :o: Modificación del estado en Vuex. `(0.5 puntos)`
+    - :heavy_check_mark: Modificación del estado en Vuex. `(0.5 puntos)`
     - :heavy_check_mark: Comunicación entre componentes mediante props o eventos. `(1 punto)`
     - :heavy_check_mark: Definición de variables y métodos necesarios. `(2 puntos)`
-    - :o: Contiene las funcionalidades básicas descritas. `(3 puntos)`
-    - :o: Agrega funcionalidades extra a las mínimas necesarias. `(2 puntos)`
+    - :heavy_check_mark: Contiene las funcionalidades básicas descritas. `(3 puntos)`
+    - :heavy_check_mark: Agrega funcionalidades extra a las mínimas necesarias. `(2 puntos)`
 
 

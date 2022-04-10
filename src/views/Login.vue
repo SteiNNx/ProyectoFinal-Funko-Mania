@@ -30,7 +30,8 @@
               class="btn btn-primary btn-funko-primary w-100"
               @click="loginUsuario"
             >
-              Ingresar
+              <b-spinner v-if="loading" small></b-spinner>
+              <span v-else>Ingresar</span>
             </button>
           </div>
           <div class="card-footer text-muted">
@@ -51,13 +52,21 @@ import { mapActions, mapState } from "vuex";
 export default {
   name: "Login",
   data() {
-    return { user: { email: "", password: "" } };
+    return {
+      user: {
+        email: "",
+        password: "",
+      },
+      loading: false,
+    };
   },
   methods: {
     ...mapActions("User", ["loginUser"]),
     async loginUsuario() {
       const { user } = this;
+      this.loading = true;
       await this.loginUser(user);
+      this.loading = false;
       const { userMsjError } = this.$store.state.User;
       if (userMsjError === null || userMsjError === undefined) {
         this.$toast.success("Sesion Iniciada");
