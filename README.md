@@ -46,6 +46,7 @@ npm run serve
 <a href="https://github.com/SteiNNx/ProyectoFinal-Funko-Mania/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=SteiNNx/ProyectoFinal-Funko-Mania" />
 </a>
+
 ### _:clipboard:Pauta de Evaluación_
 
 - [Hito 1](docs/hitos.md#hito-one)
