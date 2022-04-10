@@ -8,6 +8,7 @@ import Home from '@/views/Home'
 import Login from '@/views/Login'
 import Registrar from '@/views/Registrar'
 import Agregar from '@/views/Agregar'
+import Politicas from '@/views/Politicas'
 
 
 Vue.use(VueRouter)
@@ -50,6 +51,11 @@ const routes = [
     path: '/favoritos',
     name: 'Favoritos',
     component: Favoritos
+  },
+  {
+    path: '/politicas',
+    name: 'Politicas',
+    component: Politicas
   },
 ]
 
