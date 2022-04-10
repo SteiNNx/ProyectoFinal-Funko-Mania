@@ -61,7 +61,7 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .funko-label-name {
   font-family: $bouncy !important;
   font-size: $font-size-md;

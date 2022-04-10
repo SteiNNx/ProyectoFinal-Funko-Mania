@@ -55,9 +55,9 @@
 </template>
 
 <script>
-import { mapActions, mapState } from "vuex";
+import { mapState } from "vuex";
 
-import CardCategorias from "@/components/CardCategorias";
+import CardCategorias from "@/components/Cards/CardCategorias";
 import {
   INIT_PRICE_FUNKO_FILTER,
   MIN_PRICE_FUNKO,
