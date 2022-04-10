@@ -25,9 +25,8 @@ Nuestro sitio está dirigido a los amantes de los funko a públicos de todas las
     - [Nunito](https://fonts.google.com/specimen/Nunito?query=nunito)
 - Tamaños Texto:
     - 32px, 24px y 16px.
-- Paleta de Colores:
-
-    ![ImagenPaletaColores](./docs/img/colorscheme.png=250x250) 
+- Paleta de Colores: 
+    <img src="./docs/img/colorscheme.png" width="150" height="280">
     - **#FFFFFF, #00CCFF, #00A4CD, #000000**
 
 ## _:hammer_and_wrench:Guia de Instalación_:
