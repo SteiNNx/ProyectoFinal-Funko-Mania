@@ -10,6 +10,7 @@ import Login from '@/views/Login'
 import NotFound from '@/views/NotFound'
 import Registrar from '@/views/Registrar'
 import Politicas from '@/views/Politicas'
+import Terminos from '@/views/Terminos'
 
 
 Vue.use(VueRouter)
@@ -62,6 +63,11 @@ const routes = [
     path: '/politicas',
     name: 'Politicas',
     component: Politicas
+  },
+  {
+    path: '/terminos',
+    name: 'Terminos',
+    component: Terminos
   },
 ]
 
