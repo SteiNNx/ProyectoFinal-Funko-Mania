@@ -4,7 +4,7 @@
       <div class="row py-1 py-sm-5">
         <div class="col-sm-12 col-md-6 col-lg-6">
           <ul>
-            <router-link class="funko-footer-li" tag="li" to="/"
+            <router-link class="funko-footer-li" tag="li" to="/terminos"
               >Termino y Condiciones</router-link
             >
             <router-link class="funko-footer-li" tag="li" to="/politicas"
