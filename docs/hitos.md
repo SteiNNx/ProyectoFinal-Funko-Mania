@@ -126,11 +126,11 @@ logueado, ingrese directamente a la vista principal, de lo contrario, el usuario
 > 
 > Para la revisión de este Hito, además del código, se deberán entregar las claves de acceso de los dos usuarios creados para pruebas para verificar el funcionamiento de la aplicación.
 
-- :o: Implementación del servicio de autenticación de Firebase. (2.5 puntos)
-- :o: Persistencia del estado de autenticación del usuario. (1.5 puntos)
-- :o: Manejo de rutas según estado de autenticación. (2.5 puntos)
-- :o: Opción de cerrar sesión. (0.25 puntos)
-- :o: Creación de 2 usuarios. (0.25 puntos)
-- :o: Creación de una ruta para recuperar datos desde la base de datos. (1 punto)
-- :o: Creación de una ruta para persistir o actualizar datos en la base de datos. (1 punto)
-- :o: Conexión de la aplicación con las rutas creadas. (1 punto)
+- :o: Implementación del servicio de autenticación de Firebase. `(2.5 puntos)`
+- :o: Persistencia del estado de autenticación del usuario. `(1.5 puntos)`
+- :o: Manejo de rutas según estado de autenticación. `(2.5 puntos)`
+- :o: Opción de cerrar sesión. `(0.25 puntos)`
+- :o: Creación de 2 usuarios. `(0.25 puntos)`
+- :o: Creación de una ruta para recuperar datos desde la base de datos. `(1 punto)`
+- :o: Creación de una ruta para persistir o actualizar datos en la base de datos. `(1 punto)`
+- :o: Conexión de la aplicación con las rutas creadas. `(1 punto)`
