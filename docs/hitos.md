@@ -95,8 +95,42 @@ fecha, filtro para ordenar resultados de forma alfabética, etc,
 
 - :heavy_check_mark: Conexión con una API usando una librería. `(1 punto)`
 - :heavy_check_mark: Almacenamiento de datos en Vuex. `(0.5 puntos)`
-- :o: Modificación del estado en Vuex. `(0.5 puntos)`
+- :heavy_check_mark: Modificación del estado en Vuex. `(0.5 puntos)`
 - :heavy_check_mark: Comunicación entre componentes mediante props o eventos. `(1 punto)`
 - :heavy_check_mark: Definición de variables y métodos necesarios. `(2 puntos)`
-- :o: Contiene las funcionalidades básicas descritas. `(3 puntos)`
-- :o: Agrega funcionalidades extra a las mínimas necesarias. `(2 puntos)`
+- :heavy_check_mark: Contiene las funcionalidades básicas descritas. `(3 puntos)`
+- :heavy_check_mark: Agrega funcionalidades extra a las mínimas necesarias. `(2 puntos)`
+
+## _Hito :three:_
+
+### _Instrucciones_
+
+> Para el back end de la aplicación se utilizará Firebase, una plataforma que puede ser considerada como "Back end as a Service".
+> 
+> El primer paso para esta etapa es crear un nuevo proyecto en Firebase. Serán utilizados los servicios
+de autenticación, cloud functions y Firestore para la base de datos. Es importante recordar que será necesario tener instalada el CLI de FIrebase en el equipo.
+>
+> Se deberá conectar la pantalla de login al servicio de Firebase para autenticar a los usuarios usando correo y contraseña. Se debe persistir de alguna forma (Ej. Vuex, cookies, etc.) el estado del usuario
+(logueado/no logueado).
+>
+> A continuación, se modificará la navegación de la aplicación para que responda al estado del usuario. La información de la sesión deberá ser persistida en el navegador, de tal forma que si el usuario está
+logueado, ingrese directamente a la vista principal, de lo contrario, el usuario deberá ser redirigido a la pantalla de login.
+> 
+> Se deberá incluir una opción para cerrar sesión que modifique el estado del usuario y lo lleve a la pantalla de login.
+> 
+> En la sección recursos se encuentra un diagrama de flujo que explica el sistema de navegación y enlaces a documentación para trabajo avanzado con Vue-router y trabajo con Cookies.
+> 
+> Se deberán crear al menos 2 usuarios distintos. Se recomienda usar correos de prueba para esto. Los datos generados por cada usuario deberán ser almacenados en documentos distintos en la base de datos.
+> 
+> Usando Cloud functions se deberán definir como mínimo 2 rutas, una que permita al usuario guardar/actualizar datos en la base y otra que permita al usuario recuperar dichos datos. La aplicación deberá estar conectada a las rutas definidas utilizando alguna librería como Axios.
+> 
+> Para la revisión de este Hito, además del código, se deberán entregar las claves de acceso de los dos usuarios creados para pruebas para verificar el funcionamiento de la aplicación.
+
+- :o: Implementación del servicio de autenticación de Firebase. (2.5 puntos)
+- :o: Persistencia del estado de autenticación del usuario. (1.5 puntos)
+- :o: Manejo de rutas según estado de autenticación. (2.5 puntos)
+- :o: Opción de cerrar sesión. (0.25 puntos)
+- :o: Creación de 2 usuarios. (0.25 puntos)
+- :o: Creación de una ruta para recuperar datos desde la base de datos. (1 punto)
+- :o: Creación de una ruta para persistir o actualizar datos en la base de datos. (1 punto)
+- :o: Conexión de la aplicación con las rutas creadas. (1 punto)
