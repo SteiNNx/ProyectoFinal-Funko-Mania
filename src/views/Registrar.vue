@@ -6,6 +6,16 @@
           <div class="card-header registrar-title">Registrarse</div>
           <div class="card-body">
             <div class="form-group">
+              <label for="txt_nombre">Nombre</label>
+              <input
+                id="txt_nombre"
+                type="text"
+                class="form-control"
+                placeholder="John Doe"
+                v-model="user.nombre"
+              />
+            </div>
+            <div class="form-group">
               <label for="txt_email">Correo Electrónico</label>
               <input
                 id="txt_email"
@@ -24,6 +34,19 @@
                 v-model="user.password"
                 placeholder=""
               />
+            </div>
+            <div class="form-group">
+              <label for="txt_password">Region</label>
+              <v-select
+                v-model="user.region"
+                :options="optionsRegion"
+                :loading="loadingRegion"
+                @input="handleClickSelectRegion($event)"
+              ></v-select>
+            </div>
+            <div class="form-group">
+              <label for="txt_password">Comuna</label>
+              <v-select :options="optionsComuna" :disabled="disabledComuna"></v-select>
             </div>
             <button
               type="submit"
@@ -47,18 +70,51 @@
 </template>
 
 <script>
+import axios from "axios";
 import { mapActions, mapState } from "vuex";
+
+import { GET_ALL_REGIONES, GET_COMUNAS_BY_CODIGO_REGION } from "@/api/constants";
 
 export default {
   name: "Registrar",
   data() {
     return {
       user: {
+        nombre: "",
         email: "",
         password: "",
+        region: {
+          label: "",
+          codigo: "",
+        },
+        comuna: {
+          label: "",
+          codigo: "",
+        },
       },
+      optionsRegion: [],
+      optionsComuna: [],
       loading: false,
+      loadingRegion: true,
+      loadingComuna: true,
+      disabledComuna: true,
     };
+  },
+  mounted() {
+    axios
+      .get(GET_ALL_REGIONES)
+      .then((succesResponse) => {
+        this.loadingRegion = false;
+        this.optionsRegion = succesResponse?.data?.map(({ codigo, nombre }) => {
+          return {
+            key: codigo,
+            label: nombre,
+          };
+        });
+      })
+      .catch((errorResponse) => {
+        console.log(errorResponse);
+      });
   },
   methods: {
     ...mapActions("User", ["registerUser"]),
@@ -77,6 +133,30 @@ export default {
     },
     redirectToLogin() {
       this.$router.push("/ingresar");
+    },
+    handleClickSelectRegion($event) {
+      console.log($event);
+      if ($event !== null) {
+        this.loadComunaOptionsByCodigoRegion($event.key);
+      }
+    },
+    loadComunaOptionsByCodigoRegion(codigoRegion) {
+      this.loadingComuna = true;
+      this.disabledComuna = false;
+      axios
+        .get(GET_COMUNAS_BY_CODIGO_REGION(codigoRegion))
+        .then((succesResponse) => {
+          this.loadingComuna = false;
+          this.optionsComuna = succesResponse?.data?.map(({ codigo, nombre }) => {
+            return {
+              key: codigo,
+              label: nombre,
+            };
+          });
+        })
+        .catch((errorResponse) => {
+          console.log(errorResponse);
+        });
     },
   },
   computed: {
