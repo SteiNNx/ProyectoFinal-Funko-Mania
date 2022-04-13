@@ -11,6 +11,8 @@ import NotFound from '@/views/NotFound'
 import Registrar from '@/views/Registrar'
 import Politicas from '@/views/Politicas'
 import Terminos from '@/views/Terminos'
+import Bandeja from '@/views/Bandeja'
+import Mensaje from '@/views/Mensaje'
 
 
 Vue.use(VueRouter)
@@ -68,6 +70,18 @@ const routes = [
     path: '/terminos',
     name: 'Terminos',
     component: Terminos
+  },
+  {
+    path: '/Bandeja',
+    name: 'Bandeja',
+    component: Bandeja,
+    meta: { authRequired: true }
+  },
+  {
+    path: '/Mensaje',
+    name: 'Mensaje',
+    component: Mensaje,
+    meta: { authRequired: true }
   },
 ]
 
