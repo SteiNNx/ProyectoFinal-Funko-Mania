@@ -199,7 +199,7 @@ export default {
 }
 
 .funko-card-header-seller {
-  font-family: $bouncy;
+  font-family: $dosis;
   font-size: $font-size-md;
 }
 </style>

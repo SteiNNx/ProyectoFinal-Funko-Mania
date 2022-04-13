@@ -19,13 +19,13 @@
 <style lang="scss" scoped>
 .funko-not-found-title {
   color: $celeste-oscuro;
-  font-family: $bouncy;
+  font-family: $dosis;
   font-size: $font-size-xl;
   font-weight: 500;
   line-height: 1.2;
 }
 .funko-not-found-text {
-  font-family: $bouncy;
+  font-family: $dosis;
   font-size: $font-size-sm;
   font-weight: 500;
   line-height: 1.2;

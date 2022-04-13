@@ -74,7 +74,7 @@ export default {
 
 .funko-funko-category {
   color: $celeste-oscuro;
-  font-family: $bouncy;
+  font-family: $dosis;
   font-style: italic;
   margin: 0rem;
 }
@@ -98,7 +98,7 @@ export default {
 }
 
 .funko-funko-btn {
-  font-family: $bouncy;
+  font-family: $dosis;
   transition: transform 0.2s ease;
   &:hover {
     transform: scale(1.1);

@@ -151,12 +151,12 @@ export default {
   text-transform: uppercase;
   text-align: center;
   color: $celeste;
-  font-family: $bouncy;
+  font-family: $dosis;
 }
 
 .funko-home-sub-title {
   color: $celeste;
-  font-family: $bouncy;
+  font-family: $dosis;
   font-size: $font-size-md;
   text-align: center;
   text-transform: uppercase;

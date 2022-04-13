@@ -54,7 +54,7 @@ ul {
   }
 }
 .footer-copyrigh {
-  font-family: $bouncy;
+  font-family: $dosis;
   font-size: $font-size-xl;
   display: inline-block;
 

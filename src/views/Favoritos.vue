@@ -30,7 +30,7 @@ export default {
 <style lang="scss">
 .funko-favoritos-title {
   color: $celeste-oscuro;
-  font-family: $bouncy;
+  font-family: $dosis;
   font-size: $font-size-xl;
 }
 </style>

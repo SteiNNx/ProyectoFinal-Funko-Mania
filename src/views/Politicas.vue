@@ -129,9 +129,9 @@
 <style lang="scss">
 .funko-politicas-titulo {
   text-align: center;
-  font-family: $bouncy;
+  font-family: $dosis;
 }
 .funnko-politicas-subtitulos {
-  font-family: $bouncy;
+  font-family: $dosis;
 }
 </style>

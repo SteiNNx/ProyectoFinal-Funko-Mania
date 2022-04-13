@@ -63,12 +63,12 @@ export default {
 
 <style lang="scss">
 .funko-label-name {
-  font-family: $bouncy !important;
+  font-family: $dosis !important;
   font-size: $font-size-md;
   color: $blanco !important;
 }
 .funko-label-logout {
-  font-family: $bouncy !important;
+  font-family: $dosis !important;
   font-size: $font-size-md;
   color: $blanco !important;
 }

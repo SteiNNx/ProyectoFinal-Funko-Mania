@@ -35,7 +35,7 @@ export default {
 <style lang="scss">
 .funko-categoria-count {
   color: $celeste;
-  font-family: $bouncy;
+  font-family: $dosis;
   font-style: italic;
   text-align: right;
   span {
