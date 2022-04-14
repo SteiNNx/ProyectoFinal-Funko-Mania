@@ -8,11 +8,10 @@
         </div>
         <div class="col-12">
           <div class="row">
-            <div class="col-sm-12 col-md-6 col-lg-6 my-auto">
-              <p>
+            <div class="col-sm-12 col-md-6 col-lg-6">
+              <p class="funko-home-bienvenida">
                 Bienvenidos al mundo de Funko Pop, te contaremos la historia, datos
-            curiosos, podras intercambiar tus funkos <br />
-            y comprar para completar tu colección de uno de los mayores
+            curiosos, podras intercambiar tus funkos y comprar para completar tu colección de uno de los mayores
             fenómenos de coleccionistas modernos.
               </p>  
             </div>
@@ -32,7 +31,7 @@
         <div class="col-12">
           <div class="row">
             <div class="col-sm-12 col-md-6 col-lg-6 my-auto">
-              <p class="textHistoria">
+              <p class="funko-home-historia">
                 En 1998, Mike Becker, diseñador de camisetas y buscador de juguetes raros,
                 tenía entre ceja y ceja el muñeco-hucha con el famoso Big Boy de la cadena
                 de 'fast food' americana. El problema es que todo aquel que se la quería
@@ -157,12 +156,10 @@ export default {
   text-transform: uppercase;
   text-align: center;
   color: $celeste;
-  font-family: $bouncy;
 }
 
 .funko-home-sub-title {
   color: $celeste;
-  font-family: $bouncy;
   font-size: $font-size-md;
   text-align: center;
   text-transform: uppercase;
@@ -181,12 +178,18 @@ p {
 }
 
 .videoFunko {
-  margin-left: 30%;
+  margin-left: 15%;
 }
 
-.textHistoria {
+.funko-home-historia {
   margin-left: 70px;
   margin-right: 40px;
 }
+
+.funko-home-bienvenida {
+  text-align: center;
+}
+
+
 
 </style>
