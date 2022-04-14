@@ -34,7 +34,6 @@ footer {
   width: 100%;
   background: $negro;
   color: $blanco;
-  margin-top: 20px;
 
   @include breakpoint("Celular") {
     font-size: $font-size-sm;
