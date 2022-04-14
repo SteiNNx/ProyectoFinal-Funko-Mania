@@ -1,7 +1,7 @@
 <template>
   <div>
     <Carousel />
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
         <div class="col-12 py-5">
           <h1 class="funko-home-title">NO TE QUEDES SIN TU COLECCIÓN DE FUNKO POP!!</h1>
@@ -10,25 +10,20 @@
           <div class="row">
             <div class="col-sm-12 col-md-6 col-lg-6 my-auto">
               <p>
-                Bienvenidos al mundo de Funko Pop, aqui podras encontrar la historia,
-                datos curiosos, intercambiar y comprar para completar tu colección de uno
-                de los mayores fenómenos de coleccionistas modernos.
-              </p>
-              <p>
-                Quisque pretium hendrerit metus vel placerat. Aenean semper condimentum
-                magna, a pharetra nisi imperdiet non. Curabitur sodales, ligula quis
-                semper pellentesque, mi tellus vestibulum nisi, id tincidunt nisi est
-                fringilla massa. Nunc bibendum mi vel tempor lobortis. Phasellus arcu dui,
-                lacinia non bibendum quis, aliquet sit amet enim. Vivamus dignissim
-                facilisis aliquam. Etiam odio mauris, pulvinar in porttitor at,
-                pellentesque eu purus. Nam dapibus rhoncus justo et egestas. Sed sagittis
-                leo a pulvinar in porttitor at, pellentesque eu purus. Nam dapibus rhoncus
-                justo et egestas. Sed sagittis leo a
-              </p>
+                Bienvenidos al mundo de Funko Pop, te contaremos la historia, datos
+            curiosos, podras intercambiar tus funkos <br />
+            y comprar para completar tu colección de uno de los mayores
+            fenómenos de coleccionistas modernos.
+              </p>  
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-6 my-auto">
-              <img class="img-fluid" src="@/assets/img/inicio.jpg" />
-            </div>
+            <video
+                class="videoFunko"
+                src="https://www.youtube.com/watch?v=hSdWLNm3Xo0"
+                width="1000"
+                height="600"
+                autoplay
+                controls
+              ></video>
           </div>
         </div>
         <div class="col-12 py-5">
@@ -37,7 +32,7 @@
         <div class="col-12">
           <div class="row">
             <div class="col-sm-12 col-md-6 col-lg-6 my-auto">
-              <p>
+              <p class="textHistoria">
                 En 1998, Mike Becker, diseñador de camisetas y buscador de juguetes raros,
                 tenía entre ceja y ceja el muñeco-hucha con el famoso Big Boy de la cadena
                 de 'fast food' americana. El problema es que todo aquel que se la quería
@@ -60,7 +55,13 @@
               </p>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-6">
-              <img class="img-fluid" src="@/assets/img/BOY.jpg" />
+              <img class="BOY"
+                width="600"
+                height="400"
+ src="@/assets/img/BOY.png" />
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6">
+              <img class="img-fluid" src="@/assets/img/mitad.png" />
             </div>
           </div>
         </div>
@@ -147,6 +148,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+* {
+  background: $negro;
+  color: $blanco;
+}
+
 .funko-home-title {
   text-transform: uppercase;
   text-align: center;
@@ -173,4 +179,14 @@ export default {
 p {
   text-align: justify;
 }
+
+.videoFunko {
+  margin-left: 30%;
+}
+
+.textHistoria {
+  margin-left: 70px;
+  margin-right: 40px;
+}
+
 </style>
