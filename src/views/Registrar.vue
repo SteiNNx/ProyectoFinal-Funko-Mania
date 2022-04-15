@@ -46,12 +46,16 @@
             </div>
             <div class="form-group">
               <label for="txt_password">Comuna</label>
-              <v-select :options="optionsComuna" :disabled="disabledComuna"></v-select>
+              <v-select
+                v-model="user.comuna"
+                :options="optionsComuna"
+                :disabled="disabledComuna"
+              ></v-select>
             </div>
             <button
               type="submit"
               class="btn btn-primary btn-funko-primary w-100"
-              @click="loginUsuario"
+              @click="registrarUsuario"
             >
               <b-spinner v-if="loading" small></b-spinner>
               <span v-else>Registrarse</span>
@@ -118,17 +122,22 @@ export default {
   },
   methods: {
     ...mapActions("User", ["registerUser"]),
-    async loginUsuario() {
+    async registrarUsuario() {
       const { user } = this;
-      this.loading = true;
-      await this.registerUser(user);
-      this.loading = false;
-      const { userMsjError } = this.$store.state.User;
-      if (userMsjError === null || userMsjError === undefined) {
-        this.$toast.success("Usuario Registrado");
-        this.$router.push("/ingresar");
+      const { region, comuna } = user;
+      if ((region.label != "") & (comuna.label != "")) {
+        this.loading = true;
+        await this.registerUser(user);
+        this.loading = false;
+        const { userMsjError } = this.$store.state.User;
+        if (userMsjError === null || userMsjError === undefined) {
+          this.$toast.success("Usuario Registrado");
+          this.$router.push("/ingresar");
+        } else {
+          this.$toast.error(userMsjError);
+        }
       } else {
-        this.$toast.error(userMsjError);
+        this.$toast.error("Favor, completar formulario");
       }
     },
     redirectToLogin() {

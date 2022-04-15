@@ -55,7 +55,9 @@ export default {
   },
   computed: {
     getLabelName() {
-      return this?.userLogin?.email ? getNameLocalFromEmail(this.userLogin.email) : "";
+      return this?.userLogin?.infoUser?.nombre
+        ? this?.userLogin?.infoUser?.nombre
+        : "Sin Nombre";
     },
   },
 };
