@@ -8,21 +8,20 @@
         </div>
         <div class="col-12">
           <div class="row">
-            <div class="col-sm-12 col-md-6 col-lg-6">
+            <div class="col-sm-12 col-md-12 col-lg-12">
               <p class="funko-home-bienvenida">
                 Bienvenidos al mundo de Funko Pop, te contaremos la historia, datos
                 curiosos, podras intercambiar tus funkos y comprar para completar tu
                 colección de uno de los mayores fenómenos de coleccionistas modernos.
               </p>
             </div>
-            <video
-              class="videoFunko"
-              src="https://www.youtube.com/watch?v=hSdWLNm3Xo0"
-              width="1000"
-              height="600"
-              autoplay
-              controls
-            ></video>
+            <div class="col-sm-12 col-md-12 col-lg-12 d-flex">
+              <b-embed
+                type="iframe"
+                aspect="16by9"
+                src="https://www.youtube.com/embed/hSdWLNm3Xo0"
+              ></b-embed>
+            </div>
           </div>
         </div>
         <div class="col-12 py-5">
@@ -54,7 +53,7 @@
               </p>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-6">
-              <img class="BOY" width="600" height="400" src="@/assets/img/BOY.png" />
+              <img class="img-fluid" src="@/assets/img/BOY.png" />
             </div>
             <div class="col-sm-12 col-md-6 col-lg-6">
               <img class="img-fluid" src="@/assets/img/mitad.png" />
@@ -174,10 +173,6 @@ export default {
 
 p {
   text-align: justify;
-}
-
-.videoFunko {
-  margin-left: 15%;
 }
 
 .funko-home-historia {

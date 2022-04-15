@@ -52,6 +52,16 @@
                 :disabled="disabledComuna"
               ></v-select>
             </div>
+            <div class="form-group">
+              <label for="txt_password">Dirección</label>
+              <input
+                id="txt_password"
+                type="password"
+                class="form-control"
+                v-model="user.direccion"
+                placeholder=""
+              />
+            </div>
             <button
               type="submit"
               class="btn btn-primary btn-funko-primary w-100"
@@ -95,6 +105,7 @@ export default {
           label: "",
           codigo: "",
         },
+        direccion: "",
       },
       optionsRegion: [],
       optionsComuna: [],
@@ -124,8 +135,8 @@ export default {
     ...mapActions("User", ["registerUser"]),
     async registrarUsuario() {
       const { user } = this;
-      const { region, comuna } = user;
-      if ((region.label != "") & (comuna.label != "")) {
+      const { region, comuna, direccion } = user;
+      if ((region.label != "") & (comuna.label != "") & (direccion != "")) {
         this.loading = true;
         await this.registerUser(user);
         this.loading = false;

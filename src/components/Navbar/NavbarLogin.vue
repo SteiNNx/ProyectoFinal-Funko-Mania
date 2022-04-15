@@ -1,5 +1,6 @@
 <template>
   <b-navbar-nav class="ml-auto">
+    <ShopIconNavbar />
     <b-nav-item-dropdown right>
       <!-- Using 'button-content' slot -->
       <template #button-content>
@@ -33,9 +34,11 @@
 import { mapActions } from "vuex";
 
 import { getNameLocalFromEmail } from "@/utils/functions";
+import ShopIconNavbar from "@/components/Shop/ShopIconNavbar.vue";
 
 export default {
   name: "NavbarLogin",
+  components: { ShopIconNavbar },
   props: {
     userLogin: null,
   },

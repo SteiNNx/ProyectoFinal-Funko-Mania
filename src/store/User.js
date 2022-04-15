@@ -37,7 +37,7 @@ const User = {
     },
     actions: {
         async registerUser({ commit }, userParam) {
-            const { email, password, region, comuna, nombre } = userParam;
+            const { email, password, region, comuna, nombre, direccion } = userParam;
             const auth = getAuth();
             await createUserWithEmailAndPassword(auth, email, password)
                 .then(async (response) => {
@@ -49,6 +49,7 @@ const User = {
                         email,
                         region,
                         comuna,
+                        direccion,
                         isAdmin: false,
                     });
                     console.log("Document written with ID: ", docRef.id);
