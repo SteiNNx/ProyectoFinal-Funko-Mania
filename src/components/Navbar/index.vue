@@ -61,7 +61,7 @@ export default {
 }
 .funko-nav-item {
   a {
-    font-family: $bouncy !important;
+    font-family: $dosis !important;
     font-size: $font-size-md;
     color: $blanco !important;
   }

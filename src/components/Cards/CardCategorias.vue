@@ -9,7 +9,7 @@
     <div
       v-for="(categoria, index) in categorias"
       :key="index"
-      class="col-sm-12 col-md-6 col-lg-4 my-3"
+      class="col-sm-12 col-md-4 col-lg-3 col-xl-3 my-3"
     >
       <CardViewFunko :funko="categoria" />
     </div>
@@ -35,7 +35,7 @@ export default {
 <style lang="scss">
 .funko-categoria-count {
   color: $celeste;
-  font-family: $bouncy;
+  font-family: $dosis;
   font-style: italic;
   text-align: right;
   span {

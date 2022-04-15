@@ -66,10 +66,10 @@ En todo caso, la responsabilidad de Intercambios Funkomania S.A., contractual, e
 <style lang="scss">
 .titulo {
     text-align: center;
-    font-family: $bouncy;
+    font-family: $dosis;
 }
 .subtitulos {
-    font-family: $bouncy;
+    font-family: $dosis;
 }
 
 </style>

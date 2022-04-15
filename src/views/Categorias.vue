@@ -145,12 +145,12 @@ export default {
 <style lang="scss">
 .funko-li-title {
   color: $celeste-oscuro;
-  font-family: $bouncy;
+  font-family: $dosis;
   font-size: $font-size-xl;
   border-bottom: 1px solid $celeste !important;
 }
 .funko-li-title-item {
-  font-family: $bouncy;
+  font-family: $dosis;
   font-weight: 500;
 }
 .funko-range-price {

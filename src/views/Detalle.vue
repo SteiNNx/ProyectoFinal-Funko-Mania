@@ -5,30 +5,6 @@
         class="col-sm-12 col-md-7 col-lg-7 justify-content-center align-content-center"
       >
         <div class="card border-0">
-          <div class="funko-detalle-card-header">
-            <h1>
-              {{ funkoDetalle?.title }}
-            </h1>
-            <h3>
-              {{ getLabelPrice(funkoDetalle?.price) }}
-            </h3>
-            <template v-if="userLogin != null">
-              <b-icon
-                v-if="isInFavoritos"
-                class="funko-detalle-icon-like"
-                icon="heart-fill"
-                scale="1.4"
-                @click="eliminarFunkoFavoritos"
-              ></b-icon>
-              <b-icon
-                v-else
-                class="funko-detalle-icon-like"
-                icon="heart"
-                scale="1.4"
-                @click="agregarFunkoFavoritos"
-              ></b-icon>
-            </template>
-          </div>
           <img
             :src="funkoDetalle?.image_url"
             class="card-img-top funko-funko-img"
@@ -39,69 +15,65 @@
       <div class="col-sm-12 col-md-5 col-lg-5">
         <div class="row">
           <div class="col-12 py-3">
-            <div class="card text-center">
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item funko-card-header-seller">Vendedor</li>
-                <li class="list-group-item">Roberto Raggio</li>
-                <li class="list-group-item">San Miguel, Santiago</li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-12 py-3">
-            <div class="card text-center">
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item funko-card-header-seller">Tu Información</li>
-              </ul>
-              <div class="row text-left p-3">
-                <div class="col-12">
-                  <div class="form-group">
-                    <label for="txt_detalle_nombre">Nombre</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="txt_detalle_nombre"
-                      aria-describedby="emailHelp"
-                    />
-                  </div>
+            <div class="card border-0">
+              <div class="funko-detalle-card-header">
+                <h1>
+                  {{ funkoDetalle?.title }}
+                </h1>
+                <div>
+                  <template v-if="userLogin != null">
+                    <b-icon
+                      v-if="isInFavoritos"
+                      class="funko-detalle-icon-like"
+                      icon="heart-fill"
+                      scale="1.4"
+                      @click="eliminarFunkoFavoritos"
+                    ></b-icon>
+                    <b-icon
+                      v-else
+                      class="funko-detalle-icon-like"
+                      icon="heart"
+                      scale="1.4"
+                      @click="agregarFunkoFavoritos"
+                    ></b-icon>
+                  </template>
+                  <h3 class="my-auto">
+                    {{ getLabelPrice(funkoDetalle?.price) }}
+                  </h3>
                 </div>
-                <div class="col-12">
-                  <div class="form-group">
-                    <label for="txt_detalle_email">Correo Electrónico</label>
-                    <input
-                      type="email"
-                      class="form-control"
-                      id="txt_detalle_email"
-                      aria-describedby="emailHelp"
-                    />
+                <div class="row">
+                  <div class="col-sm-12 col-md-4 col-lg-4">
+                    <b-icon
+                      class="funko-detalle-icon-like"
+                      icon="truck"
+                      scale="1.4"
+                    ></b-icon>
                   </div>
-                </div>
-                <div class="col-12">
-                  <div class="form-group">
-                    <label for="txt_detalle_telefono">Telefono</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="txt_detalle_telefono"
-                      aria-describedby="emailHelp"
-                    />
+                  <div class="col-sm-12 col-md-4 col-lg-4">
+                    <p id="popover-3" class="my-auto funko-detalle-fecha-entrega">
+                      Llegaría entre el
+                      <span> {{ fechaEntrega?.desde }}</span>
+                      y
+                      <span>{{ fechaEntrega?.hasta }}</span>
+                    </p>
+                    <b-popover target="popover-3" triggers="hover focus">
+                      Calculamos los tiempos para esta dirección: {{ getDireccion }}
+                    </b-popover>
                   </div>
-                </div>
-                <div class="col-12">
-                  <div class="form-group">
-                    <label for="txt_detalle_mensaje">Mensaje</label>
-                    <textarea
-                      class="form-control"
-                      id="txt_detalle_mensaje"
-                      rows="3"
-                    ></textarea>
+                  <div class="col-12 pt-5 d-flex justify-content-center">
+                    <button
+                      class="btn btn-primary rounded-pill btn-funko-primary funko-categoria-btn w-100"
+                    >
+                      Agregar al carrito
+                    </button>
                   </div>
-                </div>
-                <div class="col-12 d-flex justify-content-center">
-                  <button
-                    class="btn btn-primary rounded-pill btn-funko-primary funko-categoria-btn w-75"
-                  >
-                    Enviar Mensaje
-                  </button>
+                  <div class="col-sm-12 col-md-12 col-lg-12 pt-3">
+                    <div class="d-inline-block m-auto">
+                      <span>Comparte en: </span>
+                      <SocialShared :sharing="getObjectSocialShared('facebook')" />
+                      <SocialShared :sharing="getObjectSocialShared('whatsapp')" />
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -115,20 +87,28 @@
 <script>
 import { mapActions, mapState } from "vuex";
 
+import SocialShared from "@/components/SocialShared";
 import { getPriceInCLP } from "@/utils/functions";
+import { getDayEnvio } from "@/utils/functionsDate";
 
 export default {
   name: "Detalle",
   data() {
     return {
       isSendMessage: false,
+      fechaEntrega: "",
     };
+  },
+  components: {
+    SocialShared,
   },
   mounted() {
     const { id } = this.$route.params;
     if (this.funkoDetalle.id != id) {
       this.$router.push("/categorias");
     }
+    this.fechaEntrega = getDayEnvio(this.userLogin);
+    this.getUrlDetalle();
   },
   methods: {
     ...mapActions("Funkos", ["addFunkoFavorito", "deleteFunkoFavorito"]),
@@ -143,6 +123,32 @@ export default {
     getLabelPrice(price) {
       return getPriceInCLP(price);
     },
+    getObjectSocialShared(social) {
+      const url = this.getUrlDetalle();
+      switch (social) {
+        case "facebook":
+          return {
+            network: "facebook",
+            title: "facebook",
+            url,
+            name: "Facebook",
+            color: "#00a4cd",
+            icon: "facebook",
+          };
+        case "whatsapp":
+          return {
+            network: "whatsapp",
+            title: "whatsapp",
+            url,
+            name: "whatsapp",
+            color: "#25d366",
+            icon: "phone-fill",
+          };
+      }
+    },
+    getUrlDetalle() {
+      return window.location.href;
+    },
   },
   computed: {
     ...mapState("Funkos", ["funkos", "funkoDetalle", "funkosFavoritos"]),
@@ -153,6 +159,15 @@ export default {
         (funkoIteracion) => funkoIteracion.id === funkoDetalle.id
       );
       return existFunkoInFav > -1;
+    },
+    getDireccion() {
+      const { infoUser } = this.userLogin;
+      const {
+        comuna = "Puente Alto",
+        region = "Metropolitana",
+        direccion = "Miraflores 123",
+      } = infoUser;
+      return `${direccion}, Comuna ${comuna.label}, Region ${region.label} `;
     },
   },
 };
@@ -172,17 +187,26 @@ export default {
       text-align: center;
     }
   }
-  h3 {
-    display: block;
-    font-family: fantasy;
-    font-size: $font-size-md;
-    text-align: left;
+  div {
+    display: flex;
+    justify-content: space-between;
+
     @include breakpoint("Celular") {
-      text-align: center;
+      flex-direction: column;
     }
-  }
-  svg {
-    justify-content: end;
+    h3 {
+      display: flex;
+      font-family: fantasy;
+      font-size: $font-size-md;
+      text-align: right;
+      @include breakpoint("Celular") {
+        text-align: center;
+        margin: auto;
+      }
+    }
+    svg {
+      display: flex;
+    }
   }
 }
 .funko-detalle-icon-like {
@@ -199,7 +223,18 @@ export default {
 }
 
 .funko-card-header-seller {
-  font-family: $bouncy;
+  font-family: $dosis;
   font-size: $font-size-md;
+}
+
+.funko-detalle-fecha-entrega {
+  font-size: $font-size-xs;
+  font-style: italic;
+  @include breakpoint("Celular") {
+    text-align: center;
+  }
+  span {
+    color: $celeste-oscuro;
+  }
 }
 </style>

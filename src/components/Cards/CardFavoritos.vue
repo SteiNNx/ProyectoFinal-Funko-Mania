@@ -3,7 +3,7 @@
     <div
       v-for="(favorito, index) in favoritos"
       :key="index"
-      class="col-sm-12 col-md-3 col-lg-3"
+      class="col-sm-12 col-md-4 col-lg-3 col-xl-2"
     >
       <CardViewFunko :funko="favorito" showLike />
     </div>

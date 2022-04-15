@@ -30,22 +30,23 @@ $celeste-oscuro: #00a4cd;
 }
 /** Tipografia */
 
-$bouncy: "Bouncy";
+$dosis: "Dosis";
 $nunito: "Nunito";
 
 $font-size-xl: 32px;
 $font-size-md: 24px;
 $font-size-sm: 16px;
+$font-size-xs: 10px;
 
-/** Bouncy */
-@font-face {
-    font-family: "Bouncy";
-    src: url("@/assets/fonts/bouncy/bouncy-thin-personal.otf");
-}
 /** Nunito */
 @font-face {
     font-family: "Nunito", sans-serif;
     src: url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap");
+}
+/** Dosis */
+@font-face {
+    font-family: "Dosis", sans-serif;
+    src: url("https://fonts.googleapis.com/css2?family=Dosis:wght@500;700;800&display=swap");
 }
 
 .btn-funko-primary {

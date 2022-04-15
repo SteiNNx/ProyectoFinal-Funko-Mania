@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container-fluid">
     <div class="row py-5">
       <div class="col-12">
         <h1 class="funko-favoritos-title">Favoritos</h1>
@@ -30,7 +30,7 @@ export default {
 <style lang="scss">
 .funko-favoritos-title {
   color: $celeste-oscuro;
-  font-family: $bouncy;
+  font-family: $dosis;
   font-size: $font-size-xl;
 }
 </style>
