@@ -5,7 +5,7 @@
     >
       <b-icon icon="cart4" scale="1.5" variant="white"></b-icon>
       <span class="cart-basket d-flex align-items-center justify-content-center">
-        10
+        {{ getCountFunkosItemsInCart }}
       </span>
     </span>
     <span
@@ -13,7 +13,7 @@
       href="#"
     >
       <span class="cart-basket d-flex align-items-center justify-content-center">
-        10
+        {{ getCountFunkosItemsInCart }}
       </span>
       <em class="funko-label-name"> Carrito </em>
     </span>
@@ -21,12 +21,17 @@
 </template>
 
 <script>
+import { mapGetters } from "vuex";
+
 export default {
   name: "ShopIconNavbar",
   data() {
     return {
       countFunkosOnCart: 2,
     };
+  },
+  computed: {
+    ...mapGetters("ShopCartFunkos", ["getCountFunkosItemsInCart"]),
   },
 };
 </script>

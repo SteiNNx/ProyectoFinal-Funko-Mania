@@ -1,8 +1,8 @@
 <template>
   <div class="container-fluid py-5">
     <div class="row">
-      <div class="col-sm-12 col-md-4 col-lg-4">
-        <div class="row">
+      <div class="col-sm-12 col-md-3 col-lg-3">
+        <div class="row funko-filter-category">
           <div class="col-12">
             <ul class="list-group list-group-horizontal-sm-down list-group-flush">
               <li class="list-group-item funko-li-title">Filtros:</li>
@@ -47,7 +47,7 @@
           </div>
         </div>
       </div>
-      <div class="col-sm-12 col-md-8 col-lg-8">
+      <div class="col-sm-12 col-md-9 col-lg-9">
         <CardCategorias :categorias="getFunkosFiltered" />
       </div>
     </div>
@@ -164,5 +164,11 @@ export default {
   @include breakpoint("Celular") {
     text-align: center;
   }
+}
+.funko-filter-category {
+  position: sticky;
+  top: 4rem;
+  height: calc(100vh - 4rem);
+  overflow-y: auto;
 }
 </style>

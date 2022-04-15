@@ -41,7 +41,7 @@
                     {{ getLabelPrice(funkoDetalle?.price) }}
                   </h3>
                 </div>
-                <div class="row" >
+                <div class="row">
                   <div class="col-sm-12 col-md-4 col-lg-4" v-if="userLogin != null">
                     <b-icon
                       class="funko-detalle-icon-like"
@@ -60,9 +60,10 @@
                       Calculamos los tiempos para esta dirección: {{ getDireccion }}
                     </b-popover>
                   </div>
-                  <div class="col-12 pt-5 d-flex justify-content-center">
+                  <div class="col-12 d-flex justify-content-center padding-cart">
                     <button
                       class="btn btn-primary rounded-pill btn-funko-primary funko-categoria-btn w-100"
+                      @click="agregarCarrito"
                     >
                       Agregar al carrito
                     </button>
@@ -97,6 +98,7 @@ export default {
     return {
       isSendMessage: false,
       fechaEntrega: "",
+      cantidad: 1,
     };
   },
   components: {
@@ -112,6 +114,7 @@ export default {
   },
   methods: {
     ...mapActions("Funkos", ["addFunkoFavorito", "deleteFunkoFavorito"]),
+    ...mapActions("ShopCartFunkos", ["addFunkoCart"]),
     agregarFunkoFavoritos() {
       const { funkoDetalle } = this;
       this.addFunkoFavorito(funkoDetalle);
@@ -119,6 +122,14 @@ export default {
     eliminarFunkoFavoritos() {
       const { funkoDetalle } = this;
       this.deleteFunkoFavorito(funkoDetalle);
+    },
+    agregarCarrito() {
+      const { funkoDetalle, cantidad } = this;
+      const funko = {
+        ...funkoDetalle,
+        cantidad,
+      };
+      this.addFunkoCart(funko);
     },
     getLabelPrice(price) {
       return getPriceInCLP(price);
@@ -235,6 +246,13 @@ export default {
   }
   span {
     color: $celeste-oscuro;
+  }
+}
+
+.padding-cart {
+  padding-top: 10rem;
+  @include breakpoint("Celular") {
+    padding-top: 2rem;
   }
 }
 </style>
