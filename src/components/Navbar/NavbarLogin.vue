@@ -1,6 +1,8 @@
 <template>
   <b-navbar-nav class="ml-auto">
-    <ShopIconNavbar />
+    <template >
+      <ShopIconNavbar />
+    </template>
     <b-nav-item-dropdown right>
       <!-- Using 'button-content' slot -->
       <template #button-content>
