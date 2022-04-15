@@ -41,15 +41,15 @@
                     {{ getLabelPrice(funkoDetalle?.price) }}
                   </h3>
                 </div>
-                <div class="row">
-                  <div class="col-sm-12 col-md-4 col-lg-4">
+                <div class="row" >
+                  <div class="col-sm-12 col-md-4 col-lg-4" v-if="userLogin != null">
                     <b-icon
                       class="funko-detalle-icon-like"
                       icon="truck"
                       scale="1.4"
                     ></b-icon>
                   </div>
-                  <div class="col-sm-12 col-md-4 col-lg-4">
+                  <div class="col-sm-12 col-md-4 col-lg-4" v-if="userLogin != null">
                     <p id="popover-3" class="my-auto funko-detalle-fecha-entrega">
                       Llegaría entre el
                       <span> {{ fechaEntrega?.desde }}</span>

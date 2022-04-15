@@ -3,7 +3,7 @@
     <span
       class="position-relative d-none d-sm-none d-md-block d-lg-block d-xl-block d-xxl-block"
     >
-      <b-icon class="funko-label-icon" icon="cart4" scale="1.5" variant="white"></b-icon>
+      <b-icon icon="cart4" scale="1.5" variant="white"></b-icon>
       <span class="cart-basket d-flex align-items-center justify-content-center">
         10
       </span>
