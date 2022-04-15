@@ -49,6 +49,7 @@ const User = {
                         email,
                         region,
                         comuna,
+                        isAdmin: false,
                     });
                     console.log("Document written with ID: ", docRef.id);
                 })
