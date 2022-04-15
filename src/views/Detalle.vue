@@ -60,6 +60,12 @@
                       Calculamos los tiempos para esta dirección: {{ getDireccion }}
                     </b-popover>
                   </div>
+                  <div class="col-sm-12 col-md-12 col-lg-12">
+                    <div class="m-auto">
+                      <SocialShared :sharing="getObjectSocialShared('facebook')" />
+                      <SocialShared :sharing="getObjectSocialShared('whatsapp')" />
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -80,7 +86,7 @@
 <script>
 import { mapActions, mapState } from "vuex";
 
-import { SocialShareFacebook } from "@/components/SocialShared/SocialShareFacebook";
+import SocialShared from "@/components/SocialShared";
 import { getPriceInCLP } from "@/utils/functions";
 import { getDayEnvio } from "@/utils/functionsDate";
 
@@ -92,12 +98,16 @@ export default {
       fechaEntrega: "",
     };
   },
+  components: {
+    SocialShared,
+  },
   mounted() {
     const { id } = this.$route.params;
     if (this.funkoDetalle.id != id) {
       this.$router.push("/categorias");
     }
     this.fechaEntrega = getDayEnvio(this.userLogin);
+    this.getUrlDetalle();
   },
   methods: {
     ...mapActions("Funkos", ["addFunkoFavorito", "deleteFunkoFavorito"]),
@@ -111,6 +121,32 @@ export default {
     },
     getLabelPrice(price) {
       return getPriceInCLP(price);
+    },
+    getObjectSocialShared(social) {
+      const url = this.getUrlDetalle();
+      switch (social) {
+        case "facebook":
+          return {
+            network: "facebook",
+            title: "facebook",
+            url,
+            name: "Facebook",
+            color: "#00a4cd",
+            icon: "facebook",
+          };
+        case "whatsapp":
+          return {
+            network: "whatsapp",
+            title: "whatsapp",
+            url,
+            name: "whatsapp",
+            color: "#25d366",
+            icon: "phone-fill",
+          };
+      }
+    },
+    getUrlDetalle() {
+      return window.location.href;
     },
   },
   computed: {
