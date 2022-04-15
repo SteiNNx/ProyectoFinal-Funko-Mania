@@ -4,7 +4,7 @@
     :style="{
       backgroundColor: sharing.color,
       margin: '0.2rem',
-      padding: '0.2rem 0.5rem',
+      padding: '0.4rem 0.5rem',
       borderRadius: '20%',
     }"
     :title="sharing.title"
@@ -23,13 +23,34 @@ export default {
     sharing: {
       type: Object,
       default: {
-        title: "facebook",
-        url: "https://news.vuejs.org/issues/180",
-        quote: "Funko Mania",
-        hashtags: "funko-mania",
-        network: "facebook",
-        name: "Facebook",
-        color: "#00a4cd",
+        title: {
+          type: String,
+          default: "facebook",
+        },
+        url: {
+          type: String,
+          default: "https://news.vuejs.org/issues/180",
+        },
+        quote: {
+          type: String,
+          default: "Funko Mania",
+        },
+        hashtags: {
+          type: String,
+          default: "funko-mania",
+        },
+        network: {
+          type: String,
+          default: "facebook",
+        },
+        name: {
+          type: String,
+          default: "Facebook",
+        },
+        color: {
+          type: String,
+          default: "#00a4cd",
+        },
       },
     },
   },

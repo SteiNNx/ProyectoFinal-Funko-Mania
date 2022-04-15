@@ -60,8 +60,16 @@
                       Calculamos los tiempos para esta dirección: {{ getDireccion }}
                     </b-popover>
                   </div>
-                  <div class="col-sm-12 col-md-12 col-lg-12">
-                    <div class="m-auto">
+                  <div class="col-12 pt-5 d-flex justify-content-center">
+                    <button
+                      class="btn btn-primary rounded-pill btn-funko-primary funko-categoria-btn w-100"
+                    >
+                      Agregar al carrito
+                    </button>
+                  </div>
+                  <div class="col-sm-12 col-md-12 col-lg-12 pt-3">
+                    <div class="d-inline-block m-auto">
+                      <span>Comparte en: </span>
                       <SocialShared :sharing="getObjectSocialShared('facebook')" />
                       <SocialShared :sharing="getObjectSocialShared('whatsapp')" />
                     </div>
@@ -69,13 +77,6 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-12 d-flex justify-content-center">
-            <button
-              class="btn btn-primary rounded-pill btn-funko-primary funko-categoria-btn w-75"
-            >
-              Agregar al carrito
-            </button>
           </div>
         </div>
       </div>
