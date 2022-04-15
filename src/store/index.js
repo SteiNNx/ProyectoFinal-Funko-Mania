@@ -4,6 +4,7 @@ import VuexPersistence from 'vuex-persist'
 
 import Funkos from '@/store/Funkos';
 import User from '@/store/User';
+import ShopCartFunkos from '@/store/ShopCartFunkos';
 
 const vuexLocal = new VuexPersistence({
   storage: window.localStorage
@@ -22,7 +23,8 @@ export default new Vuex.Store({
   },
   modules: {
     Funkos,
-    User: User,
+    User,
+    ShopCartFunkos,
   },
   plugins: [vuexLocal.plugin]
 });
