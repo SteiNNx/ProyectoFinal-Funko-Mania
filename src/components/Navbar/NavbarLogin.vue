@@ -7,7 +7,7 @@
       <!-- Using 'button-content' slot -->
       <template #button-content>
         <em v-if="userLogin != null" class="funko-label-name">{{ getLabelName }}</em>
-        <em v-else class="funko-label-name"> Sin Sesion </em>
+        <em v-else class="funko-label-name"> SIN SESIÓN </em>
       </template>
       <!--<b-dropdown-item href="#">Profile</b-dropdown-item>-->
       <b-dropdown-item v-if="userLogin != null" class="funko-label-logout" @click="salir">
@@ -69,6 +69,7 @@ export default {
 </script>
 
 <style lang="scss">
+
 .funko-label-name {
   font-family: $dosis !important;
   font-size: $font-size-md;

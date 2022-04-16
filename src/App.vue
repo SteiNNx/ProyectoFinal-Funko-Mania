@@ -34,7 +34,7 @@ export default {
 
 <style lang="scss" scoped>
 * {
-  font-family: "Nunito", sans-serif;
+  font-family: "Akshar", sans-serif;
   accent-color: #00a4cd;
 }
 

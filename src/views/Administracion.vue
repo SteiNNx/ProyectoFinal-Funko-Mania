@@ -1,30 +1,33 @@
 <template>
   <div id="app">
-    <!-- Create Read Update Delete  -->
-    <h1>Administración funko</h1>
-    <hr />
+    <div class="container py-5">
+    <div class="row justify-content-center text-center">
+      <div class="col-sm-12 col-md-5 col-lg-5">
+    <div class="card">
+    <div class="card-header ingresar-title">ADMINISTRACIÓN</div>
+      Foto Funko
+      <input class="btn-funko-white w-100 p-1 " v-model="usuario.fotoFunko" />
+      Nombre Funko:
+      <input class="btn-funko-white w-100 p-1" v-model="usuario.nombreFunko" />
+      Cliente Funko:
+      <input class="btn-funko-white w-100 p-1" v-model="usuario.usuarioFunko" />
+      Email:
+      <input class="btn-funko-white w-100 p-1" v-model="usuario.email" />
 
-    <div class="formulario">
-      foto Funko
-    <input v-model="usuario.fotoFunko" />
-      nombre Funko:
-      <input v-model="usuario.nombreFunko" />
-      cliente Funko:
-      <input v-model="usuario.usuarioFunko" />
-      email:
-      <input v-model="usuario.email" />
-
-      <button @click="agregaFunko">agregar</button>
+      <button class="btn btn-primary btn-funko-primary w-100 mt-4 mb-4" @click="agregaFunko">agregar</button>
+    </div>
+    </div>
+    </div>
     </div>
 
-    <table border="solid" class="table w-75 m-auto mt-5">
+    <table border="solid" bac class="table w-75 m-auto mt-5">
       <thead>
         <tr>
-          <th>fotoFunko</th>
-          <th>nombreFunko</th>
-          <th>usuarioFunko</th>
-          <th>Email</th>
-          <th></th>
+          <th class="btn-funko-primary">Foto Funko</th>
+          <th class="btn-funko-primary">Nombre Funko</th>
+          <th class="btn-funko-primary">Usuario Funko</th>
+          <th class="btn-funko-primary">Email</th>
+          <th class="btn-funko-primary"></th>
         </tr>
       </thead>
       <tbody>
@@ -34,11 +37,11 @@
           <td>{{ usuario.data.usuarioFunko }}</td>
           <td>{{ usuario.data.email }}</td>
           <td>
-            <button @click="editarUsuario(usuario.id)" class="btn btn-warning">
-              editar 🖊
+            <button @click="editarUsuario(usuario.id)" class="btn">
+              🖊
             </button>
-            <button class="btn btn-danger" @click="deleteDoc(usuario.id)">
-              eliminar ❌
+            <button class="btn" @click="deleteDoc(usuario.id)">
+              ❌
             </button>
           </td>
         </tr>
@@ -47,17 +50,17 @@
 
     <b-modal v-model="modalShow" title="BootstrapVue">
       <div class="formulario">
-        fotoFunko:
+        Foto Funko:
         <input v-model="usuarioModificando.data.fotoFunko" />
-        nombreFunko:
-        <input v-model="usuarioModificando.data.nombreFunko" />
-       clienteFunko:
+        Nombre Funko:
+        <input v-model="usuarioModificando.data.nombreFunko"/>
+       Cliente Funko:
         <input v-model="usuarioModificando.data.usuarioFunko" />
-        email:
+        Email:
         <input v-model="usuarioModificando.data.email" />
 
-        <button class="btn btn-warning" @click="actualizarUsuario">
-          actualizar
+        <button class="btn-funko-primary mt-3" @click="actualizarUsuario">
+          Actualizar
         </button>
       </div>
     </b-modal>
@@ -168,7 +171,4 @@ export default {
   align-items: center;
 }
 
-input {
-  width: 150px;
-}
 </style>

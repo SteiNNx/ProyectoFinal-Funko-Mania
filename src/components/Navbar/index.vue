@@ -33,17 +33,17 @@ export default {
       items: [
         {
           NavbarHref: "/",
-          NavbarItem: "Inicio",
+          NavbarItem: "INICIO",
           checkLogin: false,
         },
         {
           NavbarHref: "/categorias",
-          NavbarItem: "Categorias",
+          NavbarItem: "CATEGORIAS",
           checkLogin: false,
         },
         {
           NavbarHref: "/favoritos",
-          NavbarItem: "Favoritos",
+          NavbarItem: "FAVORITOS",
           checkLogin: true,
         },
       ],
@@ -61,7 +61,7 @@ export default {
 }
 .funko-nav-item {
   a {
-    font-family: $dosis !important;
+    font-family: $akshar !important;
     font-size: $font-size-md;
     color: $blanco !important;
   }

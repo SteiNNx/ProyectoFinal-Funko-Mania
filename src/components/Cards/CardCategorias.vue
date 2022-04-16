@@ -39,7 +39,7 @@ export default {
   font-style: italic;
   text-align: right;
   span {
-    font-family: $nunito;
+    font-family: $akshar;
     font-weight: 700;
   }
   @include breakpoint("Celular") {

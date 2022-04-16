@@ -31,17 +31,19 @@ $celeste-oscuro: #00a4cd;
 /** Tipografia */
 
 $dosis: "Dosis";
-$nunito: "Nunito";
+$akshar: "Akshar";
 
 $font-size-xl: 32px;
 $font-size-md: 24px;
 $font-size-sm: 16px;
 $font-size-xs: 10px;
 
-/** Nunito */
+/** Akshar */
 @font-face {
-    font-family: "Nunito", sans-serif;
-    src: url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap");
+    font-family: "Akshar", sans-serif;
+    src: url("https://fonts.googleapis.com/css2?family=Akshar:wght@300;400;500;600;700&display=swap");
+    
+    
 }
 /** Dosis */
 @font-face {
