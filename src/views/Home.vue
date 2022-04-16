@@ -65,6 +65,7 @@
             </div>
             <div class="col-sm-12 col-md-6 col-lg-6">
               <img class="img-fluid" src="@/assets/img/mitad.png" />
+              
             </div>
           </div>
         </div>
@@ -148,6 +149,7 @@
 
 <script>
 import Carousel from "@/components/Carousel";
+
 export default {
   name: "Home",
   components: {
@@ -157,6 +159,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
 * {
   background: $negro;
   color: $blanco;
@@ -166,13 +170,14 @@ export default {
   text-transform: uppercase;
   text-align: center;
   color: $celeste;
-  font-family: $dosis;
+  font-family: $akshar;
+  font-size:600;
 }
 
 .funko-home-sub-title {
   color: $celeste;
-  font-family: $dosis;
-  font-size: $font-size-md;
+  font-family: 'Akshar', sans-serif;
+  font-size: 700;
   text-align: center;
   text-transform: uppercase;
   min-height: 4rem;
@@ -187,6 +192,8 @@ export default {
 
 p {
   text-align: justify;
+  font-family: 'Oxygen', sans-serif;
+  font-size: 800;
 }
 
 .funko-home-historia {

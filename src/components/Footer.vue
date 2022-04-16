@@ -5,11 +5,9 @@
         <div class="col-sm-12 col-md-6 col-lg-6">
           <ul>
             <router-link class="funko-footer-li" tag="li" to="/terminos"
-              >Termino y Condiciones</router-link
-            >
+              >Termino y Condiciones</router-link>
             <router-link class="funko-footer-li" tag="li" to="/politicas"
-              >Politicas de Privacidad</router-link
-            >
+            >Politicas de Privacidad</router-link>
           </ul>
         </div>
         <div class="col-sm-12 col-md-6 col-lg-6">
@@ -34,6 +32,7 @@ footer {
   width: 100%;
   background: $negro;
   color: $blanco;
+  font-family: 'akshar', sans-serif;
 
   @include breakpoint("Celular") {
     font-size: $font-size-sm;
