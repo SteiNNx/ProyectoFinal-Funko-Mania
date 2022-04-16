@@ -25,6 +25,9 @@ const ShopCartFunkos = {
     mutations: {
         SET_SHOP_CART_FUNKOS(state, payload) {
             state.shopCartFunkos = payload;
+        },
+        SET_SHOW_CART(state, payload) {
+            state.showCart = payload;
         }
     },
     actions: {
@@ -44,6 +47,14 @@ const ShopCartFunkos = {
                 this._vm.$toast.success("Se ha agregado al carrito!");
             }
         },
+        changeStateShowCart({ commit, state }, newState) {
+            if (newState) {
+                document.body.style = 'overflow: hidden;'
+            } else {
+                document.body.style = 'overflow: auto;'
+            }
+            commit('SET_SHOW_CART', newState);
+        }
     },
     getters: {
         getCountFunkosItemsInCart({ shopCartFunkos }) {

@@ -1,5 +1,5 @@
 <template>
-  <li class="nav-item m-md-auto m-lg-auto m-xl-auto pr-3">
+  <li class="nav-item m-md-auto m-lg-auto m-xl-auto pr-3" @click="openCart">
     <span
       class="position-relative d-none d-sm-none d-md-block d-lg-block d-xl-block d-xxl-block"
     >
@@ -21,7 +21,7 @@
 </template>
 
 <script>
-import { mapGetters } from "vuex";
+import { mapActions, mapGetters } from "vuex";
 
 export default {
   name: "ShopIconNavbar",
@@ -29,6 +29,12 @@ export default {
     return {
       countFunkosOnCart: 2,
     };
+  },
+  methods: {
+    ...mapActions("ShopCartFunkos", ["changeStateShowCart"]),
+    openCart() {
+      this.changeStateShowCart(true);
+    },
   },
   computed: {
     ...mapGetters("ShopCartFunkos", ["getCountFunkosItemsInCart"]),
