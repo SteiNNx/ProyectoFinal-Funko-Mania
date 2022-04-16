@@ -12,7 +12,7 @@
       <NavbarLogin :userLogin="userLogin" />
     </b-collapse>
   </b-navbar>
-  <a href="https://api.whatsapp.com/send?phone=56996005943&text=Hola!%20necesito%20ayuda%20con%20mi%20pedido" class="whatsapp" target="_blank"> <b-icon icon="chat-left-text-fill" class="whatsapp-icon"></b-icon></a>
+  <a href="https://api.whatsapp.com/send?phone=56996005943&text=Hola!%20necesito%20ayuda%20con%20mi%20pedido" class="whatsapp" target="_blank"> <b-icon icon="telephone" class="whatsapp-icon"></b-icon></a>
 </div>
 </template>
 

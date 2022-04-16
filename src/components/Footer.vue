@@ -74,4 +74,8 @@ ul {
     color: $celeste;
   }
 }
+
+div {
+  position: inherit;
+}
 </style>
