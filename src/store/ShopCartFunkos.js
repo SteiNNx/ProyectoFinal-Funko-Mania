@@ -59,6 +59,9 @@ const ShopCartFunkos = {
     getters: {
         getCountFunkosItemsInCart({ shopCartFunkos }) {
             return shopCartFunkos.length;
+        },
+        getTotalPriceCart({ shopCartFunkos }) {
+            return shopCartFunkos.reduce(((previusValue, currentValue) => previusValue + (parseInt(currentValue.price) * currentValue.cantidad)), 0);
         }
     }
 };
