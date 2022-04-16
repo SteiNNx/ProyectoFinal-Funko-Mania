@@ -1,41 +1,44 @@
 <template>
   <div>
     <div v-if="showCart" class="funko-shop-cart-background"></div>
-    <div v-if="showCart" class="funko-shop-cart">
-      <div class="container-fluid cart">
-        <div class="body">
-          <b-button
-            class="mb-2 btn-funko-primary funko-categoria-btn btn-cart-close"
-            @click="closeCart"
-          >
-            <b-icon icon="x" aria-hidden="true"></b-icon>
-          </b-button>
-          <h2>Carrito</h2>
-          <ShopItemFunkoCart :shopCartFunkos="shopCartFunkos" />
-        </div>
-        <div class="footer shadow p-3 bg-white rounded">
-          <div class="row d-flex justify-content-end">
-            <div class="col-12 py-4 d-flex justify-content-between">
-              <span>Total</span>
-              <span>100000</span>
-            </div>
-            <div class="col-12">
-              <b-button class="mb-2 btn-funko-primary funko-categoria-btn w-100">
-                <b-icon icon="wallet2" aria-hidden="true"></b-icon>
-                Finalizar Compra
-              </b-button>
+    <transition name="slide">
+      <div v-if="showCart" class="funko-shop-cart">
+        <div class="container-fluid cart">
+          <div class="body">
+            <b-button
+              class="mb-2 btn-funko-primary funko-categoria-btn btn-cart-close"
+              @click="closeCart"
+            >
+              <b-icon icon="x" aria-hidden="true"></b-icon>
+            </b-button>
+            <h2>Carrito</h2>
+            <ShopItemFunkoCart :shopCartFunkos="shopCartFunkos" />
+          </div>
+          <div class="footer shadow p-3 bg-white rounded">
+            <div class="row d-flex justify-content-end">
+              <div class="col-12 py-4 d-flex justify-content-between">
+                <span>Total</span>
+                <span>{{ getLabelPrice(getTotalPriceCart) }}</span>
+              </div>
+              <div class="col-12">
+                <b-button class="mb-2 btn-funko-primary funko-categoria-btn w-100">
+                  <b-icon icon="wallet2" aria-hidden="true"></b-icon>
+                  Finalizar Compra
+                </b-button>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </transition>
   </div>
 </template>
 
 <script>
-import { mapActions, mapState } from "vuex";
+import { mapActions, mapGetters, mapState } from "vuex";
 
 import ShopItemFunkoCart from "@/components/Shop/ShopItemFunkoCart";
+import { getPriceInCLP } from "@/utils/functions";
 
 export default {
   name: "ShopCart",
@@ -47,9 +50,13 @@ export default {
     closeCart() {
       this.changeStateShowCart(false);
     },
+    getLabelPrice(price) {
+      return getPriceInCLP(price);
+    },
   },
   computed: {
     ...mapState("ShopCartFunkos", ["showCart", "shopCartFunkos"]),
+    ...mapGetters("ShopCartFunkos", ["getTotalPriceCart"]),
   },
 };
 </script>
@@ -116,5 +123,16 @@ export default {
 .btn-cart-close {
   width: 3rem;
   margin: 0.5rem 0rem;
+}
+
+.slide-leave-active,
+.slide-enter-active {
+  transition: 0.6s;
+}
+.slide-enter {
+  transform: translate(100%, 0);
+}
+.slide-leave-to {
+  transform: translate(100%, 0);
 }
 </style>

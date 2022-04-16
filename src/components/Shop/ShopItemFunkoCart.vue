@@ -12,9 +12,17 @@
         </div>
         <div class="col-md-8">
           <div class="card-body">
-            <h5 class="funko-funko-tittle">{{ shopCartFunko?.title }}</h5>
-            <p class="card-text">{{ shopCartFunko?.price }}</p>
-            <p class="card-text">{{ shopCartFunko?.cantidad }}</p>
+            <h5>{{ shopCartFunko?.title }}</h5>
+            <p class="card-text">{{ getLabelPrice(shopCartFunko?.price) }}</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <p class="card-text m-0 w-75">Cantidad: {{ shopCartFunko?.cantidad }}</p>
+              <b-icon
+                class="w-25 mr-0 funko-detalle-icon-like"
+                icon="trash-fill"
+                scale="1.4"
+                @click="eliminarFunkoFavoritos(funko)"
+              ></b-icon>
+            </div>
           </div>
         </div>
       </div>
@@ -23,12 +31,19 @@
 </template>
 
 <script>
+import { getPriceInCLP } from "@/utils/functions";
+
 export default {
   name: "ShopItemFunkoCart",
   props: {
     shopCartFunkos: {
       type: Array,
       default: [],
+    },
+  },
+  methods: {
+    getLabelPrice(price) {
+      return getPriceInCLP(price);
     },
   },
 };
