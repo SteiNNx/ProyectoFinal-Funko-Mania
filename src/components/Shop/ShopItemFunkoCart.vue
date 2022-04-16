@@ -20,7 +20,7 @@
                 class="w-25 mr-0 funko-detalle-icon-like"
                 icon="trash-fill"
                 scale="1.4"
-                @click="eliminarFunkoFavoritos(funko)"
+                @click="eliminarFunkoCart(shopCartFunko)"
               ></b-icon>
             </div>
           </div>
@@ -31,6 +31,8 @@
 </template>
 
 <script>
+import { mapActions } from "vuex";
+
 import { getPriceInCLP } from "@/utils/functions";
 
 export default {
@@ -42,6 +44,10 @@ export default {
     },
   },
   methods: {
+    ...mapActions("ShopCartFunkos", ["deleteFunkoCart"]),
+    eliminarFunkoCart(funko) {
+      this.deleteFunkoCart(funko);
+    },
     getLabelPrice(price) {
       return getPriceInCLP(price);
     },
