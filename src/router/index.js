@@ -1,7 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
-import Agregar from '@/views/Agregar'
 import Categorias from '@/views/Categorias'
 import Detalle from '@/views/Detalle'
 import Favoritos from '@/views/Favoritos'
@@ -12,7 +11,7 @@ import Registrar from '@/views/Registrar'
 import Politicas from '@/views/Politicas'
 import Terminos from '@/views/Terminos'
 import Bandeja from '@/views/Bandeja'
-import Mensaje from '@/views/Mensaje'
+import Administracion from '@/views/Administracion'
 
 
 Vue.use(VueRouter)
@@ -30,12 +29,6 @@ const routes = [
     component: NotFound,
   },
   {
-    path: '/Agregar',
-    name: 'Agregar',
-    component: Agregar,
-    meta: { authRequired: true }
-  },
-  {
     path: '/ingresar',
     name: 'Login',
     component: Login
@@ -49,6 +42,12 @@ const routes = [
     path: '/categorias',
     name: 'Categorias',
     component: Categorias
+  },
+  {
+    path: '/administracion',
+    name: 'Administracion',
+    component: Administracion,
+    meta: { authRequired: true }
   },
   {
     path: '/Detalle/:id',
@@ -75,12 +74,6 @@ const routes = [
     path: '/Bandeja',
     name: 'Bandeja',
     component: Bandeja,
-    meta: { authRequired: true }
-  },
-  {
-    path: '/Mensaje',
-    name: 'Mensaje',
-    component: Mensaje,
     meta: { authRequired: true }
   },
 ]
