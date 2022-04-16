@@ -153,7 +153,7 @@ export default {
             url,
             name: "whatsapp",
             color: "#25d366",
-            icon: "phone-fill",
+            icon: "telephone",
           };
       }
     },
