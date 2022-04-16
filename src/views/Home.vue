@@ -18,13 +18,14 @@
                 coleccionistas modernos.
               </p>
             </div>
-
-            <div class="col-sm-12 col-md-12 col-lg-12 d-flex mt-5">
-              <b-embed
-                type="iframe"
-                aspect="16by9"
-                src="https://www.youtube.com/embed/hSdWLNm3Xo0"
-              ></b-embed>
+            <div class="col-sm-12 col-md-12 col-lg-12 d-flex">
+              <div class="container">
+                <b-embed
+                  type="iframe"
+                  aspect="16by9"
+                  src="https://www.youtube.com/embed/hSdWLNm3Xo0"
+                ></b-embed>
+              </div>
             </div>
           </div>
         </div>

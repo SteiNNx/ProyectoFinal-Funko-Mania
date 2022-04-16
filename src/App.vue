@@ -4,7 +4,8 @@
     <main>
       <router-view />
     </main>
-    <Footer />
+<!--     <ShopCart />
+ -->    <Footer />
   </div>
 </template>
 
@@ -12,6 +13,7 @@
 import { mapActions } from "vuex";
 
 import Navbar from "@/components/Navbar";
+import ShopCart from "@/components/Shop/ShopCart";
 import Footer from "@/components/Footer";
 
 export default {
@@ -19,6 +21,7 @@ export default {
   components: {
     Navbar,
     Footer,
+    ShopCart,
   },
   mounted() {
     this.getInitCallApiFunkos();

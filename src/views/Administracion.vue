@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <!-- Create Read Update Delete  -->
-    <h1>Administración</h1>
+    <h1>Administración funko</h1>
     <hr />
 
     <div class="formulario">

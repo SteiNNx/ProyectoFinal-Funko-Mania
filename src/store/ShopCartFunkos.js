@@ -20,6 +20,7 @@ const ShopCartFunkos = {
     namespaced: true,
     state: {
         shopCartFunkos: [],
+        showCart: false,
     },
     mutations: {
         SET_SHOP_CART_FUNKOS(state, payload) {
