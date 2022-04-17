@@ -70,6 +70,18 @@ const Funkos = {
                 console.error(error);
             })
         },*/
+        async addFunko(context, funkoObj) {
+            console.log(funkoObj);
+            const docRef = await addDoc(collection(db, "funkos"), funkoObj);
+            console.log("Document written with ID: ", docRef.id);
+        },
+        async updateFunko(context, { id, funkoData }) {
+            const funkoRefDoc = doc(db, "funkos", id);
+            await updateDoc(funkoRefDoc, funkoData);
+        },
+        async deleteFunko({ commit }, idDocFunko) {
+            await deleteDoc(doc(db, "funkos", idDocFunko));
+        },
         setFunkoDetalle({ commit }, funko) {
             commit('SET_FUNKO_DETALLE', funko);
         },

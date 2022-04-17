@@ -192,7 +192,6 @@ export default {
 
 p {
   text-align: justify;
-  font-family: 'Oxygen', sans-serif;
   font-size: 800;
 }
 
