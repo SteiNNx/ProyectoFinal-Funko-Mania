@@ -71,7 +71,7 @@ export default {
 <style lang="scss">
 
 .funko-label-name {
-  font-family: $dosis !important;
+    font-family: $akshar !important;
   font-size: $font-size-md;
   color: $blanco !important;
 }

@@ -2,7 +2,7 @@
   <div id="app">
     <div class="container py-5">
     <div class="row justify-content-center text-center">
-      <div class="col-sm-12 col-md-5 col-lg-5">
+      <div class="col-sm-12 col-md-6 col-lg-3">
     <div class="card">
     <div class="card-header ingresar-title">ADMINISTRACIÓN</div>
       Foto Funko
@@ -45,7 +45,7 @@
             </button>
           </td>
         </tr>
-      </tbody>
+      </tbody >
     </table>
 
     <b-modal v-model="modalShow" title="BootstrapVue">
