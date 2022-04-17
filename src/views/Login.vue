@@ -51,6 +51,7 @@ import { mapActions, mapState } from "vuex";
 
 export default {
   name: "Login",
+  title: "Login | FunkoMania",
   data() {
     return {
       user: {

@@ -9,6 +9,9 @@ require('@/plugins/vue-toastification');
 require('@/plugins/vue-select');
 require('@/plugins/vue-social-shared');
 
+import titleMixin from '@/utils/titleMixin'
+Vue.mixin(titleMixin)
+
 Vue.config.productionTip = false
 
 new Vue({

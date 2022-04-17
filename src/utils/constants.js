@@ -10,6 +10,15 @@ export const MIN_PRICE_FUNKO = 3000;
 export const MAX_PRICE_FUNKO = 90000;
 export const STEP_PRICE_FUNKO = 1000;
 
+export const CATEGORIES = [
+    "Television",
+    "Anime",
+    "Rock",
+    "Book",
+    "Disney",
+    "Heroe"
+];
+
 export const LIST_REGIONS_WITH_DESPACHO_DAYS = [
     {
         "codigo": "15",
