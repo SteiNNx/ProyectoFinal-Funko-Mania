@@ -38,14 +38,38 @@ const Funkos = {
     },
     actions: {
         getInitCallApiFunkos({ commit }) {
+            const queryRequest = query(collection(db, "funkos"));
+            onSnapshot(queryRequest, (querySnapshot) => {
+                const funkos = [];
+                querySnapshot.forEach((doc) => {
+                    const funko = {
+                        ...doc.data(),
+                        id: doc.id,
+                    };
+                    funkos.push(funko);
+                });
+                commit("SET_FUNKOS", funkos);
+            });
+        },
+        /* getInitCallApiFunkos({ commit }) {
             axios.get(GET_ALL_FUNKOS)
                 .then((response) => {
-                    commit('SET_FUNKOS', response?.data);
-                })
-                .catch((error) => {
-                    console.error(error);
-                })
-        },
+                    */
+        /** Initial Data Firestore */
+        /* response?.data?.forEach(async (element) => {
+        *    const docRef = await addDoc(collection(db, "funkos"), {
+        *        ...element,
+        *        stock: 20,
+        *    });
+        * }); 
+        */
+        /*
+                commit('SET_FUNKOS', response?.data);
+            })
+                        .catch((error) => {
+                console.error(error);
+            })
+        },*/
         setFunkoDetalle({ commit }, funko) {
             commit('SET_FUNKO_DETALLE', funko);
         },
