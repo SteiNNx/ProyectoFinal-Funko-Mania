@@ -26,8 +26,7 @@ export default {
   computed: {
     isAdmin() {
       const { userLogin } = this;
-      const { infoUser } = userLogin;
-      return infoUser.isAdmin;
+      return userLogin?.infoUser?.isAdmin || false;
     },
   },
 };

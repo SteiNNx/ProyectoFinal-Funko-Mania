@@ -142,7 +142,6 @@ import Carousel from "@/components/Carousel";
 
 export default {
   name: "Home",
-  title: "Home | FunkoMania",
   components: {
     Carousel,
   },
