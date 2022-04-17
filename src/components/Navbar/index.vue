@@ -12,13 +12,7 @@
         <NavbarLogin :userLogin="userLogin" />
       </b-collapse>
     </b-navbar>
-    <a
-      href="https://api.whatsapp.com/send?phone=56996005943&text=Hola!%20necesito%20ayuda%20con%20mi%20pedido"
-      class="whatsapp"
-      target="_blank"
-    >
-      <b-icon icon="telephone" class="whatsapp-icon"></b-icon
-    ></a>
+    <WhatsAppIcon />
   </div>
 </template>
 
@@ -27,12 +21,14 @@ import { mapState } from "vuex";
 
 import NavbarItems from "@/components/Navbar/NavbarItems";
 import NavbarLogin from "@/components/Navbar/NavbarLogin";
+import WhatsAppIcon from "@/components/WhatsAppIcon";
 
 export default {
   name: "Navbar",
   components: {
     NavbarLogin,
     NavbarItems,
+    WhatsAppIcon,
   },
   data() {
     return {
@@ -77,22 +73,5 @@ export default {
 }
 .funko-toggle-btn {
   background-color: $negro-claro !important;
-}
-.whatsapp {
-  position: fixed;
-  width: 60px;
-  height: 60px;
-  bottom: 60px;
-  right: 60px;
-  background-color: #25d366;
-  color: #fff;
-  border-radius: 50px;
-  text-align: center;
-  font-size: 30px;
-  z-index: 100;
-}
-
-.whatsapp-icon {
-  margin-top: 13px;
 }
 </style>
