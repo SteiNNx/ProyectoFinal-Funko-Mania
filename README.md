@@ -21,10 +21,10 @@ Nuestro sitio está dirigido a los amantes de los funko a públicos de todas las
 
 ## _:art:Guia de estilos:_
 - Tipografía: 
-    - [Bouncy](https://www.dafont.com/es/bouncy-2.font)
+    - [Akshar](https://fonts.google.com/specimen/Akshar?query=Akshar)
     - [Nunito](https://fonts.google.com/specimen/Nunito?query=nunito)
 - Tamaños Texto:
-    - 32px, 24px y 16px.
+    - 32px, 24px, 16px, 10px.
 - Paleta de Colores: 
     - <img src="./docs/img/colorscheme.png" width="110" height="110">
     - **#FFFFFF, #00CCFF, #00A4CD, #000000**
@@ -69,11 +69,11 @@ npm run serve
     - :heavy_check_mark: Contiene las funcionalidades básicas descritas. `(3 puntos)`
     - :heavy_check_mark: Agrega funcionalidades extra a las mínimas necesarias. `(2 puntos)`
 - [Hite 3](docs/hitos.md#hito-three)
-    - :o: Implementación del servicio de autenticación de Firebase. `(2.5 puntos)`
-    - :o: Persistencia del estado de autenticación del usuario. `(1.5 puntos)`
-    - :o: Manejo de rutas según estado de autenticación. `(2.5 puntos)`
-    - :o: Opción de cerrar sesión. `(0.25 puntos)`
-    - :o: Creación de 2 usuarios. `(0.25 puntos)`
-    - :o: Creación de una ruta para recuperar datos desde la base de datos. `(1 punto)`
-    - :o: Creación de una ruta para persistir o actualizar datos en la base de datos. `(1 punto)`
-    - :o: Conexión de la aplicación con las rutas creadas. `(1 punto)`
+    - :heavy_check_mark: Implementación del servicio de autenticación de Firebase. `(2.5 puntos)`
+    - :heavy_check_mark: Persistencia del estado de autenticación del usuario. `(1.5 puntos)`
+    - :heavy_check_mark: Manejo de rutas según estado de autenticación. `(2.5 puntos)`
+    - :heavy_check_mark: Opción de cerrar sesión. `(0.25 puntos)`
+    - :heavy_check_mark: Creación de 2 usuarios. `(0.25 puntos)`
+    - :heavy_check_mark: Creación de una ruta para recuperar datos desde la base de datos. `(1 punto)`
+    - :heavy_check_mark: Creación de una ruta para persistir o actualizar datos en la base de datos. `(1 punto)`
+    - :heavy_check_mark: Conexión de la aplicación con las rutas creadas. `(1 punto)`

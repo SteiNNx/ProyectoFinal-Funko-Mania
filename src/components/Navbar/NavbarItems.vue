@@ -10,6 +10,9 @@
         {{ item?.NavbarItem }}
       </b-nav-item>
     </template>
+    <b-nav-item class="funko-nav-item" v-if="isAdmin" href="/administracion">
+      ADMINISTRACIÓN
+    </b-nav-item>
   </b-navbar-nav>
 </template>
 
@@ -20,7 +23,11 @@ export default {
     items: [],
     userLogin: null,
   },
+  computed: {
+    isAdmin() {
+      const { userLogin } = this;
+      return userLogin?.infoUser?.isAdmin || false;
+    },
+  },
 };
 </script>
-
-<style></style>

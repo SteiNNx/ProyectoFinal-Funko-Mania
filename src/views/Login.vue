@@ -87,7 +87,7 @@ export default {
 
 <style lang="scss">
 .ingresar-title {
-  font-family: $dosis;
+  font-family: $akshar;
   font-size: $font-size-md;
 }
 .span-here {
