@@ -3,15 +3,16 @@
     <Carousel />
     <div class="container-fluid">
       <div class="row">
-        <div class="col-12 py-5">
+        <div class="col-12 pt-5 pb-3">
           <h1 class="funko-home-title">
             NO TE QUEDES SIN TU COLECCIÓN DE FUNKO POP!!
           </h1>
+        <hr>
         </div>
         <div class="col-12">
           <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-12">
-              <p class="funko-home-bienvenida mb-5">
+              <p class="funko-home-bienvenida mb-5 pl-5 ml-5 mr-5 pr-5">
                 Bienvenidos al mundo de Funko Pop, te contaremos la historia,
                 datos curiosos, podras intercambiar tus funkos y comprar para
                 completar tu colección de uno de los mayores fenómenos de
@@ -25,17 +26,19 @@
                   aspect="16by9"
                   src="https://www.youtube.com/embed/hSdWLNm3Xo0"
                 ></b-embed>
+                <br>
               </div>
             </div>
           </div>
         </div>
         <div class="col-12 py-5">
           <h1 class="funko-home-title">LA HISTORIA DE LOS FUNKO POP</h1>
+          <hr>
         </div>
-        <div class="col-12">
+        <div class="col-10 texto-imagen pl-5 ml-5">
           <div class="row">
-            <div class="col-sm-12 col-md-6 col-lg-6 my-auto">
-              <p class="funko-home-historia">
+            <div class="col-sm-12 col-md-6 col-lg-6">
+              <p class="funko-home-historia mb-5">
                 En 1998, Mike Becker, diseñador de camisetas y buscador de
                 juguetes raros, tenía entre ceja y ceja el muñeco-hucha con el
                 famoso Big Boy de la cadena de 'fast food' americana. El
@@ -60,7 +63,7 @@
                 Tracy o personajes de las marcas de cereales de General Mills.
               </p>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-6">
+            <div class="col-sm-12 col-md-6 col-lg-6 mb-5">
               <img class="img-fluid" src="@/assets/img/BOY.png" />
             </div>
             <div class="col-sm-12 col-md-6 col-lg-6">
@@ -69,20 +72,20 @@
             </div>
           </div>
         </div>
-        <div class="col-12">
+        <div class="col-12 ml-5 pl-5 pr-5 mr-5">
           <div class="row">
             <div class="col-sm-12 col-md-4 col-lg-4">
               <div class="row">
-                <div class="col-12">
+                <div class="col-9">
                   <img
                     class="img-fluid funko-home-sub-img"
                     src="@/assets/img/lupa.png"
                   />
                 </div>
-                <div class="col-12">
-                  <h2 class="mt-5 funko-home-sub-title">Funkos mas buscados</h2>
+                <div class="col-9">
+                  <h2 class="mt-4 funko-home-sub-title">Funkos mas buscados</h2>
                 </div>
-                <div class="col-12">
+                <div class="col-9">
                   <p>
                     Quisque faucibus sem at justo consectetur, a dictum ante
                     rutrum. Proin in ipsum tempor, pharetra quam vitae,
@@ -96,16 +99,17 @@
             </div>
             <div class="col-sm-12 col-md-4 col-lg-4">
               <div class="row">
-                <div class="col-12">
+                <div class="col-9">
                   <img
                     class="img-fluid funko-home-sub-img"
                     src="@/assets/img/curiosidades.png"
                   />
                 </div>
-                <div class="col-12">
-                  <h2 class="mt-5 funko-home-sub-title">Curiosidades</h2>
+                <div class="col-9">
+                  <h2 class="mt-4 funko-home-sub-title">Curiosidades</h2>
                 </div>
-                <div class="col-12">
+                <div class="col-9
+                ">
                   <p>
                     Quisque faucibus sem at justo consectetur, a dictum ante
                     rutrum. Proin in ipsum tempor, pharetra quam vitae,
@@ -119,16 +123,16 @@
             </div>
             <div class="col-sm-12 col-md-4 col-lg-4">
               <div class="row">
-                <div class="col-12">
+                <div class="col-9">
                   <img
                     class="img-fluid funko-home-sub-img"
                     src="@/assets/img/promociones.png"
                   />
                 </div>
-                <div class="col-12">
-                  <h2 class="mt-5 funko-home-sub-title">Promociones</h2>
+                <div class="col-9">
+                  <h2 class="mt-4 funko-home-sub-title">Promociones</h2>
                 </div>
-                <div class="col-12">
+                <div class="col-9">
                   <p>
                     Quisque faucibus sem at justo consectetur, a dictum ante
                     rutrum. Proin in ipsum tempor, pharetra quam vitae,
@@ -162,8 +166,8 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
 * {
-  background: $negro;
-  color: $blanco;
+  background: $blanco;
+  color: $negro;
 }
 
 .funko-home-title {
@@ -205,4 +209,13 @@ p {
   text-align: center;
 }
 
+hr{
+  width: 80%;
+  height: 2px;
+  background-color: $negro;
+}
+
+.texto-imagen{
+  justify-content: center;
+}
 </style>
