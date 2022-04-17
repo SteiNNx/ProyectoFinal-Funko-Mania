@@ -58,12 +58,12 @@
               </p>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-6 mb-5">
-              <img class="img-fluid" src="@/assets/img/BOY.png" />
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-6">
-              <img class="img-fluid" src="@/assets/img/mitad.png" />
+              <img class="img-fluid" src="@/assets/img/BOY.jpg" />
             </div>
           </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6 mitad">
+          <img class="img-fluid" src="@/assets/img/mitad.png" />
         </div>
         <div class="col-12 ml-5 pl-5 pr-5 mr-5">
           <div class="row">

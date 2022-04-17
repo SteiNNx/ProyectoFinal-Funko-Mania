@@ -1,6 +1,6 @@
 <template>
   <b-navbar-nav class="ml-auto">
-    <template >
+    <template>
       <ShopIconNavbar />
     </template>
     <b-nav-item-dropdown right>
@@ -69,7 +69,6 @@ export default {
 </script>
 
 <style lang="scss">
-
 .funko-label-name {
   font-family: $akshar !important;
   font-size: $font-size-md;

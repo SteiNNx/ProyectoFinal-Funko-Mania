@@ -1,4 +1,5 @@
 <template>
+<<<<<<< HEAD
   <div class="container-fluid">
     <div class="row p-5">
       <div class="col-12 p-1">
@@ -7,6 +8,70 @@
       <div class="col-12 p-1">
         <button @click="modalShow = !modalShow" class="btn btn-primary px-4">
           Agregar
+=======
+  <div id="app">
+    <div class="container py-5">
+    <div class="row justify-content-center text-center">
+      <div class="col-sm-12 col-md-6 col-lg-3">
+    <div class="card">
+    <div class="card-header ingresar-title">ADMINISTRACIÓN</div>
+      Foto Funko
+      <input class="btn-funko-white w-100 p-1 " v-model="usuario.fotoFunko" />
+      Nombre Funko:
+      <input class="btn-funko-white w-100 p-1" v-model="usuario.nombreFunko" />
+      Cliente Funko:
+      <input class="btn-funko-white w-100 p-1" v-model="usuario.usuarioFunko" />
+      Email:
+      <input class="btn-funko-white w-100 p-1" v-model="usuario.email" />
+
+      <button class="btn btn-primary btn-funko-primary w-100 mt-4 mb-4" @click="agregaFunko">agregar</button>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <table border="solid" bac class="table w-75 m-auto mt-5">
+      <thead>
+        <tr>
+          <th class="btn-funko-primary">Foto Funko</th>
+          <th class="btn-funko-primary">Nombre Funko</th>
+          <th class="btn-funko-primary">Usuario Funko</th>
+          <th class="btn-funko-primary">Email</th>
+          <th class="btn-funko-primary"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-for="(usuario, i) in usuarios" :key="i">
+          <td>{{ usuario.data.fotoFunko }}</td>
+          <td>{{ usuario.data.nombreFunko }}</td>
+          <td>{{ usuario.data.usuarioFunko }}</td>
+          <td>{{ usuario.data.email }}</td>
+          <td>
+            <button @click="editarUsuario(usuario.id)" class="btn">
+              🖊
+            </button>
+            <button class="btn" @click="deleteDoc(usuario.id)">
+              ❌
+            </button>
+          </td>
+        </tr>
+      </tbody >
+    </table>
+
+    <b-modal v-model="modalShow" title="BootstrapVue">
+      <div class="formulario">
+        Foto Funko:
+        <input v-model="usuarioModificando.data.fotoFunko" />
+        Nombre Funko:
+        <input v-model="usuarioModificando.data.nombreFunko"/>
+       Cliente Funko:
+        <input v-model="usuarioModificando.data.usuarioFunko" />
+        Email:
+        <input v-model="usuarioModificando.data.email" />
+
+        <button class="btn-funko-primary mt-3" @click="actualizarUsuario">
+          Actualizar
+>>>>>>> origin/master
         </button>
       </div>
       <div class="col-12 p-1">
