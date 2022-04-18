@@ -1,9 +1,9 @@
 <template>
   <div class="accordion" role="tablist">
     <div class="container mt-5 mb-5">
-      <b-card no-body class="mb-1">
+      <b-card no-body class="mb-1 ">
         <b-card-header header-tag="header" class="p-1" role="tab">
-          <b-button block v-b-toggle.accordion-1 variant="info"
+          <b-button class=" btn-funko-primary w-100" block v-b-toggle.accordion-1 variant="info"
             >Sabias que...</b-button
           >
         </b-card-header>

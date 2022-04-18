@@ -18,6 +18,4 @@
 img {
   height: 33rem;
 }
-
-
 </style>

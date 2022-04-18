@@ -64,7 +64,7 @@
               </p>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-6 mb-5">
-              <img class="img-fluid" src="@/assets/img/BOY.png" />
+              <img class="img-fluid" src="@/assets/img/BOY.jpg" />
             </div>
           </div>
         </div>
@@ -194,12 +194,12 @@
                 </div>
                 <div class="col-9">
                   <p>
-                    Quisque faucibus sem at justo consectetur, a dictum ante
-                    rutrum. Proin in ipsum tempor, pharetra quam vitae,
-                    tristique ex. Sed molestie eget tellus eu scelerisque. Ut
-                    pretium arcu ac augue egestas, ut pellentesque lectus
-                    hendrerit. Vivamus interdum lorem sed facilisis volutpat.
-                    Donec varius arcu ac condimentum elementum.
+                    Hay una gran cantidad de Funkos, pero entre todos estos, hay
+                    algunos que destacan, ya sea por el personaje al que
+                    representa o por su apariencia atractiva. Éstos Funko Pop se
+                    convierten en los Funko Pop más buscados a lo largo del
+                    tiempo, una consecuencia directa de su calidad. Aqui podras
+                    conocer algunos de los Funko Pop más buscados.
                   </p>
                   <b-button
                     href="/buscados"
@@ -253,12 +253,12 @@
                 </div>
                 <div class="col-9">
                   <p>
-                    Quisque faucibus sem at justo consectetur, a dictum ante
-                    rutrum. Proin in ipsum tempor, pharetra quam vitae,
-                    tristique ex. Sed molestie eget tellus eu scelerisque. Ut
-                    pretium arcu ac augue egestas, ut pellentesque lectus
-                    hendrerit. Vivamus interdum lorem sed facilisis volutpat.
-                    Donec varius arcu ac condimentum elementum.
+                    Encuentra cientos de Funko POP de tus series, películas y
+                    dibujos animados favoritos en su tamaño regular o en la
+                    versión pocket para que siempre los lleves contigo y así
+                    nunca dejes de lucir tu colección en cualquier parte. Compra
+                    tu colección de Funko POP tv, Marvel, Disney, Anime y más en
+                    un solo lugar. Te mostraremos todas nuestras promociones.
                   </p>
                   <b-button
                     href="/promociones"

@@ -124,6 +124,6 @@ hr {
 
 Img {
   width: 100%;
-  height: 25rem;
+  height: 22rem;
 }
 </style>
