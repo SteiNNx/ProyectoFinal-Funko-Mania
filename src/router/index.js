@@ -12,6 +12,10 @@ import Politicas from '@/views/Politicas'
 import Terminos from '@/views/Terminos'
 import Bandeja from '@/views/Bandeja'
 import Administracion from '@/views/Administracion'
+import Buscados from '@/views/Buscados'
+import Vistacarrito from '@/views/Vistacarrito'
+
+
 
 
 Vue.use(VueRouter)
@@ -61,6 +65,11 @@ const routes = [
     component: Favoritos
   },
   {
+    path: '/vistacarrito',
+    name: 'Vistacarrito',
+    component: Vistacarrito
+  },
+  {
     path: '/politicas',
     name: 'Politicas',
     component: Politicas
@@ -75,6 +84,11 @@ const routes = [
     name: 'Bandeja',
     component: Bandeja,
     meta: { authRequired: true }
+  },
+  {
+    path: '/buscados',
+    name: 'Buscados',
+    component: Buscados
   },
 ]
 

@@ -34,8 +34,18 @@ export default {
 
 <style lang="scss" scoped>
 * {
-  font-family: "Akshar", sans-serif;
+  font-family: $dosis;
   accent-color: #00a4cd;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+a,
+em {
+  font-family: $akshar;
 }
 
 main {

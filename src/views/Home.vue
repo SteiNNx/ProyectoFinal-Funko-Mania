@@ -4,19 +4,16 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-12 pt-5 pb-3">
-          <h1 class="funko-home-title">
-            NO TE QUEDES SIN TU COLECCIÓN DE FUNKO POP!!
-          </h1>
-        <hr>
+          <h1 class="funko-home-title">NO TE QUEDES SIN TU COLECCIÓN DE FUNKO POP!!</h1>
+          <hr />
         </div>
         <div class="col-12">
           <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-12">
               <p class="funko-home-bienvenida mb-5 pl-5 ml-5 mr-5 pr-5">
-                Bienvenidos al mundo de Funko Pop, te contaremos la historia,
-                datos curiosos, podras intercambiar tus funkos y comprar para
-                completar tu colección de uno de los mayores fenómenos de
-                coleccionistas modernos.
+                Bienvenidos al mundo de Funko Pop, te contaremos la historia, datos
+                curiosos, podras intercambiar tus funkos y comprar para completar tu
+                colección de uno de los mayores fenómenos de coleccionistas modernos.
               </p>
             </div>
             <div class="col-sm-12 col-md-12 col-lg-12 d-flex">
@@ -26,41 +23,38 @@
                   aspect="16by9"
                   src="https://www.youtube.com/embed/hSdWLNm3Xo0"
                 ></b-embed>
-                <br>
+                <br />
               </div>
             </div>
           </div>
         </div>
         <div class="col-12 py-5">
           <h1 class="funko-home-title">LA HISTORIA DE LOS FUNKO POP</h1>
-          <hr>
+          <hr />
         </div>
         <div class="col-10 texto-imagen pl-5 ml-5">
           <div class="row">
             <div class="col-sm-12 col-md-6 col-lg-6">
               <p class="funko-home-historia mb-5">
-                En 1998, Mike Becker, diseñador de camisetas y buscador de
-                juguetes raros, tenía entre ceja y ceja el muñeco-hucha con el
-                famoso Big Boy de la cadena de 'fast food' americana. El
-                problema es que todo aquel que se la quería vender pedía una
-                millonada por ella. Ante tal panorama decidió fabricar su propia
-                versión en China por mucho menos dinero. Al poco tiempo nacía
-                Funko. Becker empezó con 35.000 dólares de su propio bolsillo
-                trabajando desde su casa y su primer muñequito, como no podía
-                ser de otra manera, fue el Big Boy que había estado buscando
-                durante tanto tiempo, esta vez en versión muñeco sin hucha. Acto
-                seguido fue a por su primera línea bautizada con el nombre de
-                Wacky Wobblers (algo así como los “locos que se tambalean”)
-                cuyos protagonistas eran figuras animadas como Popeye, Dick
-                Tracy o personajes de las marcas de cereales de General Mills.
-                Becker empezó con 35.000 dólares de su propio bolsillo
-                trabajando desde su casa y su primer muñequito, como no podía
-                ser de otra manera, fue el Big Boy que había estado buscando
-                durante tanto tiempo, esta vez en versión muñeco sin hucha. Acto
-                seguido fue a por su primera línea bautizada con el nombre de
-                Wacky Wobblers (algo así como los “locos que se tambalean”)
-                cuyos protagonistas eran figuras animadas como Popeye, Dick
-                Tracy o personajes de las marcas de cereales de General Mills.
+                En 1998, Mike Becker, diseñador de camisetas y buscador de juguetes raros,
+                tenía entre ceja y ceja el muñeco-hucha con el famoso Big Boy de la cadena
+                de 'fast food' americana. El problema es que todo aquel que se la quería
+                vender pedía una millonada por ella. Ante tal panorama decidió fabricar su
+                propia versión en China por mucho menos dinero. Al poco tiempo nacía
+                Funko. Becker empezó con 35.000 dólares de su propio bolsillo trabajando
+                desde su casa y su primer muñequito, como no podía ser de otra manera, fue
+                el Big Boy que había estado buscando durante tanto tiempo, esta vez en
+                versión muñeco sin hucha. Acto seguido fue a por su primera línea
+                bautizada con el nombre de Wacky Wobblers (algo así como los “locos que se
+                tambalean”) cuyos protagonistas eran figuras animadas como Popeye, Dick
+                Tracy o personajes de las marcas de cereales de General Mills. Becker
+                empezó con 35.000 dólares de su propio bolsillo trabajando desde su casa y
+                su primer muñequito, como no podía ser de otra manera, fue el Big Boy que
+                había estado buscando durante tanto tiempo, esta vez en versión muñeco sin
+                hucha. Acto seguido fue a por su primera línea bautizada con el nombre de
+                Wacky Wobblers (algo así como los “locos que se tambalean”) cuyos
+                protagonistas eran figuras animadas como Popeye, Dick Tracy o personajes
+                de las marcas de cereales de General Mills.
               </p>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-6 mb-5">
@@ -172,22 +166,18 @@
             <div class="col-sm-12 col-md-4 col-lg-4">
               <div class="row">
                 <div class="col-9">
-                  <img
-                    class="img-fluid funko-home-sub-img"
-                    src="@/assets/img/lupa.png"
-                  />
+                  <img class="img-fluid funko-home-sub-img" src="@/assets/img/lupa.png" />
                 </div>
                 <div class="col-9">
                   <h2 class="mt-4 funko-home-sub-title">Funkos mas buscados</h2>
                 </div>
                 <div class="col-9">
                   <p>
-                    Quisque faucibus sem at justo consectetur, a dictum ante
-                    rutrum. Proin in ipsum tempor, pharetra quam vitae,
-                    tristique ex. Sed molestie eget tellus eu scelerisque. Ut
-                    pretium arcu ac augue egestas, ut pellentesque lectus
-                    hendrerit. Vivamus interdum lorem sed facilisis volutpat.
-                    Donec varius arcu ac condimentum elementum.
+                    Quisque faucibus sem at justo consectetur, a dictum ante rutrum. Proin
+                    in ipsum tempor, pharetra quam vitae, tristique ex. Sed molestie eget
+                    tellus eu scelerisque. Ut pretium arcu ac augue egestas, ut
+                    pellentesque lectus hendrerit. Vivamus interdum lorem sed facilisis
+                    volutpat. Donec varius arcu ac condimentum elementum.
                   </p>
                 </div>
               </div>
@@ -203,15 +193,13 @@
                 <div class="col-9">
                   <h2 class="mt-4 funko-home-sub-title">Curiosidades</h2>
                 </div>
-                <div class="col-9
-                ">
+                <div class="col-9">
                   <p>
-                    Quisque faucibus sem at justo consectetur, a dictum ante
-                    rutrum. Proin in ipsum tempor, pharetra quam vitae,
-                    tristique ex. Sed molestie eget tellus eu scelerisque. Ut
-                    pretium arcu ac augue egestas, ut pellentesque lectus
-                    hendrerit. Vivamus interdum lorem sed facilisis volutpat.
-                    Donec varius arcu ac condimentum elementum.
+                    Quisque faucibus sem at justo consectetur, a dictum ante rutrum. Proin
+                    in ipsum tempor, pharetra quam vitae, tristique ex. Sed molestie eget
+                    tellus eu scelerisque. Ut pretium arcu ac augue egestas, ut
+                    pellentesque lectus hendrerit. Vivamus interdum lorem sed facilisis
+                    volutpat. Donec varius arcu ac condimentum elementum.
                   </p>
                 </div>
               </div>
@@ -229,12 +217,11 @@
                 </div>
                 <div class="col-9">
                   <p>
-                    Quisque faucibus sem at justo consectetur, a dictum ante
-                    rutrum. Proin in ipsum tempor, pharetra quam vitae,
-                    tristique ex. Sed molestie eget tellus eu scelerisque. Ut
-                    pretium arcu ac augue egestas, ut pellentesque lectus
-                    hendrerit. Vivamus interdum lorem sed facilisis volutpat.
-                    Donec varius arcu ac condimentum elementum.
+                    Quisque faucibus sem at justo consectetur, a dictum ante rutrum. Proin
+                    in ipsum tempor, pharetra quam vitae, tristique ex. Sed molestie eget
+                    tellus eu scelerisque. Ut pretium arcu ac augue egestas, ut
+                    pellentesque lectus hendrerit. Vivamus interdum lorem sed facilisis
+                    volutpat. Donec varius arcu ac condimentum elementum.
                   </p>
                 </div>
               </div>
@@ -258,8 +245,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Akshar:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap");
 * {
   background: $blanco;
   color: $negro;
@@ -270,7 +257,7 @@ export default {
   text-align: center;
   color: $celeste;
   font-family: $akshar;
-  font-size:600;
+  font-size: 600;
 }
 .exclusivos {
   margin: 0 auto;
@@ -278,7 +265,7 @@ export default {
 }
 .funko-home-sub-title {
   color: $celeste;
-  font-family: 'Akshar', sans-serif;
+  font-family: "Akshar", sans-serif;
   font-size: 700;
   text-align: center;
   text-transform: uppercase;
@@ -294,7 +281,6 @@ export default {
 
 p {
   text-align: justify;
-  font-family: 'Oxygen', sans-serif;
   font-size: 800;
 }
 
@@ -307,13 +293,13 @@ p {
   text-align: center;
 }
 
-hr{
+hr {
   width: 80%;
   height: 2px;
   background-color: $negro;
 }
 
-.texto-imagen{
+.texto-imagen {
   justify-content: center;
 }
 </style>

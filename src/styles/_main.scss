@@ -42,8 +42,6 @@ $font-size-xs: 10px;
 @font-face {
     font-family: "Akshar", sans-serif;
     src: url("https://fonts.googleapis.com/css2?family=Akshar:wght@300;400;500;600;700&display=swap");
-    
-    
 }
 /** Dosis */
 @font-face {
@@ -54,6 +52,15 @@ $font-size-xs: 10px;
 .btn-funko-primary {
     background-color: $celeste !important;
     border-color: $celeste !important;
+    color: $negro !important;
+    &:hover {
+        background-color: $celeste-oscuro !important;
+    }
+}
+
+.btn-funko-secondary {
+    background-color: $celeste-oscuro !important;
+    border-color: $celeste-oscuro !important;
     color: $negro !important;
     &:hover {
         background-color: $celeste-oscuro !important;
