@@ -4,16 +4,19 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-12 pt-5 pb-3">
-          <h1 class="funko-home-title">NO TE QUEDES SIN TU COLECCIÓN DE FUNKO POP!!</h1>
+          <h1 class="funko-home-title">
+            NO TE QUEDES SIN TU COLECCIÓN DE FUNKO POP!!
+          </h1>
           <hr />
         </div>
         <div class="col-12">
           <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-12">
               <p class="funko-home-bienvenida mb-5 pl-5 ml-5 mr-5 pr-5">
-                Bienvenidos al mundo de Funko Pop, te contaremos la historia, datos
-                curiosos, podras intercambiar tus funkos y comprar para completar tu
-                colección de uno de los mayores fenómenos de coleccionistas modernos.
+                Bienvenidos al mundo de Funko Pop, te contaremos la historia,
+                datos curiosos, podras intercambiar tus funkos y comprar para
+                completar tu colección de uno de los mayores fenómenos de
+                coleccionistas modernos.
               </p>
             </div>
             <div class="col-sm-12 col-md-12 col-lg-12 d-flex">
@@ -36,25 +39,28 @@
           <div class="row">
             <div class="col-sm-12 col-md-6 col-lg-6">
               <p class="funko-home-historia mb-5">
-                En 1998, Mike Becker, diseñador de camisetas y buscador de juguetes raros,
-                tenía entre ceja y ceja el muñeco-hucha con el famoso Big Boy de la cadena
-                de 'fast food' americana. El problema es que todo aquel que se la quería
-                vender pedía una millonada por ella. Ante tal panorama decidió fabricar su
-                propia versión en China por mucho menos dinero. Al poco tiempo nacía
-                Funko. Becker empezó con 35.000 dólares de su propio bolsillo trabajando
-                desde su casa y su primer muñequito, como no podía ser de otra manera, fue
-                el Big Boy que había estado buscando durante tanto tiempo, esta vez en
-                versión muñeco sin hucha. Acto seguido fue a por su primera línea
-                bautizada con el nombre de Wacky Wobblers (algo así como los “locos que se
-                tambalean”) cuyos protagonistas eran figuras animadas como Popeye, Dick
-                Tracy o personajes de las marcas de cereales de General Mills. Becker
-                empezó con 35.000 dólares de su propio bolsillo trabajando desde su casa y
-                su primer muñequito, como no podía ser de otra manera, fue el Big Boy que
-                había estado buscando durante tanto tiempo, esta vez en versión muñeco sin
-                hucha. Acto seguido fue a por su primera línea bautizada con el nombre de
-                Wacky Wobblers (algo así como los “locos que se tambalean”) cuyos
-                protagonistas eran figuras animadas como Popeye, Dick Tracy o personajes
-                de las marcas de cereales de General Mills.
+                En 1998, Mike Becker, diseñador de camisetas y buscador de
+                juguetes raros, tenía entre ceja y ceja el muñeco-hucha con el
+                famoso Big Boy de la cadena de 'fast food' americana. El
+                problema es que todo aquel que se la quería vender pedía una
+                millonada por ella. Ante tal panorama decidió fabricar su propia
+                versión en China por mucho menos dinero. Al poco tiempo nacía
+                Funko. Becker empezó con 35.000 dólares de su propio bolsillo
+                trabajando desde su casa y su primer muñequito, como no podía
+                ser de otra manera, fue el Big Boy que había estado buscando
+                durante tanto tiempo, esta vez en versión muñeco sin hucha. Acto
+                seguido fue a por su primera línea bautizada con el nombre de
+                Wacky Wobblers (algo así como los “locos que se tambalean”)
+                cuyos protagonistas eran figuras animadas como Popeye, Dick
+                Tracy o personajes de las marcas de cereales de General Mills.
+                Becker empezó con 35.000 dólares de su propio bolsillo
+                trabajando desde su casa y su primer muñequito, como no podía
+                ser de otra manera, fue el Big Boy que había estado buscando
+                durante tanto tiempo, esta vez en versión muñeco sin hucha. Acto
+                seguido fue a por su primera línea bautizada con el nombre de
+                Wacky Wobblers (algo así como los “locos que se tambalean”)
+                cuyos protagonistas eran figuras animadas como Popeye, Dick
+                Tracy o personajes de las marcas de cereales de General Mills.
               </p>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-6 mb-5">
@@ -80,7 +86,10 @@
               >
                 <b-card-text> $12.990 </b-card-text>
 
-                <b-button href="#" variant="primary" class="btn-funko-primary w-100"
+                <b-button
+                  href="#"
+                  variant="primary"
+                  class="btn-funko-primary w-100"
                   >Comprar</b-button
                 >
               </b-card>
@@ -97,7 +106,10 @@
               >
                 <b-card-text> $12.990 </b-card-text>
 
-                <b-button href="#" variant="primary" class="btn-funko-primary w-100"
+                <b-button
+                  href="#"
+                  variant="primary"
+                  class="btn-funko-primary w-100"
                   >Comprar</b-button
                 >
               </b-card>
@@ -114,7 +126,10 @@
               >
                 <b-card-text> $12.990 </b-card-text>
 
-                <b-button href="#" variant="primary" class="btn-funko-primary w-100"
+                <b-button
+                  href="#"
+                  variant="primary"
+                  class="btn-funko-primary w-100"
                   >Comprar</b-button
                 >
               </b-card>
@@ -131,7 +146,10 @@
               >
                 <b-card-text> $12.990 </b-card-text>
 
-                <b-button href="#" variant="primary" class="btn-funko-primary w-100"
+                <b-button
+                  href="#"
+                  variant="primary"
+                  class="btn-funko-primary w-100"
                   >Comprar</b-button
                 >
               </b-card>
@@ -148,7 +166,10 @@
               >
                 <b-card-text> $12.990 </b-card-text>
 
-                <b-button href="#" variant="primary" class="btn-funko-primary w-100"
+                <b-button
+                  href="#"
+                  variant="primary"
+                  class="btn-funko-primary w-100"
                   >Comprar</b-button
                 >
               </b-card>
@@ -163,18 +184,22 @@
             <div class="col-sm-12 col-md-4 col-lg-4">
               <div class="row">
                 <div class="col-9">
-                  <img class="img-fluid funko-home-sub-img" src="@/assets/img/lupa.png" />
+                  <img
+                    class="img-fluid funko-home-sub-img"
+                    src="@/assets/img/lupa.png"
+                  />
                 </div>
                 <div class="col-9">
-                  <h2 class="mt-4 funko-home-sub-title" >Funkos mas buscados</h2>
+                  <h2 class="mt-4 funko-home-sub-title">Funkos mas buscados</h2>
                 </div>
                 <div class="col-9">
                   <p>
-                    Quisque faucibus sem at justo consectetur, a dictum ante rutrum. Proin
-                    in ipsum tempor, pharetra quam vitae, tristique ex. Sed molestie eget
-                    tellus eu scelerisque. Ut pretium arcu ac augue egestas, ut
-                    pellentesque lectus hendrerit. Vivamus interdum lorem sed facilisis
-                    volutpat. Donec varius arcu ac condimentum elementum.
+                    Quisque faucibus sem at justo consectetur, a dictum ante
+                    rutrum. Proin in ipsum tempor, pharetra quam vitae,
+                    tristique ex. Sed molestie eget tellus eu scelerisque. Ut
+                    pretium arcu ac augue egestas, ut pellentesque lectus
+                    hendrerit. Vivamus interdum lorem sed facilisis volutpat.
+                    Donec varius arcu ac condimentum elementum.
                   </p>
                 </div>
               </div>
@@ -192,11 +217,13 @@
                 </div>
                 <div class="col-9">
                   <p>
-                    Quisque faucibus sem at justo consectetur, a dictum ante rutrum. Proin
-                    in ipsum tempor, pharetra quam vitae, tristique ex. Sed molestie eget
-                    tellus eu scelerisque. Ut pretium arcu ac augue egestas, ut
-                    pellentesque lectus hendrerit. Vivamus interdum lorem sed facilisis
-                    volutpat. Donec varius arcu ac condimentum elementum.
+                    En Estados Unidos se sirven a la venta cereales Funko Pop
+                    basados en películas como It, Bitelchús, Gremlins o
+                    Pesadilla en Elm Street. Cada caja tiene un diseño único en
+                    función de la película que represente, así como un color
+                    diferente en los cereales. Además, cada caja cuenta con su
+                    propia mini figura Funko Pop. ¡Toda una delicia para los
+                    amantes del coleccionismo!
                   </p>
                 </div>
               </div>
@@ -214,11 +241,12 @@
                 </div>
                 <div class="col-9">
                   <p>
-                    Quisque faucibus sem at justo consectetur, a dictum ante rutrum. Proin
-                    in ipsum tempor, pharetra quam vitae, tristique ex. Sed molestie eget
-                    tellus eu scelerisque. Ut pretium arcu ac augue egestas, ut
-                    pellentesque lectus hendrerit. Vivamus interdum lorem sed facilisis
-                    volutpat. Donec varius arcu ac condimentum elementum.
+                    Quisque faucibus sem at justo consectetur, a dictum ante
+                    rutrum. Proin in ipsum tempor, pharetra quam vitae,
+                    tristique ex. Sed molestie eget tellus eu scelerisque. Ut
+                    pretium arcu ac augue egestas, ut pellentesque lectus
+                    hendrerit. Vivamus interdum lorem sed facilisis volutpat.
+                    Donec varius arcu ac condimentum elementum.
                   </p>
                 </div>
               </div>
