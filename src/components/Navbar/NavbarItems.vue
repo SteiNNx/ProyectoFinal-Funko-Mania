@@ -31,3 +31,8 @@ export default {
   },
 };
 </script>
+ <style lang="scss" scoped>
+ * {
+     font-family: $akshar !important;
+ }
+ </style>
