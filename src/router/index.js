@@ -13,7 +13,6 @@ import Terminos from '@/views/Terminos'
 import Bandeja from '@/views/Bandeja'
 import Administracion from '@/views/Administracion'
 import Buscados from '@/views/Buscados'
-import Vistacarrito from '@/views/Vistacarrito'
 
 
 
@@ -64,11 +63,7 @@ const routes = [
     name: 'Favoritos',
     component: Favoritos
   },
-  {
-    path: '/vistacarrito',
-    name: 'Vistacarrito',
-    component: Vistacarrito
-  },
+  
   {
     path: '/politicas',
     name: 'Politicas',
