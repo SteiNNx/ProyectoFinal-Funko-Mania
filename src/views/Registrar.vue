@@ -187,7 +187,7 @@ export default {
 
 <style lang="scss">
 .registrar-title {
-  font-family: $dosis;
+  font-family: $akshar;
   font-size: $font-size-md;
 }
 .span-here {
