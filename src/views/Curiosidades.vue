@@ -19,7 +19,7 @@
         </b-collapse>
       </b-card>
       <b-card
-        class="mt-5"
+        class="mt-5 img-curiosidades"
         img-src="@/assets/img/funkoverse.png"
         img-alt="funkoverse"
         img-right
@@ -33,10 +33,10 @@
       </b-card>
 
       <b-card
-        class="mt-5"
+        class="mt-5 img-curiosidades"
         img-src="@/assets/img/caros.png"
         img-alt="funkoverse"
-        img-right
+        img-left
       >
         <b-card-text>
           El éxito de los Funko Pops fue tal que hoy día hay ciertas figuras que
@@ -74,10 +74,6 @@ export default {
   background-image: "../assets/img/banner8.png";
   background-repeat: no-repeat;
 }
-.banner8 {
-  width: 100%;
-  height: 600px;
-}
 .funko-home-title {
   text-transform: uppercase;
   text-align: center;
@@ -85,4 +81,8 @@ export default {
   font-family: $akshar;
   font-size: 600;
 }
+.img-curiosidades {
+  height: 18rem;
+}
+
 </style>

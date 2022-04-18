@@ -13,7 +13,7 @@
       adorne tu estantería, y nada mejor para encontrarlo que haciendo uso de la
       nuestra tienda online referente de Funkos.
     </p>
-    <div class="row">
+    <div class="row m-5">
       <div class="col-sm-12 col-md-6 col-lg-4">
         <b-card
           title="Harry Potter"
@@ -28,10 +28,6 @@
             J. K. Rowling, en la que se describen las aventuras del joven
             aprendiz de magia y hechicería Harry Potter y sus amigos
           </b-card-text>
-
-          <b-button href="#" variant="primary" class="btn-funko-primary w-100"
-            >Comprar</b-button
-          >
         </b-card>
       </div>
       <div class="col-sm-12 col-md-6 col-lg-4">
@@ -48,10 +44,6 @@
             publicados por Marvel Comics. El personaje fue cocreado por el
             escritor y editor Stan Lee
           </b-card-text>
-
-          <b-button href="#" variant="primary" class="btn-funko-primary w-100"
-            >Comprar</b-button
-          >
         </b-card>
       </div>
       <div class="col-sm-12 col-md-6 col-lg-4">
@@ -65,13 +57,9 @@
         >
           <b-card-text>
             conocido inicialmente como Bat-Man y en español como el Hombre
-            Murciélago, es un personaje de cómic creado por los estadounidenses
-            Bob Kane y Bill Finger, y propiedad de DC Comics.
+            Murciélago, es un personaje de cómic lucha por la justicia y es
+            propiedad de DC Comics.
           </b-card-text>
-
-          <b-button href="#" variant="primary" class="btn-funko-primary w-100"
-            >Comprar</b-button
-          >
         </b-card>
       </div>
       <div class="col-sm-12 col-md-6 col-lg-4">
@@ -88,10 +76,6 @@
             Tormenta, Rompedora de Cadenas, Madre de Dragones, acompañada de
             Drogon que es uno de sus dragones.
           </b-card-text>
-
-          <b-button href="#" variant="primary" class="btn-funko-primary w-100"
-            >Comprar</b-button
-          >
         </b-card>
       </div>
       <div class="col-sm-12 col-md-6 col-lg-4">
@@ -108,10 +92,6 @@
             la serie de televisión de dibujos animados Los Simpson. Es
             reconocido por ser el buen vecino de Homero.
           </b-card-text>
-
-          <b-button href="#" variant="primary" class="btn-funko-primary w-100"
-            >Comprar</b-button
-          >
         </b-card>
       </div>
     </div>
@@ -144,6 +124,6 @@ hr {
 
 Img {
   width: 100%;
-  height: 20rem;
+  height: 25rem;
 }
 </style>

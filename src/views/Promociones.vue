@@ -15,6 +15,9 @@
 * {
   font-family: $akshar;
 }
+img {
+  height: 33rem;
+}
 
 
 </style>

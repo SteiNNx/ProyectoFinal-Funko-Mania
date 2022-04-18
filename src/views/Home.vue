@@ -201,6 +201,12 @@
                     hendrerit. Vivamus interdum lorem sed facilisis volutpat.
                     Donec varius arcu ac condimentum elementum.
                   </p>
+                  <b-button
+                    href="/buscados"
+                    variant="primary"
+                    class="btn-funko-primary w-100 mb-5"
+                    >Ver más</b-button
+                  >
                 </div>
               </div>
             </div>
@@ -225,6 +231,12 @@
                     propia mini figura Funko Pop. ¡Toda una delicia para los
                     amantes del coleccionismo!
                   </p>
+                  <b-button
+                    href="/curiosidades"
+                    variant="primary"
+                    class="btn-funko-primary w-100 mb-5"
+                    >Ver más</b-button
+                  >
                 </div>
               </div>
             </div>
@@ -248,6 +260,12 @@
                     hendrerit. Vivamus interdum lorem sed facilisis volutpat.
                     Donec varius arcu ac condimentum elementum.
                   </p>
+                  <b-button
+                    href="/promociones"
+                    variant="primary"
+                    class="btn-funko-primary w-100 mb-5"
+                    >Ver más</b-button
+                  >
                 </div>
               </div>
             </div>
