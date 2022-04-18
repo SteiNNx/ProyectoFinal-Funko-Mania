@@ -73,7 +73,7 @@
                   <img class="img-fluid funko-home-sub-img" src="@/assets/img/lupa.png" />
                 </div>
                 <div class="col-9">
-                  <h2 class="mt-4 funko-home-sub-title">Funkos mas buscados</h2>
+                  <h2 class="mt-4 funko-home-sub-title" >Funkos mas buscados</h2>
                 </div>
                 <div class="col-9">
                   <p>

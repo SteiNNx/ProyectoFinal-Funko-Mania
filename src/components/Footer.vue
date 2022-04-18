@@ -52,7 +52,6 @@ ul {
   }
 }
 .footer-copyrigh {
-  font-family: $dosis;
   font-size: $font-size-xl;
   display: inline-block;
 
@@ -77,4 +76,5 @@ ul {
 div {
   position: inherit;
 }
+
 </style>
