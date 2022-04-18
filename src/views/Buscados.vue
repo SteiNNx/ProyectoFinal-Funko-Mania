@@ -5,12 +5,13 @@
     </div>
     <hr />
     <p class="mt-4 mb-4 sub-text">
-      Sin duda alguna, los Funko Pop más buscados no se limitan a estos pocos, pero si
-      podemos decir que estos en concreto se han ganado a pulso el corazón de todos los
-      fanáticos y fanáticas de los Funko Pop y de las series y películas más conocidas.
-      Echa un vistazo a todos los Funko Pop que puedas encontrarte y escoge por ti mismo
-      cual debería ser el que adorne tu estantería, y nada mejor para encontrarlo que
-      haciendo uso de la nuestra tienda online referente de Funkos.
+      Sin duda alguna, los Funko Pop más buscados no se limitan a estos pocos,
+      pero si podemos decir que estos en concreto se han ganado a pulso el
+      corazón de todos los fanáticos y fanáticas de los Funko Pop y de las
+      series y películas más conocidas. Echa un vistazo a todos los Funko Pop
+      que puedas encontrarte y escoge por ti mismo cual debería ser el que
+      adorne tu estantería, y nada mejor para encontrarlo que haciendo uso de la
+      nuestra tienda online referente de Funkos.
     </p>
     <div class="row">
       <div class="col-sm-12 col-md-6 col-lg-3">
@@ -23,9 +24,9 @@
           class="mb-2"
         >
           <b-card-text>
-            es una serie de novelas fantásticas escrita por la autora británica J. K.
-            Rowling, en la que se describen las aventuras del joven aprendiz de magia y
-            hechicería Harry Potter y sus amigos
+            es una serie de novelas fantásticas escrita por la autora británica
+            J. K. Rowling, en la que se describen las aventuras del joven
+            aprendiz de magia y hechicería Harry Potter y sus amigos
           </b-card-text>
 
           <b-button href="#" variant="primary" class="btn-funko-primary w-100"
@@ -43,8 +44,9 @@
           class="mb-2"
         >
           <b-card-text>
-            Iron Man es un superhéroe que aparece en los cómics estadounidenses publicados
-            por Marvel Comics. El personaje fue cocreado por el escritor y editor Stan Lee
+            Iron Man es un superhéroe que aparece en los cómics estadounidenses
+            publicados por Marvel Comics. El personaje fue cocreado por el
+            escritor y editor Stan Lee
           </b-card-text>
 
           <b-button href="#" variant="primary" class="btn-funko-primary w-100"
@@ -62,9 +64,9 @@
           class="mb-2"
         >
           <b-card-text>
-            conocido inicialmente como Bat-Man y en español como el Hombre Murciélago, es
-            un personaje de cómic creado por los estadounidenses Bob Kane y Bill Finger, y
-            propiedad de DC Comics.
+            conocido inicialmente como Bat-Man y en español como el Hombre
+            Murciélago, es un personaje de cómic creado por los estadounidenses
+            Bob Kane y Bill Finger, y propiedad de DC Comics.
           </b-card-text>
 
           <b-button href="#" variant="primary" class="btn-funko-primary w-100"
@@ -82,8 +84,9 @@
           class="mb-2"
         >
           <b-card-text>
-            La reina Daenerys Targaryen, también llamada Daenerys de la Tormenta, Rompedora de Cadenas, Madre de Dragones, acompañada de Drogon que es
-            uno de sus dragones.
+            La reina Daenerys Targaryen, también llamada Daenerys de la
+            Tormenta, Rompedora de Cadenas, Madre de Dragones, acompañada de
+            Drogon que es uno de sus dragones.
           </b-card-text>
 
           <b-button href="#" variant="primary" class="btn-funko-primary w-100"
@@ -101,8 +104,8 @@
           class="mb-2"
         >
           <b-card-text>
-            Nedward Flanders, más conocido como Ned, es un personaje ficticio de la serie
-            de televisión de dibujos animados Los Simpson.
+            Nedward Flanders, más conocido como Ned, es un personaje ficticio de
+            la serie de televisión de dibujos animados Los Simpson.
           </b-card-text>
 
           <b-button href="#" variant="primary" class="btn-funko-primary w-100"

@@ -14,6 +14,8 @@ import Bandeja from '@/views/Bandeja'
 import Administracion from '@/views/Administracion'
 import Buscados from '@/views/Buscados'
 import Curiosidades from '@/views/Curiosidades'
+import Promociones from '@/views/Promociones'
+
 
 
 
@@ -52,6 +54,11 @@ const routes = [
     path: '/curiosidades',
     name: 'Curiosidades',
     component: Curiosidades
+  },
+  {
+    path: '/promociones',
+    name: 'Promociones',
+    component: Promociones
   },
   {
     path: '/administracion',
