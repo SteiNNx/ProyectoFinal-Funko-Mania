@@ -12,6 +12,8 @@ import Politicas from '@/views/Politicas'
 import Terminos from '@/views/Terminos'
 import Bandeja from '@/views/Bandeja'
 import Administracion from '@/views/Administracion'
+import Buscados from '@/views/Buscados'
+
 
 
 Vue.use(VueRouter)
@@ -75,6 +77,11 @@ const routes = [
     name: 'Bandeja',
     component: Bandeja,
     meta: { authRequired: true }
+  },
+  {
+    path: '/buscados',
+    name: 'Buscados',
+    component: Buscados
   },
 ]
 
