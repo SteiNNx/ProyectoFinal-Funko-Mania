@@ -241,6 +241,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+* {
+  font-family: $akshar;
+}
+
 .table-admin {
   text-align: center;
   max-height: 30vw;
