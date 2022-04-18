@@ -4,11 +4,11 @@
       <h1 class="funko-home-title mt-5">FUNKOS MAS BUSCADOS</h1>
     </div>
     <hr />
-    <p class="mt-4 mb-4">
+    <p class="mt-4 mb-4 sub-text">
       Sin duda alguna, los Funko Pop más buscados no se limitan a estos pocos,
       pero si podemos decir que estos en concreto se han ganado a pulso el
       corazón de todos los fanáticos y fanáticas de los Funko Pop y de las
-      series y películas más conocidas. ¡Eso sí! Echa un vistazo a todos los
+      series y películas más conocidas. Echa un vistazo a todos los
       Funko Pop que puedas encontrarte y escoge por ti mismo cual debería ser el
       que adorne tu estantería, y nada mejor para encontrarlo que haciendo uso
       de la nuestra tienda online referente de Funkos.
@@ -30,8 +30,12 @@
             aprendiz de magia y hechicería Harry Potter y sus amigos
           </b-card-text>
 
-          <b-button href="#" variant="primary">Comprar</b-button>
+          <b-button href="#" variant="primary" class="btn-funko-primary w-100">Comprar</b-button>
         </b-card>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 col-md-6 col-lg-3">
         <b-card
           title="Iron Man"
           img-src="@/assets/img/star.png"
@@ -47,8 +51,12 @@
             escritor y editor Stan Lee
           </b-card-text>
 
-          <b-button href="#" variant="primary">Comprar</b-button>
+          <b-button href="#" variant="primary" class="btn-funko-primary w-100">Comprar</b-button>
         </b-card>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 col-md-6 col-lg-3">
         <b-card
           title="Batman"
           img-src="@/assets/img/batman.png"
@@ -64,8 +72,12 @@
             Bob Kane y Bill Finger, y propiedad de DC Comics.
           </b-card-text>
 
-          <b-button href="#" variant="primary">Comprar</b-button>
+          <b-button href="#" variant="primary" class="btn-funko-primary w-100">Comprar</b-button>
         </b-card>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 col-md-6 col-lg-3">
         <b-card
           title="Daenerys y Drogon"
           img-src="@/assets/img/tron.png"
@@ -82,8 +94,12 @@
             Dothraki, junto a Rhaegal y Viserion.
           </b-card-text>
 
-          <b-button href="#" variant="primary">Comprar</b-button>
+          <b-button href="#" variant="primary" class="btn-funko-primary w-100">Comprar</b-button>
         </b-card>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 col-md-6 col-lg-3">
         <b-card
           title="Ned Flanders Demonio"
           img-src="@/assets/img/flanders.png"
@@ -98,7 +114,7 @@
             la serie de televisión de dibujos animados Los Simpson.
           </b-card-text>
 
-          <b-button href="#" variant="primary">Comprar</b-button>
+          <b-button href="#" variant="primary" class="btn-funko-primary w-100">Comprar</b-button>
         </b-card>
       </div>
     </div>
@@ -124,8 +140,9 @@ hr {
   text-align: justify;
 }
 
-p {
-  margin-left: 20px;
+.sub-text {
+margin-left: 20px;
 margin-right: 20px;
 }
+
 </style>
