@@ -82,9 +82,8 @@
           class="mb-2"
         >
           <b-card-text>
-            La reina Daenerys Targaryen, también llamada Daenerys de la Tormenta, La que
-            no Arde, Rompedora de Cadenas, Madre de Dragones, acompañada de Drogon que es
-            uno de los dragones nacidos en el Mar Dothraki, junto a Rhaegal y Viserion.
+            La reina Daenerys Targaryen, también llamada Daenerys de la Tormenta, Rompedora de Cadenas, Madre de Dragones, acompañada de Drogon que es
+            uno de sus dragones.
           </b-card-text>
 
           <b-button href="#" variant="primary" class="btn-funko-primary w-100"
@@ -135,7 +134,12 @@ hr {
 }
 
 .sub-text {
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+Img {
+  width: 100%;
+  height: 300px;
 }
 </style>
