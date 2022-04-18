@@ -14,7 +14,7 @@
       nuestra tienda online referente de Funkos.
     </p>
     <div class="row">
-      <div class="col-sm-12 col-md-6 col-lg-3">
+      <div class="col-sm-12 col-md-6 col-lg-4">
         <b-card
           title="Harry Potter"
           img-src="@/assets/img/harry.png"
@@ -34,7 +34,7 @@
           >
         </b-card>
       </div>
-      <div class="col-sm-12 col-md-6 col-lg-3">
+      <div class="col-sm-12 col-md-6 col-lg-4">
         <b-card
           title="Iron Man"
           img-src="@/assets/img/star.png"
@@ -54,7 +54,7 @@
           >
         </b-card>
       </div>
-      <div class="col-sm-12 col-md-6 col-lg-3">
+      <div class="col-sm-12 col-md-6 col-lg-4">
         <b-card
           title="Batman"
           img-src="@/assets/img/batman.png"
@@ -74,7 +74,7 @@
           >
         </b-card>
       </div>
-      <div class="col-sm-12 col-md-6 col-lg-3">
+      <div class="col-sm-12 col-md-6 col-lg-4">
         <b-card
           title="Daenerys y Drogon"
           img-src="@/assets/img/tron.png"
@@ -94,7 +94,7 @@
           >
         </b-card>
       </div>
-      <div class="col-sm-12 col-md-6 col-lg-3">
+      <div class="col-sm-12 col-md-6 col-lg-4">
         <b-card
           title="Ned Flanders Demonio"
           img-src="@/assets/img/flanders.png"
@@ -105,7 +105,8 @@
         >
           <b-card-text>
             Nedward Flanders, más conocido como Ned, es un personaje ficticio de
-            la serie de televisión de dibujos animados Los Simpson.
+            la serie de televisión de dibujos animados Los Simpson. Es
+            reconocido por ser el buen vecino de Homero.
           </b-card-text>
 
           <b-button href="#" variant="primary" class="btn-funko-primary w-100"
@@ -143,6 +144,6 @@ hr {
 
 Img {
   width: 100%;
-  height: 300px;
+  height: 20rem;
 }
 </style>
