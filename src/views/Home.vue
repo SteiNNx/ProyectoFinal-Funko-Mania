@@ -32,9 +32,9 @@
           <h1 class="funko-home-title">LA HISTORIA DE LOS FUNKO POP</h1>
           <hr />
         </div>
-        <div class="col-10 texto-imagen pl-5 ml-5">
+        <div class="col-10 texto-imagen">
           <div class="row">
-            <div class="col-sm-12 col-md-6 col-lg-6">
+            <div class="col-sm-12 col-md-12 col-lg-6">
               <p class="funko-home-historia mb-5">
                 En 1998, Mike Becker, diseñador de camisetas y buscador de juguetes raros,
                 tenía entre ceja y ceja el muñeco-hucha con el famoso Big Boy de la cadena
@@ -66,9 +66,9 @@
           <h1 class="funko-home-title">LOS 5 FUNKOS MÁS VENDIDOS</h1>
           <hr />
         </div>
-        <div container>
+        <div container class="vendidos">
           <div class="row exclusivos">
-            <div class="col-sm-12 col-md-4 col-lg-2">
+            <div class="col-sm-12 col-md-6 col-lg-2">
               <b-card
                 title="Spiderman"
                 img-src="@/assets/img/spiderman.jpg"
@@ -257,8 +257,12 @@ export default {
   font-size: 600;
 }
 .exclusivos {
-  margin: 0 auto;
   justify-content: center;
+   margin: auto;
+}
+.vendidos {
+  justify-content: center;
+   margin: auto;
 }
 .funko-home-sub-title {
   color: $celeste;
@@ -298,5 +302,6 @@ hr {
 
 .texto-imagen {
   justify-content: center;
+  margin: auto;
 }
 </style>
