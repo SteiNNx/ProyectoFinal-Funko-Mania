@@ -28,9 +28,11 @@ export default {
 </script>
 
 <style lang="scss">
+* {
+  font-family: $akshar;
+}
 .funko-favoritos-title {
   color: $celeste-oscuro;
-  font-family: $dosis;
   font-size: $font-size-xl;
 }
 </style>

@@ -14,6 +14,10 @@ import Bandeja from '@/views/Bandeja'
 import Administracion from '@/views/Administracion'
 import Buscados from '@/views/Buscados'
 import InfoPedido from '@/views/InfoPedido'
+import Curiosidades from '@/views/Curiosidades'
+import Promociones from '@/views/Promociones'
+
+
 
 
 
@@ -46,6 +50,16 @@ const routes = [
     path: '/categorias',
     name: 'Categorias',
     component: Categorias
+  },
+  {
+    path: '/curiosidades',
+    name: 'Curiosidades',
+    component: Curiosidades
+  },
+  {
+    path: '/promociones',
+    name: 'Promociones',
+    component: Promociones
   },
   {
     path: '/administracion',
