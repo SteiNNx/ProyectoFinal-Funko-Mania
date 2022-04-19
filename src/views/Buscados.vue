@@ -28,7 +28,7 @@
             <b-button class="btn-funko-primary" v-b-modal.my-modal>Más detalles</b-button>
             <!-- The modal -->
             <b-modal id="my-modal"
-              >Esprotagonista de una serie de novelas fantásticas escrita por la
+              >Es protagonista de una serie de novelas fantásticas escrita por la
               autora británica J. K. Rowling, en la que se describen las
               aventuras del joven aprendiz de magia y hechicería Harry Potter y
               sus amigos</b-modal
