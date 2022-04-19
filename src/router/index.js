@@ -16,10 +16,7 @@ import Buscados from '@/views/Buscados'
 import InfoPedido from '@/views/InfoPedido'
 import Curiosidades from '@/views/Curiosidades'
 import Promociones from '@/views/Promociones'
-
-
-
-
+import Pago from '@/views/Pago'
 
 
 Vue.use(VueRouter)
@@ -103,6 +100,11 @@ const routes = [
     path: '/buscados',
     name: 'Buscados',
     component: Buscados
+  },
+  {
+    path: '/pago',
+    name: 'Pago',
+    component: Pago
   },
 ]
 
