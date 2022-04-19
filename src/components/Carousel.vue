@@ -32,6 +32,11 @@
         img-src="../assets/img/BANNER2.png"
       >
       </b-carousel-slide>
+      <b-carousel-slide
+        class="funko-carousel__img"
+        img-src="@/assets/img/BANNER5.png"
+      >
+      </b-carousel-slide>
     </b-carousel>
   </div>
 </template>
