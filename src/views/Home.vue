@@ -63,12 +63,12 @@
           </div>
         </div>
         <div class="col-12 py-5">
-          <h1 class="funko-home-title">LOS 5 FUNKOS MÁS VENDIDOS</h1>
+          <h1 class="funko-home-title">LOS 4 FUNKOS MÁS VENDIDOS</h1>
           <hr />
         </div>
-        <div container class="vendidos">
-          <div class="row exclusivos">
-            <div class="col-sm-12 col-md-6 col-lg-2">
+        <div class="col-12 py-5">
+          <div class="row mx-5">
+            <div class="col-sm-12 col-md-6 col-lg-3">
               <b-card
                 title="Spiderman"
                 img-src="@/assets/img/spiderman.jpg"
@@ -85,7 +85,7 @@
                 >
               </b-card>
             </div>
-            <div class="col-sm-12 col-md-4 col-lg-2">
+            <div class="col-sm-12 col-md-6 col-lg-3">
               <b-card
                 title="Harry Potter"
                 img-src="@/assets/img/harry.jpg"
@@ -102,7 +102,7 @@
                 >
               </b-card>
             </div>
-            <div class="col-sm-12 col-md-4 col-lg-2">
+            <div class="col-sm-12 col-md-6 col-lg-3">
               <b-card
                 title="F. Mercury"
                 img-src="@/assets/img/freddy.jpg"
@@ -119,27 +119,10 @@
                 >
               </b-card>
             </div>
-            <div class="col-sm-12 col-md-4 col-lg-2">
+            <div class="col-sm-12 col-md-6 col-lg-3">
               <b-card
                 title="Dr. Strange"
                 img-src="@/assets/img/drstrange.jpg"
-                img-alt="Image"
-                img-top
-                tag="article"
-                style="max-width: 20rem"
-                class="mb-2"
-              >
-                <b-card-text> $12.990 </b-card-text>
-
-                <b-button href="#" variant="primary" class="btn-funko-primary w-100"
-                  >Comprar</b-button
-                >
-              </b-card>
-            </div>
-            <div class="col-sm-12 col-md-4 col-lg-2">
-              <b-card
-                title="T. Lannister"
-                img-src="@/assets/img/got.jpg"
                 img-alt="Image"
                 img-top
                 tag="article"
@@ -276,14 +259,7 @@ export default {
   font-family: $akshar;
   font-size: 600;
 }
-.exclusivos {
-  justify-content: center;
-  margin: auto;
-}
-.vendidos {
-  justify-content: center;
-  margin: auto;
-}
+
 .funko-home-sub-title {
   color: $celeste;
   font-family: "Akshar", sans-serif;
