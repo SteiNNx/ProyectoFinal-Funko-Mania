@@ -25,11 +25,13 @@
         >
           <div>
             <!-- Using modifiers -->
-            <b-button class="btn-funko-primary" v-b-modal.my-modal>Más detalles</b-button>
+            <b-button class="btn-funko-primary" v-b-modal.my-modal
+              >Más detalles</b-button
+            >
             <!-- The modal -->
             <b-modal id="my-modal"
-              >Es protagonista de una serie de novelas fantásticas escrita por la
-              autora británica J. K. Rowling, en la que se describen las
+              >Es protagonista de una serie de novelas fantásticas escrita por
+              la autora británica J. K. Rowling, en la que se describen las
               aventuras del joven aprendiz de magia y hechicería Harry Potter y
               sus amigos</b-modal
             >
@@ -45,14 +47,16 @@
           tag="article"
           class="mb-2"
         >
-        <div>
+          <div>
             <!-- Using modifiers -->
-            <b-button class="btn-funko-primary" v-b-modal.my-modal2>Más detalles</b-button>
+            <b-button class="btn-funko-primary" v-b-modal.my-modal2
+              >Más detalles</b-button
+            >
             <!-- The modal -->
             <b-modal id="my-modal2"
-              >Iron Man es un superhéroe que aparece en los cómics estadounidenses
-            publicados por Marvel Comics. El personaje fue cocreado por el
-            escritor y editor Stan Lee</b-modal
+              >Iron Man es un superhéroe que aparece en los cómics
+              estadounidenses publicados por Marvel Comics. El personaje fue
+              cocreado por el escritor y editor Stan Lee</b-modal
             >
           </div>
         </b-card>
@@ -66,14 +70,16 @@
           tag="article"
           class="mb-2"
         >
-        <div>
+          <div>
             <!-- Using modifiers -->
-            <b-button class="btn-funko-primary" v-b-modal.my-modal3>Más detalles</b-button>
+            <b-button class="btn-funko-primary" v-b-modal.my-modal3
+              >Más detalles</b-button
+            >
             <!-- The modal -->
             <b-modal id="my-modal3"
               >Conocido inicialmente como Bat-Man y en español como el Hombre
-            Murciélago, es un personaje de cómic lucha por la justicia y es
-            propiedad de DC Comics.</b-modal
+              Murciélago, es un personaje de cómic lucha por la justicia y es
+              propiedad de DC Comics.</b-modal
             >
           </div>
         </b-card>
@@ -87,14 +93,16 @@
           tag="article"
           class="mb-2"
         >
-        <div>
+          <div>
             <!-- Using modifiers -->
-            <b-button class="btn-funko-primary" v-b-modal.my-modal4>Más detalles</b-button>
+            <b-button class="btn-funko-primary" v-b-modal.my-modal4
+              >Más detalles</b-button
+            >
             <!-- The modal -->
             <b-modal id="my-modal4"
               >La reina Daenerys Targaryen, también llamada Daenerys de la
-            Tormenta, Rompedora de Cadenas, Madre de Dragones, acompañada de
-            Drogon que es uno de sus leales dragones.</b-modal
+              Tormenta, Rompedora de Cadenas, Madre de Dragones, acompañada de
+              Drogon que es uno de sus leales dragones.</b-modal
             >
           </div>
         </b-card>
@@ -108,14 +116,16 @@
           tag="article"
           class="mb-2"
         >
-        <div>
+          <div>
             <!-- Using modifiers -->
-            <b-button class="btn-funko-primary" v-b-modal.my-modal5>Más detalles</b-button>
+            <b-button class="btn-funko-primary" v-b-modal.my-modal5
+              >Más detalles</b-button
+            >
             <!-- The modal -->
             <b-modal id="my-modal5"
-              >Nedward Flanders, más conocido como Ned, es un personaje ficticio de
-            la serie de televisión de dibujos animados Los Simpson. Es
-            reconocido por ser el buen vecino de Homero.</b-modal
+              >Nedward Flanders, más conocido como Ned, es un personaje ficticio
+              de la serie de televisión de dibujos animados Los Simpson. Es
+              reconocido por ser el buen vecino de Homero.</b-modal
             >
           </div>
         </b-card>

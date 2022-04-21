@@ -1,5 +1,9 @@
 <template>
   <div class="container">
+    <div>
+      <h1 class="funko-home-title mt-5">Curiosidades</h1>
+    </div>
+    <hr />
     <b-card-group columns>
       <b-card
         title="Tienen su propio juego de mesa"
@@ -63,8 +67,7 @@
         </blockquote>
       </b-card>
 
-      <b-card class="mt-4"
->
+      <b-card class="mt-4">
         <b-card-title>Mike Becker creador funko pop</b-card-title>
         <b-card-text>
           los orígenes de los Funko Pops tienen lugar en la franquicia Bob's Big
@@ -98,5 +101,17 @@
 <style lang="scss" scoped>
 * {
   font-family: $akshar;
+}
+hr {
+  width: 80%;
+  height: 2px;
+  background-color: $negro;
+}
+.funko-home-title {
+  text-transform: uppercase;
+  color: $celeste;
+  font-family: $akshar;
+  font-size: 600;
+  text-align: center;
 }
 </style>
