@@ -5,6 +5,7 @@
         title="Tienen su propio juego de mesa"
         img-src="@/assets/img/funkoverse.png"
         img-alt="Image"
+        class="mt-4"
         img-top
       >
         <b-card-text>
@@ -33,6 +34,7 @@
         img-src="@/assets/img/caros.png"
         img-alt="Image"
         img-top
+        class="mt-4"
       >
         <b-card-text>
           Hoy día hay ciertas figuras que valen una fortuna, ya sea porque se
@@ -61,7 +63,8 @@
         </blockquote>
       </b-card>
 
-      <b-card>
+      <b-card class="mt-4"
+>
         <b-card-title>Mike Becker creador funko pop</b-card-title>
         <b-card-text>
           los orígenes de los Funko Pops tienen lugar en la franquicia Bob's Big

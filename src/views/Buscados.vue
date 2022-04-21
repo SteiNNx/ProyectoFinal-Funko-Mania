@@ -150,6 +150,6 @@ hr {
 
 Img {
   width: 100%;
-  height: 22rem;
+  height: 300px;
 }
 </style>
