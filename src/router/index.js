@@ -1,19 +1,19 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
+import Administracion from '@/views/Administracion'
+import Buscados from '@/views/Buscados'
 import Categorias from '@/views/Categorias'
+import Curiosidades from '@/views/Curiosidades'
 import Detalle from '@/views/Detalle'
 import Favoritos from '@/views/Favoritos'
 import Home from '@/views/Home'
 import Login from '@/views/Login'
 import NotFound from '@/views/NotFound'
-import Registrar from '@/views/Registrar'
 import Politicas from '@/views/Politicas'
-import Terminos from '@/views/Terminos'
-import Administracion from '@/views/Administracion'
-import Buscados from '@/views/Buscados'
-import Curiosidades from '@/views/Curiosidades'
 import Promociones from '@/views/Promociones'
+import Registrar from '@/views/Registrar'
+import Terminos from '@/views/Terminos'
 
 
 Vue.use(VueRouter)
