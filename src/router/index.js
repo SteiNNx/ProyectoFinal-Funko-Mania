@@ -10,13 +10,10 @@ import NotFound from '@/views/NotFound'
 import Registrar from '@/views/Registrar'
 import Politicas from '@/views/Politicas'
 import Terminos from '@/views/Terminos'
-import Bandeja from '@/views/Bandeja'
 import Administracion from '@/views/Administracion'
 import Buscados from '@/views/Buscados'
-import InfoPedido from '@/views/InfoPedido'
 import Curiosidades from '@/views/Curiosidades'
 import Promociones from '@/views/Promociones'
-import Pago from '@/views/Pago'
 
 
 Vue.use(VueRouter)
@@ -65,7 +62,7 @@ const routes = [
     meta: { authRequired: true }
   },
   {
-    path: '/Detalle/:id',
+    path: '/detalle/:id',
     name: 'Detalle',
     component: Detalle,
     props: true,
@@ -76,11 +73,6 @@ const routes = [
     component: Favoritos
   },
   {
-    path: '/infopedido',
-    name: 'InfoPedido',
-    component: InfoPedido
-  },
-  {
     path: '/politicas',
     name: 'Politicas',
     component: Politicas
@@ -89,12 +81,6 @@ const routes = [
     path: '/terminos',
     name: 'Terminos',
     component: Terminos
-  },
-  {
-    path: '/Bandeja',
-    name: 'Bandeja',
-    component: Bandeja,
-    meta: { authRequired: true }
   },
   {
     path: '/buscados',
