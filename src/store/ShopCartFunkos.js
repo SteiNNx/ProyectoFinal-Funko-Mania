@@ -73,7 +73,13 @@ const ShopCartFunkos = {
                 document.body.style = 'overflow: auto;'
             }
             commit('SET_SHOW_CART', newState);
-        }
+        },
+        changeStateShowCheckout({ commit, state }, newState) {
+            commit('SET_SHOW_CHECKOUT', newState);
+        },
+        changeStateShopCartFunkos({ commit, state }, newState) {
+            commit('SET_SHOP_CART_FUNKOS', newState);
+        },
     },
     getters: {
         getCountFunkosItemsInCart({ shopCartFunkos }) {

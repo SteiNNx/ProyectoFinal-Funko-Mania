@@ -21,7 +21,10 @@
                 <span>{{ getLabelPrice(getTotalPriceCart) }}</span>
               </div>
               <div class="col-12">
-                <b-button class="mb-2 btn-funko-primary funko-categoria-btn w-100">
+                <b-button
+                  class="mb-2 btn-funko-primary funko-categoria-btn w-100"
+                  @click="handleOnClickFinalizar()"
+                >
                   <b-icon icon="wallet2" aria-hidden="true"></b-icon>
                   Finalizar Compra
                 </b-button>
@@ -46,7 +49,12 @@ export default {
     ShopItemFunkoCart,
   },
   methods: {
-    ...mapActions("ShopCartFunkos", ["changeStateShowCart"]),
+    ...mapActions("ShopCartFunkos", ["changeStateShowCart", "changeStateShowCheckout"]),
+    handleOnClickFinalizar() {
+      this.changeStateShowCart(false);
+      this.changeStateShowCheckout(true);
+      this.$router.push("/checkout-compra");
+    },
     closeCart() {
       this.changeStateShowCart(false);
     },
