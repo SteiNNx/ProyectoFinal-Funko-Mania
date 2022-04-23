@@ -1,22 +1,21 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
+import Administracion from '@/views/Administracion'
+import Buscados from '@/views/Buscados'
 import Categorias from '@/views/Categorias'
+import CheckoutCompra from '@/views/CheckoutCompra'
+import CheckoutPostCompra from '@/views/CheckoutPostCompra'
+import Curiosidades from '@/views/Curiosidades'
 import Detalle from '@/views/Detalle'
 import Favoritos from '@/views/Favoritos'
 import Home from '@/views/Home'
 import Login from '@/views/Login'
 import NotFound from '@/views/NotFound'
-import Registrar from '@/views/Registrar'
 import Politicas from '@/views/Politicas'
-import Terminos from '@/views/Terminos'
-import Bandeja from '@/views/Bandeja'
-import Administracion from '@/views/Administracion'
-import Buscados from '@/views/Buscados'
-import InfoPedido from '@/views/InfoPedido'
-import Curiosidades from '@/views/Curiosidades'
 import Promociones from '@/views/Promociones'
-import Pago from '@/views/Pago'
+import Registrar from '@/views/Registrar'
+import Terminos from '@/views/Terminos'
 
 
 Vue.use(VueRouter)
@@ -65,7 +64,7 @@ const routes = [
     meta: { authRequired: true }
   },
   {
-    path: '/Detalle/:id',
+    path: '/detalle/:id',
     name: 'Detalle',
     component: Detalle,
     props: true,
@@ -74,11 +73,6 @@ const routes = [
     path: '/favoritos',
     name: 'Favoritos',
     component: Favoritos
-  },
-  {
-    path: '/infopedido',
-    name: 'InfoPedido',
-    component: InfoPedido
   },
   {
     path: '/politicas',
@@ -91,20 +85,19 @@ const routes = [
     component: Terminos
   },
   {
-    path: '/Bandeja',
-    name: 'Bandeja',
-    component: Bandeja,
-    meta: { authRequired: true }
-  },
-  {
     path: '/buscados',
     name: 'Buscados',
     component: Buscados
   },
   {
-    path: '/pago',
-    name: 'Pago',
-    component: Pago
+    path: '/checkout-compra',
+    name: 'CheckoutCompra',
+    component: CheckoutCompra
+  },
+  {
+    path: '/checkout-post-compra',
+    name: 'CheckoutPostCompra',
+    component: CheckoutPostCompra
   },
 ]
 

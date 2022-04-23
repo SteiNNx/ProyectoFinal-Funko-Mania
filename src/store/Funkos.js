@@ -48,6 +48,7 @@ const Funkos = {
                     };
                     funkos.push(funko);
                 });
+                commit("ShopCartFunkos/SET_SHOW_CHECKOUT", false, { root: true });
                 commit("SET_FUNKOS", funkos);
             });
         },
