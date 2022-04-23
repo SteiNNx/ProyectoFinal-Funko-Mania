@@ -21,6 +21,7 @@ const ShopCartFunkos = {
     state: {
         shopCartFunkos: [],
         showCart: false,
+        showCheckout: false,
     },
     mutations: {
         SET_SHOP_CART_FUNKOS(state, payload) {
@@ -28,6 +29,9 @@ const ShopCartFunkos = {
         },
         SET_SHOW_CART(state, payload) {
             state.showCart = payload;
+        },
+        SET_SHOW_CHECKOUT(state, payload) {
+            state.showCheckout = payload;
         }
     },
     actions: {

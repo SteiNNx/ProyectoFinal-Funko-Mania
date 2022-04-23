@@ -1,0 +1,12 @@
+*.vue text=auto eol=lf
+*.js text=auto eol=lf
+*.css text=auto eol=lf
+*.scss text=auto eol=lf
+*.svg text=auto eol=lf
+*.eot text=auto eol=lf
+*.ttf text=auto eol=lf
+*.woff text=auto eol=lf
+*.woff2 text=auto eol=lf
+*.md text=auto eol=lf
+*.html text=auto eol=lf
+*.json text=auto eol=lf

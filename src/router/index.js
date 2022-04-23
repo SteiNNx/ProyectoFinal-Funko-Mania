@@ -4,6 +4,8 @@ import VueRouter from 'vue-router'
 import Administracion from '@/views/Administracion'
 import Buscados from '@/views/Buscados'
 import Categorias from '@/views/Categorias'
+import CheckoutCompra from '@/views/CheckoutCompra'
+import CheckoutPostCompra from '@/views/CheckoutPostCompra'
 import Curiosidades from '@/views/Curiosidades'
 import Detalle from '@/views/Detalle'
 import Favoritos from '@/views/Favoritos'
@@ -88,9 +90,14 @@ const routes = [
     component: Buscados
   },
   {
-    path: '/pago',
-    name: 'Pago',
-    component: Pago
+    path: '/checkout-compra',
+    name: 'CheckoutCompra',
+    component: CheckoutCompra
+  },
+  {
+    path: '/checkout-post-compra',
+    name: 'CheckoutPostCompra',
+    component: CheckoutPostCompra
   },
 ]
 

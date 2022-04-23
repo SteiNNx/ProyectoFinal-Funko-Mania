@@ -1,11 +1,11 @@
 <template>
   <div class="funko-body">
-    <Navbar />
+    <Navbar v-if="!showCheckout" />
     <main>
       <router-view />
     </main>
-    <Footer />
-    <ShopCart />
+    <Footer v-if="!showCheckout" />
+    <ShopCart v-if="!showCheckout" />
   </div>
 </template>
 
@@ -28,6 +28,9 @@ export default {
   },
   methods: {
     ...mapActions("Funkos", ["getInitCallApiFunkos"]),
+  },
+  computed: {
+    ...mapState("ShopCartFunkos", ["showCheckout"]),
   },
 };
 </script>
