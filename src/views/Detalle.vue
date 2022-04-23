@@ -226,7 +226,7 @@ export default {
   margin: 1rem 0rem;
   transition: transform 0.2s;
   &:hover {
-    transform: scale(2);
+    transform: scale(1.5);
   }
   @include breakpoint("Celular") {
     width: 100%;

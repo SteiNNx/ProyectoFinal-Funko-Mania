@@ -12,8 +12,26 @@
 </template>
 
 <script>
+import { mapActions } from "vuex";
+
 export default {
   name: "CheckoutPostCompra",
+  mounted() {
+    setTimeout(() => {
+      this.changeStateShowCart(false);
+      this.changeStateShopCartFunkos([]);
+      this.changeStateShowCheckout(false);
+      this.$toast.success("Compra realizada");
+      this.$router.push("/");
+    }, 6000);
+  },
+  methods: {
+    ...mapActions("ShopCartFunkos", [
+      "changeStateShowCart",
+      "changeStateShowCheckout",
+      "changeStateShopCartFunkos",
+    ]),
+  },
 };
 </script>
 

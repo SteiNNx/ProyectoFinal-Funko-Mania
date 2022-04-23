@@ -28,6 +28,6 @@ export const getDayEnvio = (userLogin) => {
     return fechaLlegadaAprox;
 }
 
-export const getDateCompra = (format = 'dddd-DD-MMMM') => {
+export const getDateCompra = (format = 'dddd DD, MMMM YYYY') => {
     return dayjs().format(format);
 }
