@@ -3,29 +3,40 @@
     <template>
       <ShopIconNavbar />
     </template>
-    <b-nav-item-dropdown right>
+    <b-nav-item-dropdown class="funko-dropdown-menu" right>
       <!-- Using 'button-content' slot -->
       <template #button-content>
         <em v-if="userLogin != null" class="funko-label-name">{{ getLabelName }}</em>
         <em v-else class="funko-label-name"> SIN SESIÓN </em>
       </template>
       <!--<b-dropdown-item href="#">Profile</b-dropdown-item>-->
-      <b-dropdown-item v-if="userLogin != null" class="funko-label-logout" @click="salir">
-        Salir
-        <b-icon
-          class="float-end funko-label-icon"
-          icon="box-arrow-right"
-          scale="1"
-          variant="white"
-        ></b-icon>
-      </b-dropdown-item>
+      <template v-if="userLogin != null">
+        <b-dropdown-item class="funko-label-logout" @click="salir">
+          <span>Mis Compras</span>
+          <b-icon
+            class="float-end funko-label-icon"
+            icon="cart-check-fill"
+            scale="1"
+            variant="black"
+          ></b-icon>
+        </b-dropdown-item>
+        <b-dropdown-item class="funko-label-logout" @click="salir">
+          <span>Salir</span>
+          <b-icon
+            class="float-end funko-label-icon"
+            icon="box-arrow-right"
+            scale="1"
+            variant="black"
+          ></b-icon>
+        </b-dropdown-item>
+      </template>
       <b-dropdown-item v-else class="funko-label-logout" @click="ingresar">
-        Ingresar
+        <span>Ingresar</span>
         <b-icon
           class="float-end funko-label-icon"
           icon="box-arrow-in-left"
           scale="1"
-          variant="white"
+          variant="black"
         ></b-icon>
       </b-dropdown-item>
     </b-nav-item-dropdown>
@@ -78,6 +89,15 @@ export default {
   font-family: $akshar !important;
   font-size: $font-size-md;
   color: $blanco !important;
+  a {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.funko-dropdown-menu {
+  ul {
+    width: 15rem;
+  }
 }
 
 .funko-label-icon {
