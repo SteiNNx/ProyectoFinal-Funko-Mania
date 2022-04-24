@@ -28,9 +28,10 @@ const Compras = {
         },
     },
     actions: {
-        getCompras({ commit, state }) {
-            const usersRef = collection(db, "compras");
-            const queryRequest = query(usersRef, where("email", "==", user.email));
+        getCompras({ commit, state }, email) {
+            console.log({ email });
+            const comprasRef = collection(db, "compras");
+            const queryRequest = query(comprasRef, where("compra.user.email", "==", email));
             onSnapshot(queryRequest, (querySnapshot) => {
                 const compras = [];
                 querySnapshot.forEach((doc) => {
@@ -40,7 +41,7 @@ const Compras = {
                     };
                     compras.push(compra);
                 });
-                commit("SET_COMPRAS", funkos);
+                commit("SET_COMPRAS", compras);
             });
         },
         async addCompra({ commit, state }, compra) {
