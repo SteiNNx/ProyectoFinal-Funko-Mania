@@ -35,6 +35,9 @@
             <div class="col-12">
               <p>{{ compra.fecha_compra }}</p>
             </div>
+            <div class="col-12">
+              <p class="label-envio">En Preparación</p>
+            </div>
           </div>
         </div>
         <b-collapse :id="'collapse-' + index">
@@ -241,11 +244,23 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+h3 {
+  text-transform: capitalize;
+}
+
+p {
+  margin: 0;
+  text-transform: capitalize;
+}
+
+.label-envio {
+  color: $celeste-oscuro;
+  text-transform: capitalize;
+  margin: 0;
+}
+
 .card-header-compra {
   display: flex;
   justify-content: space-between;
-}
-h3 {
-  text-transform: capitalize;
 }
 </style>
