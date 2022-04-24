@@ -11,6 +11,7 @@ import Detalle from '@/views/Detalle'
 import Favoritos from '@/views/Favoritos'
 import Home from '@/views/Home'
 import Login from '@/views/Login'
+import MisCompras from '@/views/MisCompras'
 import NotFound from '@/views/NotFound'
 import Politicas from '@/views/Politicas'
 import Promociones from '@/views/Promociones'
@@ -98,6 +99,11 @@ const routes = [
     path: '/checkout-post-compra',
     name: 'CheckoutPostCompra',
     component: CheckoutPostCompra
+  },
+  {
+    path: '/mis-compras',
+    name: 'MisCompras',
+    component: MisCompras
   },
 ]
 

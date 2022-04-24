@@ -11,7 +11,7 @@
       </template>
       <!--<b-dropdown-item href="#">Profile</b-dropdown-item>-->
       <template v-if="userLogin != null">
-        <b-dropdown-item class="funko-label-logout" @click="salir">
+        <b-dropdown-item class="funko-label-logout" @click="misCompras">
           <span>Mis Compras</span>
           <b-icon
             class="float-end funko-label-icon"
@@ -67,6 +67,9 @@ export default {
     },
     ingresar() {
       this.$router.push("/ingresar");
+    },
+    misCompras() {
+      this.$router.push("/mis-compras");
     },
   },
   computed: {
