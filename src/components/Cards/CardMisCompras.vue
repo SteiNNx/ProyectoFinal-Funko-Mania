@@ -185,7 +185,11 @@
                     <tbody>
                       <tr v-for="(funko, index) in compra.compra.compras" :key="index">
                         <td>{{ index + 1 }}</td>
-                        <td>{{ funko.title }}</td>
+                        <td>
+                          <router-link class="" tag="a" :to="'/detalle/' + funko.id">
+                            {{ funko.title }}
+                          </router-link>
+                        </td>
                         <td>{{ funko.category }}</td>
                         <td>{{ getLabelPrice(funko.price) }}</td>
                         <td>{{ funko.cantidad }}</td>
