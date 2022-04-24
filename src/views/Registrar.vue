@@ -56,7 +56,7 @@
               <label for="txt_password">Dirección</label>
               <input
                 id="txt_password"
-                type="password"
+                type="text"
                 class="form-control"
                 v-model="user.direccion"
                 placeholder=""
