@@ -38,6 +38,21 @@ npm install
 npm run serve
 ```
 
+## _:triangular_ruler:Herramientas Usadas_:
+- App:
+  - VueJS.
+  - Vuex, Vuex-persist.
+  - Vue-Router.
+  - Firebase, Axios
+  - Boostrap-vue.
+    - vue-select, vue-social-sharing, vue-toastification.
+  - Jest, Cypress
+  - vue-template-babel-compiler (Optional Chaining(?.), Nullish Coalescing(??))
+  - Dayjs
+- WebScrapping
+  - Axios
+  - Cheerio
+
 ### _:woman_technologist:Instructivos para desarrolladores_
 - [instructivo de Git](docs/git-commands.md)
 - [WebScrapping Generated Api JSON Funkos](https://github.com/SteiNNx/WebScrappingSample-ProyectoFinal-Funko-Mania)
