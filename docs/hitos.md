@@ -134,3 +134,23 @@ logueado, ingrese directamente a la vista principal, de lo contrario, el usuario
 - :heavy_check_mark: Creación de una ruta para recuperar datos desde la base de datos. `(1 punto)`
 - :heavy_check_mark: Creación de una ruta para persistir o actualizar datos en la base de datos. `(1 punto)`
 - :heavy_check_mark: Conexión de la aplicación con las rutas creadas. `(1 punto)`
+
+## _Hito :four:_
+
+### _Instrucciones_
+
+> Teniendo la aplicación ya desarrollada y conectada al back end, se deberán escribir test que permitan probar la aplicación simulando las acciones que realizaría un usuario real, por ejemplo, loguearse,
+marcar un elemento como favorito, eliminar un elemento, etc.
+>
+> La aplicación deberá superar con éxito todos los test programados y se revisará que los test escritos realmente contemplen todo el  funcionamiento de la aplicación.
+> 
+> Una vez finalizado el proceso de pruebas, se empaquetará la aplicación para su paso a producción.
+> 
+> Esta será alojada en un servicio de hosting a elección. Dentro de las opciones sugeridas se encuentran Firebase hosting, GIthub Pages y Netlify.
+> 
+> Además del código fuente del proyecto, se deberá adjuntar el enlace a la aplicación terminada.
+
+- :heavy_check_mark: Escritura de tests para probar la aplicación completa. `(4 puntos)`
+- :heavy_check_mark: Los test escritos abarcan todo el funcionamiento de la aplicación. `(2 puntos)`
+- :heavy_check_mark: La aplicación pasa todos los test escritos. `(2 puntos)`
+- :heavy_check_mark: Alojamiento de la aplicación en un servicio de Hosting. `(2 puntos)`

@@ -77,3 +77,9 @@ npm run serve
     - :heavy_check_mark: Creación de una ruta para recuperar datos desde la base de datos. `(1 punto)`
     - :heavy_check_mark: Creación de una ruta para persistir o actualizar datos en la base de datos. `(1 punto)`
     - :heavy_check_mark: Conexión de la aplicación con las rutas creadas. `(1 punto)`
+- [Hite 4](docs/hitos.md#hito-four)
+    - :heavy_check_mark: Escritura de tests para probar la aplicación completa. `(4 puntos)`
+    - :heavy_check_mark: Los test escritos abarcan todo el funcionamiento de la aplicación. `(2 puntos)`
+    - :heavy_check_mark: La aplicación pasa todos los test escritos. `(2 puntos)`
+    - :heavy_check_mark: Alojamiento de la aplicación en un servicio de Hosting. `(2 puntos)`
+
